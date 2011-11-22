@@ -1,0 +1,36 @@
+Best Practices for BoonBox Front-End Development
+
+Please follow these guidelines when developing the site. Because you know.. they're awesome. 
+
+/* HTML */ 
+
+// HTML5
+
+: We will be developing in HTML5 so please use the HTML5 doctype
+: HTML5 elements do not need to be self-closed (e.g. write <img> instead of <img/>
+
+// Keeping things minimal
+
+: Do not use a div to for clearing - it bloats the mark up -  and it's not necessary
+: Do not use br elements for positioning. this is what css is for. 
+
+// Element names
+
+: Please no acronyms for id and class names - makes the code less readable
+: Please use dashes for id and class names (e.g. main-navigation) - if both of you prefer to use
+  camel casing then that's cool - just as long as it's consistent :)
+
+// Performance
+
+: Put javascript files as close to the bottom of the document as possible (just above the closing body tag)
+
+
+/* CSS */
+
+: Avoid using margin-left, margin-top, etc. where possible - this makes it difficult to track 
+  bugs later on 
+: !importants are the spawn of the devil - they break the cascading nature of the stylesheet and
+  lead to all sorts of problems - please avoid at all costs
+
+
+
