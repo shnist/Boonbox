@@ -8,7 +8,7 @@
 <meta name="distribution" content="global">
 <meta name="rating" content="general">
 <!-- favicon -->
-<link rel="shortcut icon" href="/assets/cp10-blue/image/favicon.ico">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
 
 <!-- stylesheets -->
 <link rel="stylesheet" href="/assets/styles/common.css" media="screen">	
@@ -16,3 +16,13 @@
 <!--[if IE 9]><link rel="stylesheet" href="/assets/styles/ie/ie9.css" media="screen"><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" href="/assets/styles/ie/ie8.css" media="screen"><![endif]-->
 <!--[if IE 7]><link rel="stylesheet" href="/assets/styles/ie/ie7.css" media="screen"><![endif]-->
+
+<!-- facebook meta data -->
+<meta property="og:title" content="Boonbox">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://www.boonbox.co.uk/">
+<meta property="og:image" content="http://www.boonbox.co.uk/assets/images/boonbox_logo.jpg">
+<meta property="og:site_name" content="Boonbox">
+<meta property="fb:admins" content="1619700045">
+<meta property="og:description"
+        content="Boonbox">
