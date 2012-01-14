@@ -48,23 +48,3 @@ Boonbox.extend('common', {
 	}
 
 });
-
-Boonbox.extend('filters', {
-	/**
-	 * Initialiser of the setup functionality of the filters
-	 * @function
-	 * @memberOf boonbox
-	 */
-	init : function (){}
-
-});
-
-
-/**
- * Document ready function for jquery
- */
-
-$(document).ready(function () {
-	Boonbox.common.init();
-	Boonbox.filters.init();
-});
