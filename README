@@ -1,5 +1,13 @@
 Best Practices for BoonBox 
 
+/* Starting up */
+
+Set up git account
+Git gui for mac
+Fork a repository
+Read readme 
+
+
 /* Templates */
 : Inside htmlTemplates/templates you'll find an HTML template file, please copy and paste this file
   whenever you want to make a new page
@@ -7,7 +15,6 @@ Best Practices for BoonBox
 : Sections that occur throughout the site, e.g. footer, header, head, scripts and filters - have been put
   into separate blocks that can be found in htmlTemplates/blocks - please work in those files
   when updating those sections. 
-
 
 /* Naming */
 
@@ -18,7 +25,6 @@ Best Practices for BoonBox
 
 // File names
 : Please use _ for file names (e.g. boonbox_logo.jpg) 
-
 
 /* CSS */
 
