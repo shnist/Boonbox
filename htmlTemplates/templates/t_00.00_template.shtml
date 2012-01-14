@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-
 <html>
     <head>
-        
+        <!--#include virtual="/blocks/b_00.01_head.shtml" -->    
     </head>
     <body>
-    
-    
-    
-    
-    
+        <!-- header -->
+        <!--#include virtual="/blocks/b_01.00_header.shtml" -->
+        <!-- filters -->
+        <!--#include virtual="/blocks/b_03.00_filters.shtml" -->
+        <!-- rest of the content of page goes inside page div -->
+        <div id="page">
+            
+            
+            <!-- footer -->
+            <!--#include virtual="/blocks/b_02.00_footer.shtml" -->
+        </div>
+        <!-- scripts go here -->
+        <!--#include virtual="/blocks/b_00.02_scripts.shtml" -->
     </body>
 </html>
