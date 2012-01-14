@@ -1,5 +1,14 @@
 Best Practices for BoonBox 
 
+/* Templates */
+: Inside htmlTemplates/templates you'll find an HTML template file, please copy and paste this file
+  whenever you want to make a new page
+: Add new pages to the htmlTemplates/pages folder
+: Sections that occur throughout the site, e.g. footer, header, head, scripts and filters - have been put
+  into separate blocks that can be found in htmlTemplates/blocks - please work in those files
+  when updating those sections. 
+
+
 /* Naming */
 
 // Ids and Class names
@@ -13,5 +22,6 @@ Best Practices for BoonBox
 
 /* CSS */
 
+: please read reserved class name section of common.css
 : !importants are the spawn of the devil - they break the cascading nature of the stylesheet and
   lead to all sorts of problems - please avoid
