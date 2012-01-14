@@ -1,0 +1,42 @@
+/*!
+        Boonbox
+        Common CSS styles for Boonbox sites
+        
+        Structure
+        ---------
+        1.				Restricted classnames
+        2.      	Common elements
+
+        New CSS must comply with current structure or new structure section must be created.
+*/
+
+/* 1.	Restricted classnames
+
+       The restricted classnames are here solely as a hook for the new HTML 5 elements. 
+       They should not be used for styling. 
+               
+       .article
+       .aside
+       .datagrid
+       .datalist
+       .details
+       .dialog
+       .figure
+       .footer
+       .header
+       .hgroup
+       .mark
+       .meter
+       .nav
+       .output
+       .progress
+       .section
+       .time
+                        
+*/
+
+/* 2. 	Common Elements */
+
+html, body{
+	margin: 0;
+}
