@@ -26,6 +26,12 @@ Read readme
 // File names
 : Please use _ for file names (e.g. boonbox_logo.jpg) 
 
+/* Images */
+
+sprites = assets/images/sprites
+backgrounds = assets/images/backgrounds
+other = assets/images
+
 /* CSS */
 
 : please read reserved class name section of common.css
