@@ -1,3 +1,4 @@
 <!-- libraries -->
-
+<script src="/assets/scripts/libs/jquery_1.7.1.js"></script>
 <!-- custom scripts -->
+<script src="/assets/scripts/common.js"></script>
