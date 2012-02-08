@@ -51,13 +51,13 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, ol, ul, li
 }
 ol, ul {list-style:none outside none;}
 input, select, textarea {font-family:inherit; font-size:100%; font-weight:normal;}
-a {color:#478cd3; text-decoration:none;}
-a:hover {text-decoration:underline;}
+a {color:#2a2a2a; text-decoration:none;}
+a:hover {color:#478cd3;}
 
 #page {width:940px; margin:0 auto;}
 
 /* Add sprite images here*/
-#main-header input {background:url('../images/sprites/main_sprite.png') 0 0 no-repeat transparent;}
+#main-header input, #basket p#basket-summary a {background:url('../images/sprites/main_sprite.png') 0 0 no-repeat transparent;}
 
 /*---- HEADER ----*/
 
@@ -69,14 +69,16 @@ a:hover {text-decoration:underline;}
 #top-banner ul li {float:left;}
 #top-banner ul li:first-child {text-decoration:underline; border-right:1px solid #FFF; padding-right:5px; margin-right:5px;}
 #top-banner ul li a {color:#fff;}
+#top-banner ul li a:hover {color:#478cd3;}
 #mini-basket {display:none;}
 
 /* Main Header */
 #main-header {width:940px; margin:0 auto; padding:20px 0; position:relative;}
 #main-header #logo, #main-header input, #main-header #basket {float:left;}
-#main-header input {color:#5f5f5f; font-size:12px; font-style:italic; padding:8px 30px 8px 8px; position:relative; top:78px; left:60px; width:430px; background-position:-1419px -165px; border:1px solid #CCCCCC;}
+#main-header input {color:#5f5f5f; font-size:12px; font-style:italic; padding:8px 30px 8px 8px; position:relative; top:78px; left:105px; width:430px; background-position:-1419px -165px; border:1px solid #CCCCCC;}
 
-#basket {font-size:12px; position:relative; top:100px; left:249px;}
+#basket {font-size:12px; position:relative; top:97px; left:200px;}
+#basket p#basket-summary a {background-position:-83px -167px; padding:20px 0 0 45px;}
 /*---- CONTENTS ----*/
 
 

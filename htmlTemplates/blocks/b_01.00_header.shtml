@@ -13,7 +13,7 @@
     	<a href=""><img id="logo" src="../../assets/images/boonbox.jpg" alt="Boonbox"></a>
         <input type="text" value="I'm looking for...">
         <div id="basket">
-        	<p><a href="#" alt="View my basket">Basket (£40)</a></p>
+        	<p id="basket-summary"><a href="#" alt="View my basket">Basket (£40)</a></p>
             <div id="mini-basket">
             	<h2>Your bag has 2 items, £40.00</h2>
                 <ul>
