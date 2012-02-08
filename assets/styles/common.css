@@ -56,8 +56,12 @@ a:hover {color:#478cd3;}
 
 #page {width:940px; margin:0 auto;}
 
+<<<<<<< HEAD
 /* Add sprite images here*/
 #main-header input, #basket p#basket-summary a, #mini-basket p a, #mini-basket ul li a.close  {background:url('../images/sprites/main_sprite.png') 0 0 no-repeat transparent;}
+=======
+.clear{clear:both;line-height:0px;font-size:0px;height:0px;padding:0px;margin:0px;border:none;}
+>>>>>>> Footer
 
 /*---- HEADER ----*/
 
@@ -101,3 +105,14 @@ a:hover {color:#478cd3;}
 
 
 /*---- FOOTER ----*/
+#footer{color:#2a2a2a;font-size:90%;}
+.twitter-follow{width:160px;}
+#connect{padding:10px 0 35px 0;border-top: #e7e7e7 1px solid;border-bottom: #e7e7e7 1px solid;}
+#connect li{float:left; margin:0 15px 0 0;}
+#rss:{ background-color:#e7e7e7;}
+
+.sitemap{padding:10px 0 10px 0;border-bottom: #e7e7e7 1px solid;}
+.sitemap ul{float:left; width:148px;padding:0 40px 0 0;}
+.sitemap li.first{font-size:125%;padding:0 0 10px 0;}
+
+.copy{padding:10px 0 0 0;}
