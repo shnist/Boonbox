@@ -10,7 +10,7 @@
         <!-- filters -->
         <!--#include virtual="../blocks/b_03.00_filters.shtml" -->
         <!-- rest of the content of page goes inside page div -->
-        <div id="page">
+        <div id="page" class="clear">
             
             
             <!-- footer -->

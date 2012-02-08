@@ -56,12 +56,9 @@ a:hover {color:#478cd3;}
 
 #page {width:940px; margin:0 auto;}
 
-<<<<<<< HEAD
 /* Add sprite images here*/
 #main-header input, #basket p#basket-summary a, #mini-basket p a, #mini-basket ul li a.close  {background:url('../images/sprites/main_sprite.png') 0 0 no-repeat transparent;}
-=======
-.clear{clear:both;line-height:0px;font-size:0px;height:0px;padding:0px;margin:0px;border:none;}
->>>>>>> Footer
+.clear{clear:both;}
 
 /*---- HEADER ----*/
 
