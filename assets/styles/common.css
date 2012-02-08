@@ -84,7 +84,7 @@ a:hover {color:#478cd3;}
 #mini-basket ul {background:url('../images/backgrounds/mini_basket.png') 0 0 no-repeat transparent; margin-top:-6px; padding-top:6px;}
 #mini-basket ul li:first-child {margin-top:11px;}
 #mini-basket ul li:hover {background-color:#efefef;}
-#mini-basket ul li {position:relative; border:1px solid #bababa; padding:7px; margin:6px 9px 0 9px; display:inline-block;}
+#mini-basket ul li {background-color:#fff; position:relative; border:1px solid #bababa; padding:7px; margin:6px 9px 0 9px; display:inline-block;}
 #mini-basket ul li img {border:1px solid #848484; width:90px;}
 #mini-basket ul li img,
 #mini-basket ul li .product_detail {float:left;}
