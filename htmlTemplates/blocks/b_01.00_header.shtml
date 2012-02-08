@@ -15,24 +15,32 @@
         <div id="basket">
         	<p id="basket-summary"><a href="#" alt="View my basket">Basket (£40)</a></p>
             <div id="mini-basket">
-            	<h2>Your bag has 2 items, £40.00</h2>
                 <ul>
                 	<li>
                     	<a href="" alt="Product 1">
-                            <img src="" alt="Product 1">
-                            <h3>Product 1</h3>
-                            <p>£20</p>
+                            <img src="../../assets/images/mini_basket_placeholder1.jpg" alt="Product 1">
+                            <div class="product_detail">
+                            	<h4>Blow Monkey Nail Dryer</h3>
+                            	<p class="price">£20</p>
+                            	<p>Qty 1</p>
+                            </div>
+                            <a href="#" class="close">X</a>
                         </a>
                     </li>
                     <li>
                     	<a href="" alt="Product 2">
-                            <img src="" alt="Product 2">
-                            <h3>Product 2</h3>
-                            <p>£20</p>
+                            <img src="../../assets/images/mini_basket_placeholder2.jpg" alt="Product 1">
+                            <div class="product_detail">
+                            	<h4>Crystal Garden Grow Your Own Wish Flower - I Love You - Pink</h3>
+                            	<p class="price">£20</p>
+                            	<p>Qty 1</p>
+                            </div>
+                            <a href="#" class="close">X</a>
                         </a>
                     </li>
                 </ul>
-                <p><a href="">View Bag &amp; Checkout</a></p>             
+                <h3>Total <span>£40.00</span></h3>
+                <p id="view_basket"><a href="">View Bag &amp; Checkout</a></p>             
             </div>
         </div>
     </div>

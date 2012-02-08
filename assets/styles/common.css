@@ -57,7 +57,7 @@ a:hover {color:#478cd3;}
 #page {width:940px; margin:0 auto;}
 
 /* Add sprite images here*/
-#main-header input, #basket p#basket-summary a {background:url('../images/sprites/main_sprite.png') 0 0 no-repeat transparent;}
+#main-header input, #basket p#basket-summary a, #mini-basket p a, #mini-basket ul li a.close  {background:url('../images/sprites/main_sprite.png') 0 0 no-repeat transparent;}
 
 /*---- HEADER ----*/
 
@@ -70,7 +70,6 @@ a:hover {color:#478cd3;}
 #top-banner ul li:first-child {text-decoration:underline; border-right:1px solid #FFF; padding-right:5px; margin-right:5px;}
 #top-banner ul li a {color:#fff;}
 #top-banner ul li a:hover {color:#478cd3;}
-#mini-basket {display:none;}
 
 /* Main Header */
 #main-header {width:940px; margin:0 auto; padding:20px 0; position:relative;}
@@ -79,6 +78,24 @@ a:hover {color:#478cd3;}
 
 #basket {font-size:12px; position:relative; top:97px; left:200px;}
 #basket p#basket-summary a {background-position:-83px -167px; padding:20px 0 0 45px;}
+
+#mini-basket {border:1px solid #bababa; border-top:0; width:283px; position:absolute; right:1px; top:26px; -moz-box-shadow:0 3px 5px 0 #ccc; -webkit-box-shadow:0 3px 5px 0 #ccc; box-shadow:0 3px 5px 0 #ccc; z-index:1000;}
+#mini-basket ul {background:url('../images/backgrounds/mini_basket.png') 0 0 no-repeat transparent; margin-top:-6px; padding-top:6px;}
+#mini-basket ul li:first-child {margin-top:11px;}
+#mini-basket ul li:hover {background-color:#efefef;}
+#mini-basket ul li {position:relative; border:1px solid #bababa; padding:7px; margin:6px 9px 0 9px; display:inline-block;}
+#mini-basket ul li img {border:1px solid #848484; width:90px;}
+#mini-basket ul li img,
+#mini-basket ul li .product_detail {float:left;}
+#mini-basket ul li .product_detail {width:137px; padding:0 10px;}
+#mini-basket ul li .product_detail h4,
+#mini-basket ul li .product_detail p.price {line-height:14px; width:130px; font-weight:bold; padding-bottom:6px;}
+#mini-basket ul li a:hover {color:#2A2A2A;}
+#mini-basket ul li a.close {text-indent:-999em; display:inline-block; background-position:-579px -169px; width:13px; height:13px; position:absolute; top:5px; right:5px;}
+#mini-basket h3 {font-size:15px; font-weight:bold; padding:13px 9px; text-align:right; text-transform:uppercase;}
+#mini-basket h3 span {font-weight:bold; padding-left:15px;}
+#mini-basket p#view_basket {border-top:1px solid #848484; padding:14px 0; margin-left:9px; width:265px;}
+#mini-basket p#view_basket a {background-position:-302px -169px; width:265px; height:32px; display:block; text-indent:-999em;}
 /*---- CONTENTS ----*/
 
 
