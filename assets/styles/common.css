@@ -37,10 +37,40 @@
 
 /* 2. 	Common Elements */
 
-html, body{
-	margin: 0;
+html, body {margin: 0;}
+body {background:none repeat scroll 0 0 #FFFFFF; color:#353733; font-family:Calibri,Arial,sans-serif;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
 }
-#page{
-	width: 940px;
-	margin: 0 auto;
-}
+ol, ul {list-style:none outside none;}
+input, select, textarea {font-family:inherit; font-size:100%; font-weight:normal;}
+a {color:#478cd3; text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+#page {width:940px; margin:0 auto;}
+
+/*---- HEADER ----*/
+
+/* Top Banner */
+#header {border-top:#2a2a2a 35px solid;}
+#top-banner {color:#FFF; width:940px;}
+#top-banner p {float:left;}
+#top-banner ul {float:right;}
+#top-banner ul li {float:left;}
+#top-banner ul li:first-child {text-decoration:underline; border-right:1px solid #FFF;}
+
+
+/* Main Header */
+
+
+/*---- CONTENTS ----*/
+
+
+
+/*---- FOOTER ----*/
