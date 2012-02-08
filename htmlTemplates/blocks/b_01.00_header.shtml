@@ -1,15 +1,16 @@
 <div class="header" id="header">
     
-    <div id="top-banner">
-    	<p>Welcome to BoonBox! We help you find easy ways to find gifts!</p>
-        <ul>
-        	<li><a href="">Register</a></li>
-            <li><a href="">Login</a></li>
-        </ul>
+    <div id="top-banner-wrapper">
+    	<div id="top-banner">
+    		<p>Welcome to BoonBox! We help you find easy ways to find gifts!</p>
+        	<ul>
+        		<li><a href="">Register</a></li>
+          	  <li><a href="">Login</a></li>
+        	</ul>
+    	</div>
     </div>
-    
     <div id="main-header">
-    	<a href=""><img src="" alt="Boonbox"></a>
+    	<a href=""><img id="logo" src="../../assets/images/boonbox.jpg" alt="Boonbox"></a>
         <input type="text" value="I'm looking for...">
         <div id="basket">
         	<p><a href="#" alt="View my basket">Basket (£40)</a></p>
