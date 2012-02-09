@@ -14,28 +14,26 @@
  * @memberOf boonbox
  */
 
-(function () {
-	var Boonbox = {
+var Boonbox = {
+	
+	/**
+	 * Extends the Boonbox object with the intended object
+	 * @function
+	 * @memberOf Boonbox
+	 * @name {String} The namespace the object should be dropped into
+	 * @obj {Object} The object
+	 */
+	extend: function (name, object){
 		
-		/**
-		 * Extends the Boonbox object with the intended object
-		 * @function
-		 * @memberOf Boonbox
-		 * @name {String} The namespace the object should be dropped into
-		 * @obj {Object} The object
-		 */
-		extend: function (name, object){
-			
-			if (this[name] === undefined){
-				this[name] = object;
-			}
-			
+		if (this[name] === undefined){
+			this[name] = object;
 		}
-	};
-	
-	Boonbox = window.Boonbox;
-	
-}());
+		
+	}
+};
+
+Boonbox = window.Boonbox;
+
 
 Boonbox.extend('common', {
 	/**
@@ -44,7 +42,44 @@ Boonbox.extend('common', {
 	 * @memberOf boonbox
 	 */
 	init : function(){
-		
+		this.basket.ui();
+	},
+	basket : {
+		ui : function (){
+			// first hide the basket by default 
+			$('#mini-basket').addClass('hidden');
+			
+			var timer;
+			$('#basket-summary a').mouseenter(function (event) {
+				clearTimeout(timer);
+				Boonbox.common.basket.add();
+				event.stopPropagation();
+			}).mouseleave(function (event){
+				timer = setTimeout(Boonbox.common.basket.remove, 2500);
+				event.stopPropagation();
+			})
+			$('#mini-basket').mouseenter(function (event){
+				clearTimeout(timer);
+				event.stopPropagation();
+			});
+			$('#mini-basket').mouseleave(function (event) {
+				timer = setTimeout(Boonbox.common.basket.remove, 2500);
+				event.stopPropagation();
+			});
+		},
+		add : function (){
+			$('#mini-basket').slideDown('slow', function(){
+				$(this).removeClass('hidden');
+			});
+		},
+		remove : function (){
+			$('#mini-basket').slideUp('slow', function(){
+				$(this).addClass('hidden');
+			});
+		}
 	}
+});
 
+$('document').ready(function () {
+	Boonbox.common.init();
 });
