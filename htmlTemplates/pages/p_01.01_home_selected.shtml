@@ -11,8 +11,60 @@
         <!--#include virtual="../blocks/b_03.00_filters.shtml" -->
         <!-- rest of the content of page goes inside page div -->
         <div id="page" class="clear">
-            <div id="content">
-            
+            <div id="content" class="results">
+            	<div id="results_top">
+              		<div>
+              			<h3>Results</h3>
+              			<p>Boon selector has found 34 items</p>
+              		</div>
+              		<ul>
+              			<li><a href="#">View All</a></li>
+              			<li><a href="#">Reset Selection</a></li>
+              			<li>Sort By: 
+              				<select>
+ 								<option value="volvo">Price, low to high</option>
+  								<option value="saab">Price, high to low</option>
+  								<option value="mercedes">Relevance</option>
+  								<option value="audi">Best Selling</option>
+  								<option value="audi">Best Reviews</option>
+							</select>
+              			</li>
+              		</ul>
+              	</div>
+              	<ul id="results_main">
+              		<li>
+              			<img src="../../assets/images/placeholder1.jpg">
+              			<div class="product_desc">
+              				<h4>Monster Toy</h4>
+              				<p class="price">£25.99</p>
+              				<img src="../../assets/images/star4.jpg">
+              			</div>
+              		</li>
+              		<li>
+              			<img src="../../assets/images/placeholder1.jpg">
+              			<div class="product_desc">
+              				<h4>Monster Toy</h4>
+              				<p class="price">£25.99</p>
+              				<img src="../../assets/images/star4.jpg">
+              			</div>
+              		</li>
+              		<li>
+              			<img src="../../assets/images/placeholder1.jpg">
+              			<div class="product_desc">
+              				<h4>Monster Toy</h4>
+              				<p class="price">£25.99</p>
+              				<img src="../../assets/images/star4.jpg">
+              			</div>
+              		</li>
+              		<li>
+              			<img src="../../assets/images/placeholder1.jpg">
+              			<div class="product_desc">
+              				<h4>Monster Toy</h4>
+              				<p class="price">£25.99</p>
+              				<img src="../../assets/images/star4.jpg">
+              			</div>
+              		</li>
+              	</ul>
             </div>
             </div><!-- footer -->
             <!--#include virtual="../blocks/b_02.00_footer.shtml" -->
