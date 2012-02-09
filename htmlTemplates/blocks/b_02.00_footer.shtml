@@ -7,7 +7,7 @@
         <li id="twitter"><a href="#" alt="Twitter">2,252</a></li>
         <li id="facebook"><a href="#" alt="Facebook">1,997</a></li>
         <li id="email"><a href="#" alt="E-mail">Join our mailing list:</a></li>
-        <li id="last"><input type="text" value="enter your email here..."></li>
+        <li id="last"><input type="text" placeholder="enter your email here..."></li>
     </ul>
     
     <div id="sitemap">
