@@ -167,10 +167,10 @@ a:hover {
 /*---- CONTENTS ----*/
 
 /* Top gift section */
-.top-section {float:left;margin:20px 0 0 0;}
+.top-section {float:left;margin:20px 0 0 0;width:225px;}
 .top-section h2{color: #2a2a2a;}
 
-.top-gifts{margin:10px 20px 0 0; padding:0 10px 0 0; border-right: #e7e7e7 1px solid; width:220px; }
+.top-gifts{margin:10px 20px 0 0; padding:0 10px 0 0; border-right: #e7e7e7 1px solid; width:215px; float:left }
 .top-gifts img{border: #d9d9d9 1px solid; float:left; }
 .top-gifts li{padding:7px;margin:4px 0 0 0;}
 .top-gifts li:hover{background-color:#f6f6f6;}
@@ -179,12 +179,12 @@ a:hover {
 .top-gift-text{width:85px;margin:0 0 0 10px;float:left;}
 
 
-.top-links li{float:left;font-size:80%;margin:15px 0 0 0; padding:0 10px 0 10px; border-left:#5f5f5f 1px solid;}
+.top-links li{float:left;font-size:80%;margin:15px 0 0 0; padding:0 8px 0 8px; border-left:#5f5f5f 1px solid;}
 .top-links li:first-child{padding:0 10px 0 0; border:none;}
 .top-links li:hover{background:none;}
 
 /* Main carousel */
-.carousel{float:left; padding: 20px 0 0 0;}
+.carousel{float:right; padding: 20px 0 0 0;}
 
 
 /*---- FOOTER ----*/

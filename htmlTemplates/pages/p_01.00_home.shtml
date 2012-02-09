@@ -123,17 +123,20 @@
                         </a>
                     </li>                        
                 </ul>
+                
                 <ul class="top-links">
-                    <li><a href="#week" alt="This week">This week</a></li>
-                    <li><a href="#month" alt="This month">This month</a></li>
-                    <li><a href="#year" alt="This year">This year</a></li>
+                        <li><a href="" alt="This week">This week</a></li>
+                        <li><a href="" alt="This month">This month</a></li>
+                        <li><a href="" alt="This year">This year</a></li>
                 </ul>
             </div>
-
+            
+            
             <div class="carousel">
                 <img src="../../assets/images/carousel1.jpg" alt="Carousel image 1">
-            </div>    
+            </div>
             <div class="clear"></div>
+            
             <!-- footer -->
             <!--#include virtual="../blocks/b_02.00_footer.shtml" -->
         </div>
