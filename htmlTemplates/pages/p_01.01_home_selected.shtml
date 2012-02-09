@@ -12,7 +12,7 @@
         <!-- rest of the content of page goes inside page div -->
         <div id="page" class="clear">
             <div id="content" class="results">
-            	<div id="results_top">
+            	<div id="results_top" class="clear">
               		<div>
               			<h3>Results</h3>
               			<p>Boon selector has found 34 items</p>
@@ -31,13 +31,13 @@
               			</li>
               		</ul>
               	</div>
-              	<ul id="results_main">
+              	<ul id="results_main" class="clear">
               		<li>
               			<img src="../../assets/images/placeholder1.jpg">
               			<div class="product_desc">
               				<h4>Monster Toy</h4>
               				<p class="price">£25.99</p>
-              				<img src="../../assets/images/star4.jpg">
+              				<img src="../../assets/images/star4.png">
               			</div>
               		</li>
               		<li>
@@ -45,7 +45,7 @@
               			<div class="product_desc">
               				<h4>Monster Toy</h4>
               				<p class="price">£25.99</p>
-              				<img src="../../assets/images/star4.jpg">
+              				<img src="../../assets/images/star4.png">
               			</div>
               		</li>
               		<li>
@@ -53,7 +53,7 @@
               			<div class="product_desc">
               				<h4>Monster Toy</h4>
               				<p class="price">£25.99</p>
-              				<img src="../../assets/images/star4.jpg">
+              				<img src="../../assets/images/star4.png">
               			</div>
               		</li>
               		<li>
@@ -61,7 +61,7 @@
               			<div class="product_desc">
               				<h4>Monster Toy</h4>
               				<p class="price">£25.99</p>
-              				<img src="../../assets/images/star4.jpg">
+              				<img src="../../assets/images/star4.png">
               			</div>
               		</li>
               	</ul>
