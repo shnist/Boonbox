@@ -1,5 +1,29 @@
-<div id="filters">
+<div id="filters" class="clear">
+	<div id="filters_wrapper">
+    	<h3>Boon Selector <span>- Select an option to start</span></h3>
+   		<ul id="filter_selectors">
+    		<li><a href="#">Relationship</a></li>
+    		<li><a href="#">Age</a></li>
+    		<li><a href="#">Occasion</a></li>
+    		<li><a href="#">Interest</a></li>
+    		<li><a href="#">Price</a></li>
+    	</ul>
     
-    
+    	<div id="filter_options">
+    		<p class="close"><a href="#">close</a></p>
+    		<h4>What's your relationship with the person? <span>(select an option below)</span></h4>
+    		<ul>
+				<li><input type="radio" name="relationship" value="Mum" /> Mum</li>
+				<li><input type="radio" name="relationship" value="Dad" /> Dad</li>
+				<li><input type="radio" name="relationship" value="Girlfriend" /> Girlfriend</li>
+				<li><input type="radio" name="relationship" value="Boyfriend" /> Boyfriend</li>
+				<li><input type="radio" name="relationship" value="Friend" /> Friend</li>
+				<li><input type="radio" name="relationship" value="Sister" /> Sister</li>
+				<li><input type="radio" name="relationship" value="Brother" /> Brother</li>
+				<li><input type="radio" name="relationship" value="Daughter" /> Daughter</li>
+				<li><input type="radio" name="relationship" value="Son" /> Son</li>
+			</ul>
+		</div>
+    </div>
     
 </div>

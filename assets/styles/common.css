@@ -81,7 +81,8 @@ a:hover {
 #main-header input,
 #basket-summary a,
 #mini-basket p a,
-#mini-basket ul li a.close  {
+#mini-basket ul li a.close,
+#filter_options ul li  {
 	background:url('../images/sprites/main_sprite.png') 0 0 no-repeat transparent;
 }
 
@@ -148,6 +149,14 @@ a:hover {
 #mini-basket h3 span {font-weight:bold; padding-left:15px;}
 #mini-basket p#view_basket {border-top:1px solid #848484; padding:14px 0; margin-left:9px; width:265px;}
 #mini-basket p#view_basket a {background-position:-302px -348px; width:265px; height:32px; display:block; text-indent:-999em;}
+
+
+/*---- FILTERS ----*/
+
+#filters {background:url('../images/backgrounds/filter_top.png') 0 0 repeat-x #478cd3;}
+#filters_wrapper {margin:0 auto; width:940px;}
+#filter_options ul li {float:left; width:185px; height:152px;}
+
 /*---- CONTENTS ----*/
 
 
@@ -159,7 +168,7 @@ a:hover {
 #connect{padding:15px 0 35px 0;border-top: #e7e7e7 1px solid;border-bottom: #e7e7e7 1px solid; color:#2a2a2a;}
 #connect li{float:left; margin:0 15px 0 0;}
 #twitter-follow{width:160px;}
-#rss a{ background:url('../images/backgrounds/rss.jpg') 0 1px no-repeat;padding:5px 0 3px 30px;font-weight:bold;margin:0 15px 0 0;}
+#rss a{ background:url('../images/backgrounds/rss.jpg') 0 1px no-repeat; padding:5px 0 3px 30px;font-weight:bold;margin:0 15px 0 0;}
 #twitter a{ background:url('../images/backgrounds/twitter.jpg') 0 1px no-repeat;padding:5px 0 3px 30px;font-weight:bold;margin:0 15px 0 0;}
 #facebook a{ background:url('../images/backgrounds/facebook.jpg') 0 1px no-repeat;padding:5px 0 3px 30px;font-weight:bold;margin:0 15px 0 0;}
 #email a{ background:url('../images/backgrounds/email.jpg') 0 1px no-repeat;padding:4px 0 0 40px;font-weight:bold;}
