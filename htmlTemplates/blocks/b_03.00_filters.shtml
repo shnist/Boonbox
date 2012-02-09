@@ -2,11 +2,11 @@
 	<div id="filters_wrapper">
     	<h3>Boon Selector : Select an option to start</h3>
    		<ul id="filter_selectors">
-    		<li class="relationship"><p><a href="#">Relationship</a></p></li>
+    		<li class="relationship selected"><p><a href="#">Relationship</a></p></li>
     		<li class="age"><p><a href="#">Age</a></p></li>
     		<li class="occasion"><p><a href="#">Occasion</a></p></li>
     		<li class="interest"><p><a href="#">Interest</a></p></li>
-    		<li class="price selected"><p><a href="#">Price</a></p></li>
+    		<li class="price"><p><a href="#">Price</a></p></li>
     	</ul>
     
     	<div id="filter_options" class="clear">
