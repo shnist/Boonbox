@@ -44,6 +44,9 @@ Boonbox.extend('common', {
 	init : function(){
 		this.basket.ui();
 		this.topBuys.init();
+		if($.support.opacity !== true){
+			this.placeholder();
+		}
 	},
 	basket : {
 		ui : function (){
@@ -113,5 +116,34 @@ Boonbox.extend('common', {
 				}
 			});
 		}
+	},
+	placeholder : function () {
+		// local reference to the element
+		var placeholderEl = $('[placeholder]');
+		$(placeholderEl).focus(function() {
+			// re-localised for the function's scope
+			var input = $(this);
+			if (input.val() === input.attr('placeholder')) {
+				input.val('');
+				input.removeClass('placeholder');
+			}
+		}).blur(function() {
+			var input = $(this);
+			if (input.val() === '' || input.val() == input.attr('placeholder')) {
+				input.addClass('placeholder');
+				input.val(input.attr('placeholder'));
+			}
+		}).blur(); // this initialises the fields
+		
+		// prevents the values of the placeholder from attaching themselves
+		// to the form action script
+		$(placeholderEl).parents('form').submit(function() {
+			$(this).find('[placeholder]').each(function() {
+			var input = $(this);
+				if (input.val() === input.attr('placeholder')) {
+					input.val('');
+				}
+			});
+		});		
 	}
 });
