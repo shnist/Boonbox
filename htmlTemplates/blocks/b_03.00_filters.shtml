@@ -1,27 +1,54 @@
 <div id="filters" class="clear">
 	<div id="filters_wrapper">
-    	<h3>Boon Selector <span>- Select an option to start</span></h3>
+    	<h3>Boon Selector : Select an option to start</h3>
    		<ul id="filter_selectors">
-    		<li class="relationship"><a href="#">Relationship</a></li>
-    		<li class="age"><a href="#">Age</a></li>
-    		<li class="occasion"><a href="#">Occasion</a></li>
-    		<li class="interest"><a href="#">Interest</a></li>
-    		<li class="price"><a href="#">Price</a></li>
+    		<li class="relationship"><p><a href="#">Relationship</a></p></li>
+    		<li class="age"><p><a href="#">Age</a></p></li>
+    		<li class="occasion"><p><a href="#">Occasion</a></p></li>
+    		<li class="interest"><p><a href="#">Interest</a></p></li>
+    		<li class="price selected"><p><a href="#">Price</a></p></li>
     	</ul>
     
     	<div id="filter_options" class="clear">
     		<p class="close"><a href="#">close</a></p>
     		<h4>What's your relationship with the person? <span>(select an option below)</span></h4>
     		<ul class="clear">
-				<li><input type="radio" name="relationship" value="Mum" /> Mum</li>
-				<li><input type="radio" name="relationship" value="Dad" /> Dad</li>
-				<li><input type="radio" name="relationship" value="Girlfriend" /> Girlfriend</li>
-				<li><input type="radio" name="relationship" value="Boyfriend" /> Boyfriend</li>
-				<li><input type="radio" name="relationship" value="Friend" /> Friend</li>
-				<li><input type="radio" name="relationship" value="Sister" /> Sister</li>
-				<li><input type="radio" name="relationship" value="Brother" /> Brother</li>
-				<li><input type="radio" name="relationship" value="Daughter" /> Daughter</li>
-				<li><input type="radio" name="relationship" value="Son" /> Son</li>
+				<li>
+					<input id="mum" type="radio" name="relationship" value="Mum" />
+					<label for="mum">Mum</label>
+				</li>
+				<li>
+					<input id="dad" type="radio" name="relationship" value="Dad" />
+					<label for="dad">Dad</label>
+				</li>
+				<li>
+					<input id="girlfriend" type="radio" name="relationship" value="Girlfriend" />
+					<label for="girlfriend">Girlfriend</label>
+				</li>
+				<li>
+					<input id="boyfriend" type="radio" name="relationship" value="Boyfriend" />
+					<label for="boyfriend">Boyfriend</label>
+				</li>
+				<li>
+					<input id="friend" type="radio" name="relationship" value="Friend" />
+					<label for="friend">Friend</label>
+				</li>
+				<li>
+					<input id="sister" type="radio" name="relationship" value="Sister" />
+					<label for="sister">Sister</label>
+				</li>
+				<li>
+					<input id="brother" type="radio" name="relationship" value="Brother" />
+					<label for="brother"> Brother</label>
+				</li>
+				<li>
+					<input id="daughter" type="radio" name="relationship" value="Daughter" />
+					<label for="daughter">Daughter</label>
+				</li>
+				<li>
+					<input id="son" type="radio" name="relationship" value="Son" />
+					<label for="son">Son</label>
+				</li>
 			</ul>
 		</div>
     </div>
