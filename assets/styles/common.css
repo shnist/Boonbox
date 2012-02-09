@@ -82,7 +82,8 @@ a:hover {
 #basket-summary a,
 #mini-basket p a,
 #mini-basket ul li a.close,
-#filter_options ul li  {
+#filter_selectors li,
+#filter_options p.close  {
 	background:url('../images/sprites/main_sprite.png') 0 0 no-repeat transparent;
 }
 
@@ -153,9 +154,27 @@ a:hover {
 
 /*---- FILTERS ----*/
 
-#filters {background:url('../images/backgrounds/filter_top.png') 0 0 repeat-x #478cd3;}
-#filters_wrapper {margin:0 auto; width:940px;}
-#filter_options ul li {float:left; width:185px; height:152px;}
+#filters {background:url('../images/backgrounds/filter_top.png') 0 0 repeat-x #478cd3; margin-top:1em;}
+#filters_wrapper {margin:0 auto; width:932px; padding:10px 7px 0 7px; color:#fff;}
+
+#filter_selectors li {float:left; width:188px; height:153px; text-indent:-999em; background-position:-2px -152px;}
+#filter_selectors li:hover {margin-left:-3px; padding-right:3px;}
+#filter_selectors li.relationship:hover {background-position:2px 1px;}
+#filter_selectors li.age {background-position:-189px -152px;}
+#filter_selectors li.age:hover {background-position:-185px 1px;}
+#filter_selectors li.occasion {background-position:-377px  -152px;}
+#filter_selectors li.occasion:hover {background-position:-373px 1px;}
+#filter_selectors li.interest {background-position:-565px -152px;}
+#filter_selectors li.interest:hover {background-position:-561px 1px;}
+#filter_selectors li.price {width:180px; background-position:-752px -152px;}
+#filter_selectors li.price:hover {background-position:-748px 1px;}
+
+#filter_options {position:relative; background-color:#3365a7; padding:10px;}
+#filter_options p.close {text-indent:-999em; width:13px; height:13px; background-position:-603px -348px; position:absolute; top:5px; right:5px;}
+#filter_options h4 {border-bottom:1px solid #0e4084; width:905px; height:30px; margin:5px 5px 0 5px;}
+#filter_options ul {display:inline-block; border-top:1px solid #6098d6; width:913px;}
+#filter_options ul li {float:left; padding:20px; padding-left:0;}
+
 
 /*---- CONTENTS ----*/
 
