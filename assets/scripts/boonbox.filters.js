@@ -36,7 +36,11 @@ Boonbox.extend('filters', {
 							$(this).removeClass('hidden').addClass('active');
 						});
 					});
-
+					if ($('.active', '#filter_options').length === 0){
+						$('#' + tab).slideDown(1500, function () {
+							$(this).removeClass('hidden').addClass('active');
+						});
+					}
 				}
 			});
 			$('.close', '.filter').click(function () {
