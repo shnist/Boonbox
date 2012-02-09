@@ -3,10 +3,10 @@
         <li>Connect with us:</li>
         <li id="twitter-follow"><a href="https://twitter.com/BoonBox" class="twitter-follow-button" data-show-count="false">Follow @BoonBox</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
-        <li id="rss"><a href="#" alt="RSS">2,964</a></li>
-        <li id="twitter"><a href="#" alt="Twitter">2,252</a></li>
-        <li id="facebook"><a href="#" alt="Facebook">1,997</a></li>
-        <li id="email"><a href="#" alt="E-mail">Join our mailing list:</a></li>
+        <li id="rss"><a href="#" title="RSS">2,964</a></li>
+        <li id="twitter"><a href="#" title="Twitter">2,252</a></li>
+        <li id="facebook"><a href="#" title="Facebook">1,997</a></li>
+        <li id="email"><a href="#" title="E-mail">Join our mailing list:</a></li>
         <li id="last"><input type="text" placeholder="enter your email here..."></li>
     </ul>
     
@@ -40,7 +40,7 @@
     <div id="information">
         <p id="disclaimer">Copyright &copy; BoonBox 2011. All rights reserved. Legal Disclaimer. </p>
         <div id="payment">
-            <img src="../../assets/images/payment.jpg" alt="Payment" >
+            <img src="../../assets/images/payment.jpg" title="Payment" >
         </div>
         <div class="clear"></div>
     </div>    

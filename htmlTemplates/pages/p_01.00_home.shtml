@@ -15,8 +15,8 @@
                 <h2 class="week">This Weeks Top 5 Gifts</h2>
                 <ul class="top-gifts week">
                     <li>
-                        <a href="" alt="Gift Idea #1">
-                            <img src="../../assets/images/top_gift.jpg" alt="Top gift">
+                        <a href="" title="Gift Idea #1">
+                            <img src="../../assets/images/top_gift.jpg" title="Top gift">
                             <div class="top-gift-text">
                                 <h4>Gift Idea #1</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -25,25 +25,25 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" alt="Gift Idea #2">
+                        <a href="" title="Gift Idea #2">
                             <h4>Gift Idea #2</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </a>
                     </li>
                     <li>
-                        <a href="" alt="Gift Idea #3">
+                        <a href="" title="Gift Idea #3">
                             <h4>Gift Idea #3</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </a>
                     </li>
                     <li>
-                        <a href="" alt="Gift Idea #4">
+                        <a href="" title="Gift Idea #4">
                             <h4>Gift Idea #4</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </a>
                     </li>
                     <li>
-                        <a href="" alt="Gift Idea #5">
+                        <a href="" title="Gift Idea #5">
                             <h4>Gift Idea #5</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </a>
@@ -52,8 +52,8 @@
                 <h2 class="month">This Months Top 5 Gifts</h2>
                 <ul class="top-gifts month">
                     <li>
-                        <a href="" alt="Gift Idea #1">
-                            <img src="../../assets/images/top_gift.jpg" alt="Top gift">
+                        <a href="" title="Gift Idea #1">
+                            <img src="../../assets/images/top_gift.jpg" title="Top gift">
                             <div class="top-gift-text">
                                 <h4>Gift Idea #1</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -62,25 +62,25 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" alt="Gift Idea #2">
+                        <a href="" title="Gift Idea #2">
                             <h4>Gift Idea #2</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </a>
                     </li>
                     <li>
-                        <a href="" alt="Gift Idea #3">
+                        <a href="" title="Gift Idea #3">
                             <h4>Gift Idea #3</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </a>
                     </li>
                     <li>
-                        <a href="" alt="Gift Idea #4">
+                        <a href="" title="Gift Idea #4">
                             <h4>Gift Idea #4</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </a>
                     </li>
                     <li>
-                        <a href="" alt="Gift Idea #5">
+                        <a href="" title="Gift Idea #5">
                             <h4>Gift Idea #5</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </a>
@@ -89,8 +89,8 @@
                 <h2 class="year">This Years Top 5 Gifts</h2>
                 <ul class="top-gifts year">
                     <li>
-                        <a href="" alt="Gift Idea #1">
-                            <img src="../../assets/images/top_gift.jpg" alt="Top gift">
+                        <a href="" title="Gift Idea #1">
+                            <img src="../../assets/images/top_gift.jpg" title="Top gift">
                             <div class="top-gift-text">
                                 <h4>Gift Idea #1</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -99,25 +99,25 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" alt="Gift Idea #2">
+                        <a href="" title="Gift Idea #2">
                             <h4>Gift Idea #2</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </a>
                     </li>
                     <li>
-                        <a href="" alt="Gift Idea #3">
+                        <a href="" title="Gift Idea #3">
                             <h4>Gift Idea #3</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </a>
                     </li>
                     <li>
-                        <a href="" alt="Gift Idea #4">
+                        <a href="" title="Gift Idea #4">
                             <h4>Gift Idea #4</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </a>
                     </li>
                     <li>
-                        <a href="" alt="Gift Idea #5">
+                        <a href="" title="Gift Idea #5">
                             <h4>Gift Idea #5</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </a>
@@ -125,15 +125,15 @@
                 </ul>
                 
                 <ul class="top-links">
-                        <li><a href="" alt="This week">This week</a></li>
-                        <li><a href="" alt="This month">This month</a></li>
-                        <li><a href="" alt="This year">This year</a></li>
+                        <li><a href="#week" title="This week">This week</a></li>
+                        <li><a href="#month" title="This month">This month</a></li>
+                        <li><a href="#year" title="This year">This year</a></li>
                 </ul>
             </div>
             
             
             <div class="carousel">
-                <img src="../../assets/images/carousel1.jpg" alt="Carousel image 1">
+                <img src="../../assets/images/carousel1.jpg" title="Carousel image 1">
             </div>
             <div class="clear"></div>
             

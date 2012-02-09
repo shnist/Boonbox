@@ -10,33 +10,33 @@
     	</div>
     </div>
     <div id="main-header">
-    	<a href=""><img id="logo" src="../../assets/images/boonbox.jpg" alt="Boonbox"></a>
+    	<a href=""><img id="logo" src="../../assets/images/boonbox.jpg" title="Boonbox"></a>
         <input type="text" placeholder="I'm looking for...">
         <div id="basket">
-        	<p id="basket-summary"><a href="#" alt="View my basket">Basket (£40)</a></p>
+        	<p id="basket-summary"><a href="#" title="View my basket">Basket (£40)</a></p>
             <div id="mini-basket">
                 <ul>
                 	<li>
-                    	<a href="" alt="Product 1">
-                            <img src="../../assets/images/mini_basket_placeholder1.jpg" alt="Product 1">
+                    	<a href="" title="Blow Monkey Nail Dryer">
+                            <img src="../../assets/images/mini_basket_placeholder1.jpg" title="Product 1">
                             <div class="product_detail">
-                            	<h4>Blow Monkey Nail Dryer</h3>
+                            	<h4>Blow Monkey Nail Dryer</h4>
                             	<p class="price">£20</p>
                             	<p>Qty 1</p>
                             </div>
-                            <a href="#" class="close">X</a>
                         </a>
+                        <a href="#" class="close">X</a>
                     </li>
                     <li>
-                    	<a href="" alt="Product 2">
-                            <img src="../../assets/images/mini_basket_placeholder2.jpg" alt="Product 1">
+                    	<a href="" title="Crystal Garden Grow Your Own Wish Flower - I Love You - Pink">
+                            <img src="../../assets/images/mini_basket_placeholder2.jpg" title="Product 1">
                             <div class="product_detail">
-                            	<h4>Crystal Garden Grow Your Own Wish Flower - I Love You - Pink</h3>
+                            	<h4>Crystal Garden Grow Your Own Wish Flower - I Love You - Pink</h4>
                             	<p class="price">£20</p>
                             	<p>Qty 1</p>
                             </div>
-                            <a href="#" class="close">X</a>
                         </a>
+                        <a href="#" class="close">X</a>
                     </li>
                 </ul>
                 <h3>Total <span>£40.00</span></h3>
