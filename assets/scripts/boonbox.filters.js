@@ -30,8 +30,12 @@ Boonbox.extend('filters', {
 				var activeTab = $('.active', '#filter_options').attr('id');
 				
 				if (tab !== activeTab){
-					$('.active', '#filter_options').removeClass('active').addClass('hidden');
-					$('#' + tab).removeClass('hidden').addClass('active');
+					$('.active', '#filter_options').slideUp(function () {
+						$(this).removeClass('active').addClass('hidden');
+					});
+					$('#' + tab).slideDown(function () {
+						$(this).removeClass('hidden').addClass('active');
+					});
 				}
 			});
 			$('.close', '.filter').click(function () {
@@ -43,7 +47,9 @@ Boonbox.extend('filters', {
 		},
 		remove : function ($this) {
 			$('.selected', '#filter_selectors').removeClass('selected');
-			$this.parents('.filter').removeClass('active').addClass('hidden');
+			$this.parents('.filter').slideUp(function () {
+				$(this).removeClass('active').addClass('hidden');
+			});
 			
 		},
 		slider : function () {
