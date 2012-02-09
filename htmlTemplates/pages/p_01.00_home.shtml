@@ -129,10 +129,11 @@
                     <li><a href="#year" alt="This year">This year</a></li>
                 </ul>
             </div>
-            
 
+            <div class="carousel">
+                <img src="../../assets/images/carousel1.jpg" alt="Carousel image 1">
+            </div>    
             <div class="clear"></div>
-            
             <!-- footer -->
             <!--#include virtual="../blocks/b_02.00_footer.shtml" -->
         </div>

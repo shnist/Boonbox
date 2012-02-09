@@ -207,9 +207,12 @@ a:hover {
 .top-links li:first-child{padding:0 10px 0 0; border:none;}
 .top-links li:hover{background:none;}
 
+/* Main carousel */
+.carousel{float:left; padding: 20px 0 0 0;}
+
 
 /*---- FOOTER ----*/
-#footer{color:#5f5f5f;font-size:80%; margin:150px 0 15px 0;}
+#footer{color:#5f5f5f;font-size:80%; margin:15px 0 15px 0;}
 
 /* Connect */
 #connect{padding:15px 0 35px 0;border-top: #e7e7e7 1px solid;border-bottom: #e7e7e7 1px solid; color:#2a2a2a;}
