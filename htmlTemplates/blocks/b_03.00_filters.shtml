@@ -149,7 +149,7 @@
                     <!-- INTEREST -->
                     <li id="interest" class="filter">
                         <p class="close"><a href="#">close</a></p>
-                        <h4>4. What is s/he's interest? <span>(select an option below)</span></h4>
+                        <h4>4. What are his/her interests? <span>(select an option below)</span></h4>
                         <ul class="filter-options-detail clear">
                             <li>
                                 <input id="Music" type="checkbox" name="interest" value="Music" >

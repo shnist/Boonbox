@@ -48,7 +48,7 @@ Boonbox.extend('filters', {
 		},
 		remove : function ($this) {
 			$('.selected', '#filter_selectors').removeClass('selected');
-			$this.parents('.filter').slideUp(function () {
+			$this.parents('.filter').slideUp(1000, function () {
 				$(this).removeClass('active').addClass('hidden');
 			});
 			
