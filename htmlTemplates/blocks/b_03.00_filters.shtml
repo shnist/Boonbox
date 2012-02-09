@@ -2,18 +2,18 @@
 	<div id="filters_wrapper">
     	<h3>Boon Selector : Select an option to start</h3>
    		<ul id="filter_selectors">
-    		<li class="relationship selected"><p><a href="#">Relationship</a></p></li>
-    		<li class="age"><p><a href="#">Age</a></p></li>
-    		<li class="occasion"><p><a href="#">Occasion</a></p></li>
-    		<li class="interest"><p><a href="#">Interest</a></p></li>
-    		<li class="price"><p><a href="#">Price</a></p></li>
+    		<li class="relationship selected"><p><a href="#relationship">Relationship</a></p></li>
+    		<li class="age"><p><a href="#age">Age</a></p></li>
+    		<li class="occasion"><p><a href="#occasion">Occasion</a></p></li>
+    		<li class="interest"><p><a href="#interest">Interest</a></p></li>
+    		<li class="price"><p><a href="#price">Price</a></p></li>
     	</ul>
     
     	<div id="filter_options" class="clear">
     		<p class="close"><a href="#">close</a></p>
     		<ul>
     			<!-- RELATIONSHIP -->
-    			<li>
+    			<li id="relationship">
     				<h4>1. What's your relationship with the person? <span>(select an option below)</span></h4>
     				
     				<ul class="filter-options-detail clear">
@@ -56,7 +56,7 @@
 					</ul>
 				</li>
 				<!-- AGE -->
-				<li>	
+				<li id="age">	
 					<h4>2. How old is s/he? <span>(select an option below)</span></h4>
 					<ul class="filter-options-detail clear">
 						<li>
@@ -102,7 +102,7 @@
 					</ul>
 				</li>
     			<!-- OCCASION -->
-				<li>
+				<li id="occasion">
     				<h4>3. What is the occasion? <span>(select an option below)</span></h3>
     				<ul class="filter-options-detail clear">
 						<li>
@@ -143,7 +143,7 @@
 						</li>
 					</ul>
 				</li>
-				<li class="price">
+				<li class="price" id="price">
     				<h4>4. What is your spending allowance? <span>(select an option below)</span></h3>
 					<div class="filter-options-detail">
 						<input type="text">
