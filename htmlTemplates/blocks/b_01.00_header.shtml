@@ -11,7 +11,7 @@
     </div>
     <div id="main-header">
     	<a href=""><img id="logo" src="../../assets/images/boonbox.jpg" alt="Boonbox"></a>
-        <input type="text" value="I'm looking for...">
+        <input type="text" placeholder="I'm looking for...">
         <div id="basket">
         	<p id="basket-summary"><a href="#" alt="View my basket">Basket (£40)</a></p>
             <div id="mini-basket">
