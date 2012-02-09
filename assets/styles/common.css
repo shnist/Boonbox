@@ -176,7 +176,7 @@ a:hover {
 .ui-slider-horizontal .ui-slider-range-max { right: 0; }
 
 
-/*---- CONTENTS ----*/
+/*---- CONTENTS: ON LOAD----*/
 
 /* Top gift section */
 .top-section {float:left;margin:20px 0 0 0;width:225px;}
@@ -197,6 +197,21 @@ a:hover {
 
 /* Main carousel */
 .carousel{float:right; padding: 20px 0 0 0;}
+
+
+/*---- CONTENTS: AFTER FILTRATION----*/
+
+/* Top results bar */
+#content.results #results_top div {float:left;}
+#content.results #results_top ul {float:right;}
+
+#content.results #results_main li {float:left; padding-left:15px; width:220px; height:200px;}
+
+/* Results */
+
+
+/*Pagination*/
+
 
 
 /*---- FOOTER ----*/
