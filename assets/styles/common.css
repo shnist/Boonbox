@@ -117,7 +117,7 @@ a:hover {color:#478cd3;}
 
 
 /*---- FOOTER ----*/
-#footer{color:#5f5f5f;font-size:80%; margin:500px 0 0 0;}
+#footer{color:#5f5f5f;font-size:80%; margin:15px 0 15px 0;}
 
 /* Connect */
 #connect{padding:15px 0 35px 0;border-top: #e7e7e7 1px solid;border-bottom: #e7e7e7 1px solid; color:#2a2a2a;}
@@ -137,6 +137,6 @@ a:hover {color:#478cd3;}
 #sitemap li.first{font-size:125%;padding:0 0 10px 0;color:#2a2a2a;}
 
 /* Copyright */
-#information{margin:10px 0 0 0;}
-#disclaimer{ padding:13px 0 0 0;float:left;}
-#payment{padding:10px; margin:0 0 0 153px; background:#e7e7e7; float:left;}
+#information{margin:10px 0 0 0; }
+#disclaimer{ padding:13px 0 0 0;font-size:90%;float:left;}
+#payment{padding:10px; margin:0 0 0 178px; background:#e7e7e7; float:left;}
