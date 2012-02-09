@@ -10,10 +10,10 @@
     	</ul>
     
     	<div id="filter_options" class="clear">
-    		<p class="close"><a href="#">close</a></p>
     		<ul>
     			<!-- RELATIONSHIP -->
-    			<li id="relationship">
+    			<li id="relationship" class="filter">
+                    <p class="close"><a href="#">close</a></p>
     				<h4>1. What's your relationship with the person? <span>(select an option below)</span></h4>
     				
     				<ul class="filter-options-detail clear">
@@ -56,7 +56,8 @@
 					</ul>
 				</li>
 				<!-- AGE -->
-				<li id="age">	
+				<li id="age" class="filter">
+                    <p class="close"><a href="#">close</a></p>
 					<h4>2. How old is s/he? <span>(select an option below)</span></h4>
 					<ul class="filter-options-detail clear">
 						<li>
@@ -102,7 +103,8 @@
 					</ul>
 				</li>
     			<!-- OCCASION -->
-				<li id="occasion">
+				<li id="occasion" class="filter">
+                    <p class="close"><a href="#">close</a></p>
     				<h4>3. What is the occasion? <span>(select an option below)</span></h3>
     				<ul class="filter-options-detail clear">
 						<li>
@@ -143,7 +145,8 @@
 						</li>
 					</ul>
 				</li>
-				<li class="price" id="price">
+				<li class="price filter" id="price">
+                    <p class="close"><a href="#">close</a></p>
     				<h4>4. What is your spending allowance? <span>(select an option below)</span></h3>
 					<div class="filter-options-detail">
 						<input type="text">
