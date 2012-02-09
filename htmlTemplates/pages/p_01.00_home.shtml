@@ -12,7 +12,7 @@
         <!-- rest of the content of page goes inside page div -->
         <div id="page" class="clear">
             <div class="top-section">
-                <h2>This Weeks Top 5 Gifts</h2>
+                <h2 class="week">This Weeks Top 5 Gifts</h2>
                 <ul class="top-gifts week">
                     <li>
                         <a href="" alt="Gift Idea #1">
@@ -49,7 +49,7 @@
                         </a>
                     </li>                        
                 </ul>
-                <h2>This Months Top 5 Gifts</h2>
+                <h2 class="month">This Months Top 5 Gifts</h2>
                 <ul class="top-gifts month">
                     <li>
                         <a href="" alt="Gift Idea #1">
@@ -86,7 +86,7 @@
                         </a>
                     </li>                        
                 </ul>
-                <h2>This Years Top 5 Gifts</h2>
+                <h2 class="year">This Years Top 5 Gifts</h2>
                 <ul class="top-gifts year">
                     <li>
                         <a href="" alt="Gift Idea #1">
@@ -124,9 +124,9 @@
                     </li>                        
                 </ul>
                 <ul class="top-links">
-                        <li><a href="" alt="This week">This week</a></li>
-                        <li><a href="" alt="This month">This month</a></li>
-                        <li><a href="" alt="This year">This year</a></li>
+                    <li><a href="#week" alt="This week">This week</a></li>
+                    <li><a href="#month" alt="This month">This month</a></li>
+                    <li><a href="#year" alt="This year">This year</a></li>
                 </ul>
             </div>
             

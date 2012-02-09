@@ -43,6 +43,7 @@ Boonbox.extend('common', {
 	 */
 	init : function(){
 		this.basket.ui();
+		this.topBuys.init();
 	},
 	basket : {
 		ui : function (){
@@ -88,9 +89,29 @@ Boonbox.extend('common', {
 				$(this).remove();
 			});
 		}
+	},
+	topBuys : {
+		init : function () {
+			$('.month, .year', '.top-section').addClass('hidden');
+			$('.week', '.top-section').addClass('active');
+			
+			Boonbox.common.topBuys.ui();
+		},
+		ui : function () {
+			$('.top-links a', '.top-section').click(function (e) {
+				e.preventDefault();
+				var tab = $(this).attr('href');
+					tab = tab.replace('#', '');
+				
+				var activeTab = $('ul.active', '.top-section').attr('class');
+					activeTab = activeTab.split(' ');
+					activeTab = activeTab[1];
+				
+				if (tab !== activeTab){
+					$('.active', '.top-section').removeClass('active').addClass('hidden');
+					$('.' + tab + ',' + '.top-section').removeClass('hidden').addClass('active');
+				}
+			});
+		}
 	}
-});
-
-$('document').ready(function () {
-	Boonbox.common.init();
 });
