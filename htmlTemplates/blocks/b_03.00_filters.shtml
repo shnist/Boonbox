@@ -14,7 +14,7 @@
     			<!-- RELATIONSHIP -->
     			<li id="relationship" class="filter">
                     <p class="close"><a href="#">close</a></p>
-    				<h3>1. What's your relationship with the person? <span>(select an option below)</span></h3>
+    				<h4>1. What's your relationship with the person? <span>(select an option below)</span></h4>
     				
     				<ul class="filter-options-detail clear">
 						<li>
@@ -58,7 +58,7 @@
 				<!-- AGE -->
 				<li id="age" class="filter">
                     <p class="close"><a href="#">close</a></p>
-					<h3>2. How old is s/he? <span>(select an option below)</span></h3>
+					<h4>2. How old is s/he? <span>(select an option below)</span></h4>
 					<ul class="filter-options-detail clear">
 						<li>
 							<input id="one-five" type="radio" name="age" value="Mum" >
@@ -105,7 +105,7 @@
     			<!-- OCCASION -->
 				<li id="occasion" class="filter">
                     <p class="close"><a href="#">close</a></p>
-    				<h3>3. What is the occasion? <span>(select an option below)</span></h3>
+    				<h4>3. What is the occasion? <span>(select an option below)</span></h4>
     				<ul class="filter-options-detail clear">
 						<li>
 							<input id="birthday" type="checkbox" name="occasion" value="Birthday" >
@@ -144,10 +144,53 @@
 							<label for="retirement">Retirement</label>
 						</li>
 					</ul>
+				</li><!-- INTEREST -->
+				<li id="interest" class="filter">
+                    <p class="close"><a href="#">close</a></p>
+    				<h4>4. What is s/he's interest? <span>(select an option below)</span></h4>
+    				<ul class="filter-options-detail clear">
+						<li>
+							<input id="Music" type="checkbox" name="interest" value="Music" >
+							<label for="Music">Music</label>
+						</li>
+						<li>
+							<input id="Sport" type="checkbox" name="interest" value="Sport" >
+							<label for="Sport">Sport</label>
+						</li>
+						<li>
+							<input id="Art" type="checkbox" name="interest" value="Art" >
+                            <label for="Art">Art</label>
+						</li>
+						<li>
+							<input id="Science" type="checkbox" name="interest" value="Science" >
+							<label for="Science">Science</label>
+						</li>
+						<li>
+							<input id="Cars" type="checkbox" name="interest" value="Cars" >
+							<label for="Cars">Cars</label>
+						</li>
+						<li>
+							<input id="Holidays" type="checkbox" name="interest" value="Holidays" >
+							<label for="Holidays">Holidays</label>
+						</li>
+						<li>
+							<input id="Design" type="checkbox" name="interest" value="Design" >
+						<label for="Design">Design</label>
+						</li>
+						<li>
+							<input id="Food" type="checkbox" name="interest" value="Food" >
+							<label for="Food">Food</label>
+						</li>
+						<li>
+							<input id="Cooking" type="checkbox" name="interest" value="Cooking" >
+							<label for="Cooking">Cooking</label>
+						</li>
+					</ul>
 				</li>
+
 				<li class="price filter" id="price">
                     <p class="close"><a href="#">close</a></p> 
-    				<h3>4. What is your spending allowance? <span>(select an option below)</span></h3>
+    				<h4>5. What is your spending allowance? <span>(select an option below)</span></h4>
 					<div class="filter-options-detail">
 						<input type="text">
 					</div>

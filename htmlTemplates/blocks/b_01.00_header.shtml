@@ -13,11 +13,7 @@
     	<a href=""><img id="logo" src="../../assets/images/boonbox.jpg" title="Boonbox"></a>
         <input type="text" placeholder="I'm looking for...">
         <div id="basket">
-<<<<<<< HEAD
-        	<p id="basket-summary"><a href="#" title="View my basket">Basket (£40)</a></p>
-=======
-        	<p id="basket-summary"><a href="#" alt="View my basket">My Basket <span>(£40)</span></a></p>
->>>>>>> new homepage
+          	<p id="basket-summary"><a href="#" alt="View my basket">My Basket <span>(£40)</span></a></p>
             <div id="mini-basket">
                 <ul>
                 	<li>
