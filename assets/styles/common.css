@@ -102,14 +102,25 @@ a:hover {color:#478cd3;}
 
 
 /*---- FOOTER ----*/
-#footer{color:#2a2a2a;font-size:90%;}
-.twitter-follow{width:160px;}
-#connect{padding:10px 0 35px 0;border-top: #e7e7e7 1px solid;border-bottom: #e7e7e7 1px solid;}
+#footer{color:#5f5f5f;font-size:80%; margin:500px 0 0 0;}
+
+/* Connect */
+#connect{padding:15px 0 35px 0;border-top: #e7e7e7 1px solid;border-bottom: #e7e7e7 1px solid; color:#2a2a2a;}
 #connect li{float:left; margin:0 15px 0 0;}
-#rss:{ background-color:#e7e7e7;}
+#twitter-follow{width:160px;}
+#rss a{ background:url('../images/backgrounds/rss.jpg') 0 1px no-repeat;padding:5px 0 3px 30px;font-weight:bold;margin:0 15px 0 0;}
+#twitter a{ background:url('../images/backgrounds/twitter.jpg') 0 1px no-repeat;padding:5px 0 3px 30px;font-weight:bold;margin:0 15px 0 0;}
+#facebook a{ background:url('../images/backgrounds/facebook.jpg') 0 1px no-repeat;padding:5px 0 3px 30px;font-weight:bold;margin:0 15px 0 0;}
+#email a{ background:url('../images/backgrounds/email.jpg') 0 1px no-repeat;padding:4px 0 0 40px;font-weight:bold;}
+#connect input {color:#5f5f5f; font-size:12px; font-style:italic; padding:3px 3px 3px 12px; width:155px;  border:1px solid #CCCCCC; margin:-8px 0 0 0;}
 
-.sitemap{padding:10px 0 10px 0;border-bottom: #e7e7e7 1px solid;}
-.sitemap ul{float:left; width:148px;padding:0 40px 0 0;}
-.sitemap li.first{font-size:125%;padding:0 0 10px 0;}
+/* Sitemap */
+#sitemap{padding:10px 0 10px 0;border-bottom: #e7e7e7 1px solid;}
+#sitemap ul{float:left; width:148px;padding:0 40px 0 0;}
+/*#sitemap ul a{color:#5f5f5f;}*/
+#sitemap li.first{font-size:125%;padding:0 0 10px 0;color:#2a2a2a;}
 
-.copy{padding:10px 0 0 0;}
+/* Copyright */
+#information{margin:10px 0 0 0;}
+#disclaimer{ padding:13px 0 0 0;float:left;}
+#payment{padding:10px; margin:0 0 0 153px; background:#f9f9f9; float:left;}

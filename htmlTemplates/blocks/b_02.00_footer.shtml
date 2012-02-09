@@ -1,33 +1,31 @@
 <div class="footer" id="footer">
     <ul id="connect">
         <li>Connect with us:</li>
-        <li class="twitter-follow"><a href="https://twitter.com/BoonBox" class="twitter-follow-button" data-show-count="false">Follow @BoonBox</a>
+        <li id="twitter-follow"><a href="https://twitter.com/BoonBox" class="twitter-follow-button" data-show-count="false">Follow @BoonBox</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
-        <li id="rss">Test</li>
-        <li id="twitter">Test</li>
-        <li id="facebook">Test</li>
-        <li id="email">Test</li>
+        <li id="rss"><a href="#" alt="RSS">2,964</a></li>
+        <li id="twitter"><a href="#" alt="Twitter">2,252</a></li>
+        <li id="facebook"><a href="#" alt="Facebook">1,997</a></li>
+        <li id="email"><a href="#" alt="E-mail">Join our mailing list:</a></li>
+        <li id="last"><input type="text" value="enter your email here..."></li>
     </ul>
     
-    <div class="sitemap">
+    <div id="sitemap">
             <ul>
                <li class="first">Boonbox</li>
                <li>Do you get tired of trying to find gifts for people? Well guess what...BoonBox is here to do all the gift seraching you struggle to do.</li>
            </ul>
-           
            <ul>
                <li class="first">Shopping with us</li>
                <li><a href="">Ordering &amp; payment</a></li>
                <li><a href="">Delivery information</a></li>
                <li><a href="">Returns &amp; refunds</a></li>
            </ul>
-           
            <ul>
                <li class="first">Questions?</li>
                <li><a href="">F.A.Q.</a></li>
                <li><a href="">Complaints</a></li>
            </ul>
-           
            <ul>
                <li class="first">More about BoonBox</li>
                <li><a href="">History</a></li>
@@ -35,7 +33,6 @@
                <li><a href="">Press</a></li>
                <li><a href="">Affliate scheme</a></li>
            </ul>
-           
            <ul>
                <li class="first">Other services</li>
                 <li><a href="">Gift wrapping</a></li>
@@ -44,8 +41,12 @@
            </ul>
            <div class="clear"></div>
     </div>
-    <div class="copy">
-        <p>Copyright &copy; BoonBox 2011. All rights reserved. Legal Disclaimer. </p>
+    <div id="information">
+        <p id="disclaimer">Copyright &copy; BoonBox 2011. All rights reserved. Legal Disclaimer. </p>
+        <div id="payment">
+            <img src="../../assets/images/payment.jpg" alt="Payment" >
+        </div>
+        <div class="clear"></div>
     </div>    
     
 </div>
