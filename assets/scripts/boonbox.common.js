@@ -55,7 +55,7 @@ Boonbox.extend('common', {
 				Boonbox.common.basket.add();
 				event.stopPropagation();
 			}).mouseleave(function (event){
-				timer = setTimeout(Boonbox.common.basket.remove, 2500);
+				timer = setTimeout(Boonbox.common.basket.remove, 700);
 				event.stopPropagation();
 			})
 			$('#mini-basket').mouseenter(function (event){
@@ -63,17 +63,17 @@ Boonbox.extend('common', {
 				event.stopPropagation();
 			});
 			$('#mini-basket').mouseleave(function (event) {
-				timer = setTimeout(Boonbox.common.basket.remove, 2500);
+				timer = setTimeout(Boonbox.common.basket.remove, 700);
 				event.stopPropagation();
 			});
 		},
 		add : function (){
-			$('#mini-basket').slideDown('slow', function(){
+			$('#mini-basket').slideDown(1000, function(){
 				$(this).removeClass('hidden');
 			});
 		},
 		remove : function (){
-			$('#mini-basket').slideUp('slow', function(){
+			$('#mini-basket').slideUp(1000, function(){
 				$(this).addClass('hidden');
 			});
 		}
