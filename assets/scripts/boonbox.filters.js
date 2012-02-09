@@ -38,12 +38,28 @@ Boonbox.extend('filters', {
 				var $that = $(this);
 				Boonbox.filters.ui.remove($that);
 			});
+			// slider 
+			Boonbox.filters.ui.slider();
 		},
 		remove : function ($this) {
 			$('.selected', '#filter_selectors').removeClass('selected');
 			$this.parents('.filter').removeClass('active').addClass('hidden');
 			
-		}
+		},
+		slider : function () {
+			$('#price .filter-options-detail').append('<div id="slider-range"></div>');
+			$('#slider-range').slider({
+				range: true,
+				min: 0,
+				max: 500,
+				values: [ 15, 300 ],
+				slide: function( event, ui ) {
+					$('#price-range').val( "£" + ui.values[ 0 ] + " - £" + ui.values[ 1 ] );
+				}
+			});
+			$('#price-range').val("$" + $('#slider-range').slider( "values", 0 ) +
+				" - £" + $('#slider-range').slider( "values", 1 ) );
+			}
 	}
 
 });

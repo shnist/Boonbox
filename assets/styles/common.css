@@ -167,6 +167,14 @@ a:hover {
 #filter_options ul.filter-options-detail li {float:left; padding:15px 0 0; min-width:140px;}
 #filter_options ul.filter-options-detail li label {cursor:pointer;}
 
+/* -- Slider -- */
+
+.ui-slider { position: relative; text-align: left; background: #EEE; height: .8em; }
+.ui-slider .ui-slider-handle { top: -.3em; margin-left: -.6em; background: #000; position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }
+.ui-slider .ui-slider-range { top: 0; height: 100%; position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+
 
 /*---- CONTENTS ----*/
 
