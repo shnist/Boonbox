@@ -67,10 +67,10 @@ Boonbox.extend('common', {
 				event.stopPropagation();
 			});
 			
-			$('.close', '#mini-basket').click(function () {
+			$('.close', '#mini-basket').click(function (e) {
 				var $item = $(this).parents('li');
-				console.log($item);
 				Boonbox.common.basket.removeItem($item);
+				e.preventDefault();
 			});
 		},
 		add : function (){
