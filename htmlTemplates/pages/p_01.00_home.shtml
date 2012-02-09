@@ -11,7 +11,52 @@
         <!--#include virtual="../blocks/b_03.00_filters.shtml" -->
         <!-- rest of the content of page goes inside page div -->
         <div id="page" class="clear">
+            <ul class="top-section">
+                <h1>This Weeks Top 5 Gifts</h1>
+                <a href="" alt="Gift Idea #1">
+                    <li>
+                        <img src="../../assets/images/top_gift.jpg" alt="Top gift">
+                        <div class="top-gift-text">
+                            <h4>Gift Idea #1</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                </a>
+                <a href="" alt="Gift Idea #2">
+                    <li>
+                        <h4>Gift Idea #2</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </li>
+                </a>
+                <a href="" alt="Gift Idea #3">
+                    <li>
+                        <h4>Gift Idea #3</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </li>
+                </a>
+                <a href="" alt="Gift Idea #4">
+                    <li>
+                        <h4>Gift Idea #4</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </li>
+                </a>
+                <a href="" alt="Gift Idea #5">
+                    <li>
+                        <h4>Gift Idea #5</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </li>
+                </a>
+                <ul class="top-links">
+                    <li><a href="" alt="This month">This month</a></li>
+                    <li><a href="" alt="This year">This year</a></li>
+                    <li><a href="" alt="All time">All time</a></li>
+                </ul>
+            </ul>
+     
             
+
+            <div class="clear"></div>
             
             <!-- footer -->
             <!--#include virtual="../blocks/b_02.00_footer.shtml" -->

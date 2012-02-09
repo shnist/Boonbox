@@ -39,10 +39,8 @@
 
 /* 2. 	Common Elements */
 
-html, body {margin: 0;}
-body {
-	background:none repeat scroll 0 0 #FFFFFF; color:#353733; font-family:Arial,Calibri,sans-serif;
-}
+html{margin: 0;}
+body {margin: 0; background:none repeat scroll 0 0 #FFFFFF; color:#353733; font-family:Arial,Calibri,sans-serif;}
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td {
     background: none repeat scroll 0 0 transparent; border: 0 none; font-size: 100%; margin: 0; outline: 0 none; padding: 0; vertical-align: baseline; font-weight:normal;
 }
@@ -73,11 +71,13 @@ a:hover {
 /* All styles relating to the structure of the pages */
 
 #page {
-	width:940px; margin:0 auto;
+	width:940px;
+	margin:0 auto;
 }
 
 /* 3.1 Sprites */
 /* Add sprite images here*/
+
 #main-header input,
 #basket-summary a,
 #mini-basket p a,
@@ -147,23 +147,38 @@ a:hover {
 #mini-basket h3 {font-size:15px; font-weight:bold; padding:13px 9px; text-align:right; text-transform:uppercase;}
 #mini-basket h3 span {font-weight:bold; padding-left:15px;}
 #mini-basket p#view_basket {border-top:1px solid #848484; padding:14px 0; margin-left:9px; width:265px;}
-#mini-basket p#view_basket a {background-position:-302px -348px; width:265px; height:32px; display:block; text-indent:-999em;}
+#mini-basket p#view_basket a {background-position:-302px -169px; width:265px; height:32px; display:block; text-indent:-999em;}
+
 /*---- CONTENTS ----*/
 
+/* Top gift section */
+.top-section{margin:20px 20px 0 0; padding:0 10px 0 0; border-right: #e7e7e7 1px solid; width:220px; float:left; }
+.top-section img{border: #d9d9d9 1px solid; float:left; }
+.top-section li{padding:7px;margin:4px 0 0 0;}
+.top-section li:hover{background-color:#f6f6f6;}
+.top-section h4{font-size:80%; font-weight:bold;}
+.top-section p{font-size:80%;color: #5f5f5f;}
+.top-gift-text{width:85px;margin:0 0 0 10px;float:left;}
+
+
+.top-links li{float:left;font-size:80%;margin:15px 0 0 0; padding:0 10px 0 10px; border-left:#5f5f5f 1px solid;}
+.top-links li:first-child{padding:0 10px 0 0; border:none;}
+.top-links li:hover{background:none;}
 
 
 /*---- FOOTER ----*/
-#footer{color:#5f5f5f;font-size:80%; margin:500px 0 0 0;}
+#footer{color:#5f5f5f;font-size:80%; margin:150px 0 15px 0;}
 
 /* Connect */
 #connect{padding:15px 0 35px 0;border-top: #e7e7e7 1px solid;border-bottom: #e7e7e7 1px solid; color:#2a2a2a;}
-#connect li{float:left; margin:0 15px 0 0;}
+#connect li{float:left; margin:0 0 0 15px;}
+#connect li:first-child{margin:0;}
 #twitter-follow{width:160px;}
 #rss a{ background:url('../images/backgrounds/rss.jpg') 0 1px no-repeat;padding:5px 0 3px 30px;font-weight:bold;margin:0 15px 0 0;}
 #twitter a{ background:url('../images/backgrounds/twitter.jpg') 0 1px no-repeat;padding:5px 0 3px 30px;font-weight:bold;margin:0 15px 0 0;}
 #facebook a{ background:url('../images/backgrounds/facebook.jpg') 0 1px no-repeat;padding:5px 0 3px 30px;font-weight:bold;margin:0 15px 0 0;}
 #email a{ background:url('../images/backgrounds/email.jpg') 0 1px no-repeat;padding:4px 0 0 40px;font-weight:bold;}
-#connect input {color:#5f5f5f; font-size:12px; font-style:italic; padding:3px 3px 3px 12px; width:155px;  border:1px solid #CCCCCC; margin:-8px 0 0 0;}
+#connect input {color:#5f5f5f; font-size:12px; font-style:italic; padding:3px 3px 3px 12px; width:175px;  border:1px solid #CCCCCC; margin:-8px 0 0 0;}
 
 /* Sitemap */
 #sitemap{padding:10px 0 10px 0;border-bottom: #e7e7e7 1px solid;}
