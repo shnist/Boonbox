@@ -156,12 +156,15 @@ a:hover {
 #filter_selectors li p a, #filter_selectors li p a:hover {color:#fff;}
 #filter_selectors li p a {position:relative; top:115px; text-shadow:0 -2px 0 #285384;}
 
-#filter_options {position:relative; background-color:#3365a7; padding:10px;}
+#filter_options {position:relative; background-color:#3365a7; padding:7px;}
+#filter_options ul li.price {text-align:center;}
+#filter_options ul li.price input {margin:20px 0 10px -60px;}
 #filter_options p.close {text-indent:-999em; cursor:pointer; width:13px; height:13px; background-position:-603px -348px; position:absolute; top:8px; right:7px;}
-#filter_options h4 {border-bottom:1px solid #0e4084; text-shadow:0 -2px 0 #173F6B; width:905px; height:30px; margin:5px 5px 0 5px;}
-#filter_options ul {display:inline-block; border-top:1px solid #6098d6; width:910px;}
-#filter_options ul li {float:left; padding:20px; padding-left:0;}
-#filter_options ul li label {cursor:pointer;}
+#filter_options h4 {text-align:center; padding:15px 0 7px; border-bottom:1px solid #0e4084; text-shadow:0 -2px 0 #173F6B; width:905px; height:30px; margin:5px 5px 0 5px;}
+#filter_options span {font-style:italic; font-size:12px; position:relative; top:-1px;}
+#filter_options .filter-options-detail {display:inline-block; border-top:1px solid #6098d6; width:845px; margin-left:5px; padding:8px 0 10px 60px;}
+#filter_options ul.filter-options-detail li {float:left; padding:15px 0 0; min-width:140px;}
+#filter_options ul.filter-options-detail li label {cursor:pointer;}
 
 
 /*---- CONTENTS ----*/
