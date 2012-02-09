@@ -30,12 +30,13 @@ Boonbox.extend('filters', {
 				var activeTab = $('.active', '#filter_options').attr('id');
 				
 				if (tab !== activeTab){
-					$('.active', '#filter_options').slideUp(function () {
+					$('.active', '#filter_options').slideUp(1000, function () {
 						$(this).removeClass('active').addClass('hidden');
+						$('#' + tab).slideDown(1500, function () {
+							$(this).removeClass('hidden').addClass('active');
+						});
 					});
-					$('#' + tab).slideDown(function () {
-						$(this).removeClass('hidden').addClass('active');
-					});
+
 				}
 			});
 			$('.close', '.filter').click(function () {
