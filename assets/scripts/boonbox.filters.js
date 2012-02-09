@@ -40,7 +40,8 @@ Boonbox.extend('filters', {
 			});
 		},
 		remove : function ($this) {
-			//$this.parents('.filter').removeClass('active').addClass('hidden');
+			$('.selected', '#filter_selectors').removeClass('selected');
+			$this.parents('.filter').removeClass('active').addClass('hidden');
 			
 		}
 	}
