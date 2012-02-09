@@ -49,14 +49,12 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, ol, ul, li
     vertical-align: baseline;
     font-weight:normal;
 }
-h1{color:#2a2a2a;}
-p{font-size:80%; color:#5f5f5f}
 ol, ul {list-style:none outside none;}
 input, select, textarea {font-family:inherit; font-size:100%; font-weight:normal;}
 a {color:#2a2a2a; text-decoration:none;}
 a:hover {color:#478cd3;}
 
-#page {width:940px; margin:0 auto;padding: 35px 0 0 0;}
+#page {width:940px; margin:0 auto;}
 
 /* Add sprite images here*/
 #main-header input, #basket p#basket-summary a, #mini-basket p a, #mini-basket ul li a.close  {background:url('../images/sprites/main_sprite.png') 0 0 no-repeat transparent;}
@@ -102,22 +100,23 @@ a:hover {color:#478cd3;}
 
 /*---- CONTENTS ----*/
 
-/* Home page */
-
-.top-section{width:210px; margin:0 20px 0 0; padding: 0 10px 0 0; border-right: #e7e7e7 1px solid; float:left; }
-.top-section a{font-size:80%;}
-.top-section li{margin:4px 0 0 0;padding:7px;}
-.top-section li:hover{background:#f6f6f6;}
-.top-section p{display:inline-block;font-size:90%;}
-
-.top-gift img{border: #d9d9d9 1px solid;float:left;margin:0 10px 0 0;}
-.top-gift-text{float:left; width:70px;}
+/* Top gift section */
+.top-section{margin:20px 20px 0 0; padding:0 10px 0 0; border-right: #e7e7e7 1px solid; width:220px; float:left; }
+.top-section img{border: #d9d9d9 1px solid; float:left; }
+.top-section li{padding:7px;margin:4px 0 0 0;}
+.top-section li:hover{background-color:#f6f6f6;}
+.top-section h4{font-size:80%; font-weight:bold;}
+.top-section p{font-size:80%;color: #5f5f5f;}
+.top-gift-text{width:85px;margin:0 0 0 10px;float:left;}
 
 
+.top-links li{float:left;font-size:80%;margin:15px 0 0 0; padding:0 10px 0 10px; border-left:#5f5f5f 1px solid;}
+.top-links li:first-child{padding:0 10px 0 0; border:none;}
+.top-links li:hover{background:none;}
 
 
 /*---- FOOTER ----*/
-#footer{color:#5f5f5f;font-size:80%; margin:15px 0 15px 0;}
+#footer{color:#5f5f5f;font-size:80%; margin:150px 0 15px 0;}
 
 /* Connect */
 #connect{padding:15px 0 35px 0;border-top: #e7e7e7 1px solid;border-bottom: #e7e7e7 1px solid; color:#2a2a2a;}
@@ -137,6 +136,6 @@ a:hover {color:#478cd3;}
 #sitemap li.first{font-size:125%;padding:0 0 10px 0;color:#2a2a2a;}
 
 /* Copyright */
-#information{margin:10px 0 0 0; }
-#disclaimer{ padding:13px 0 0 0;font-size:90%;float:left;}
-#payment{padding:10px; margin:0 0 0 178px; background:#e7e7e7; float:left;}
+#information{margin:10px 0 0 0;}
+#disclaimer{ padding:13px 0 0 0;float:left;}
+#payment{padding:10px; margin:0 0 0 153px; background:#e7e7e7; float:left;}
