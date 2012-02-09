@@ -49,12 +49,14 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, ol, ul, li
     vertical-align: baseline;
     font-weight:normal;
 }
+h1{color:#2a2a2a;}
+p{font-size:80%; color:#5f5f5f}
 ol, ul {list-style:none outside none;}
 input, select, textarea {font-family:inherit; font-size:100%; font-weight:normal;}
 a {color:#2a2a2a; text-decoration:none;}
 a:hover {color:#478cd3;}
 
-#page {width:940px; margin:0 auto;}
+#page {width:940px; margin:0 auto;padding: 35px 0 0 0;}
 
 /* Add sprite images here*/
 #main-header input, #basket p#basket-summary a, #mini-basket p a, #mini-basket ul li a.close  {background:url('../images/sprites/main_sprite.png') 0 0 no-repeat transparent;}
@@ -97,7 +99,20 @@ a:hover {color:#478cd3;}
 #mini-basket h3 span {font-weight:bold; padding-left:15px;}
 #mini-basket p#view_basket {border-top:1px solid #848484; padding:14px 0; margin-left:9px; width:265px;}
 #mini-basket p#view_basket a {background-position:-302px -169px; width:265px; height:32px; display:block; text-indent:-999em;}
+
 /*---- CONTENTS ----*/
+
+/* Home page */
+
+.top-section{width:210px; margin:0 20px 0 0; padding: 0 10px 0 0; border-right: #e7e7e7 1px solid; float:left; }
+.top-section a{font-size:80%;}
+.top-section li{margin:4px 0 0 0;padding:7px;}
+.top-section li:hover{background:#f6f6f6;}
+.top-section p{display:inline-block;font-size:90%;}
+
+.top-gift img{border: #d9d9d9 1px solid;float:left;margin:0 10px 0 0;}
+.top-gift-text{float:left; width:70px;}
+
 
 
 
@@ -106,13 +121,14 @@ a:hover {color:#478cd3;}
 
 /* Connect */
 #connect{padding:15px 0 35px 0;border-top: #e7e7e7 1px solid;border-bottom: #e7e7e7 1px solid; color:#2a2a2a;}
-#connect li{float:left; margin:0 15px 0 0;}
+#connect li{float:left; margin:0 0 0 15px;}
+#connect li:first-child{margin:0;}
 #twitter-follow{width:160px;}
 #rss a{ background:url('../images/backgrounds/rss.jpg') 0 1px no-repeat;padding:5px 0 3px 30px;font-weight:bold;margin:0 15px 0 0;}
 #twitter a{ background:url('../images/backgrounds/twitter.jpg') 0 1px no-repeat;padding:5px 0 3px 30px;font-weight:bold;margin:0 15px 0 0;}
 #facebook a{ background:url('../images/backgrounds/facebook.jpg') 0 1px no-repeat;padding:5px 0 3px 30px;font-weight:bold;margin:0 15px 0 0;}
 #email a{ background:url('../images/backgrounds/email.jpg') 0 1px no-repeat;padding:4px 0 0 40px;font-weight:bold;}
-#connect input {color:#5f5f5f; font-size:12px; font-style:italic; padding:3px 3px 3px 12px; width:155px;  border:1px solid #CCCCCC; margin:-8px 0 0 0;}
+#connect input {color:#5f5f5f; font-size:12px; font-style:italic; padding:3px 3px 3px 12px; width:175px;  border:1px solid #CCCCCC; margin:-8px 0 0 0;}
 
 /* Sitemap */
 #sitemap{padding:10px 0 10px 0;border-bottom: #e7e7e7 1px solid;}
