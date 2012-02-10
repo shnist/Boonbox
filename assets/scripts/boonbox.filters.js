@@ -159,23 +159,26 @@ Boonbox.extend('filters', {
 			addResults : function (results) {
 				// first say how many have been created
 				$('.results_context p').html('Boon selector has found ' + results.length + ' items');
-				var i = 0, j = 0, productMarkUp = '', paginationMarkUp = '', maxProducts = 16;
+				var i = 0, j = 0, productMarkUp = '', paginationMarkUp = '', maxProducts = 12;
 				
 				// creating pagination if necessary
-				if (results > 16){
-					var paginationNumber = Math.ceil(results.length / 16);
+				if (results.length > 12){
+					var paginationNumber = Math.ceil(results.length / 12);
+
 					paginationMarkup = '<ul id="pagination" class="clear">' +
 											'<li class="prev"><a href="#">Previous</a></li>';
 					for (j; j < paginationNumber; j = j + 1){
-						paginationMarkUp = paginationMarkup + '<li><a href="#' + j + '">' + j + '</a></li>';
+						paginationMarkup = paginationMarkup + '<li><a href="#' + (j + 1) + '">' + (j + 1) + '</a></li>';
 					}
 					paginationMarkup = paginationMarkup + '<li class="next"><a href="#">Next</a></li>' +
 						'</ul>';
 						
 					$('#content').append(paginationMarkup);
-					// add selected class to last pagination number
-
 					
+					// add selected class to last pagination number
+					$('#pagination a[href=#1]').addClass('selected');	
+					// initialise event binding
+									
 				} else {
 					maxProducts = results.length;
 				}
@@ -198,6 +201,15 @@ Boonbox.extend('filters', {
 				$('#results_main').append(productMarkUp);
 				// start the ui for the results
 				Boonbox.filters.results.ui.init();
+			},
+			/**
+			 * Method that resets the DOM if results already exist
+			 * @function
+			 * @memberOf Boonbox.filters.submit.dom
+			 */
+			resetResults : function (){
+				
+				
 			}
 		}
 	},
@@ -218,6 +230,7 @@ Boonbox.extend('filters', {
 				dataType: 'json',
 				success : function (data) {
 					$('#results_main .loader').remove();
+					Boonbox.filters.submit.dom.resetResults();
 					Boonbox.filters.submit.dom.addResults(data);
 				},
 				error: function (object, stat, error) {
