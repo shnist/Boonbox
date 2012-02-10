@@ -178,6 +178,7 @@ Boonbox.extend('filters', {
 					// add selected class to last pagination number
 					$('#pagination a[href=#1]').addClass('selected');	
 					// initialise event binding
+					Boonbox.filters.results.ui.pagination();
 									
 				} else {
 					maxProducts = results.length;
@@ -222,7 +223,12 @@ Boonbox.extend('filters', {
 	 */
 	ajax : {
 		init : function (searchOptions) {
-			$('#results_main').append('<img src="../../assets/images/loader.gif" alt="products loading" class="loader">');
+			$('#results_top').after(
+				'<div class="overlay">' +
+					'<img src="../../assets/images/loader.gif" alt="products loading" class="loader">' +
+				'</div>'
+			);
+			$('#content.results').addClass('ajax');
 			Boonbox.filters.ajax.request(searchOptions);
 		},
 		request : function (searchOptions) {
@@ -231,7 +237,8 @@ Boonbox.extend('filters', {
 				data: searchOptions,
 				dataType: 'json',
 				success : function (data) {
-					$('#results_main .loader').remove();
+					$('.overlay').remove();
+					$('#content.results').removeClass('ajax');
 					Boonbox.filters.submit.dom.resetResults();
 					Boonbox.filters.submit.dom.addResults(data);
 				},
@@ -260,6 +267,14 @@ Boonbox.extend('filters', {
 					event.stopPropagation();
 					$('.product_desc', this).slideUp(400);
 				});
+			},
+			/**
+			 * Method that handles the pagination ui
+			 * @function
+			 * @memberOf Boonbox.filters.results
+			 */ 
+			pagination : function(){
+				console.log('pagination ready');
 			}
 		}
 		

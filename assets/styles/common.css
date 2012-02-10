@@ -225,7 +225,8 @@ a:hover {
 
 /*---- CONTENTS: AFTER FILTRATION----*/
 
-#content.results {padding:15px 0 50px; margin-left:3px;}
+#content.results {padding:15px 0 50px; margin-left:3px; position: relative; overflow: hidden;}
+#content.ajax {min-height: 100px;}
 
 /* Top results bar */
 #content.results #results_top {border-bottom:1px solid #CCCCCC; display:inline-block; padding-bottom:10px; width:933px;}
@@ -256,7 +257,9 @@ a:hover {
 #content.results #results_main li .product_desc p.price {font-size:12px; font-weight:normal;}
 #content.results #results_main li .product_desc img {width:74px; margin-top:6px;}
 
-#results_main .loader{margin: 40px auto; display: block;}
+/* Overlay */
+.overlay{z-index: 10; position: absolute; top: 70px; left: 0; background: #FFF; opacity: 0.7; width: 940px; height: 100%;}
+.overlay .loader{margin: 40px auto; display: block;}
 
 /*Pagination*/
 #pagination {left:352px; position:relative; top:18px; width:225px;}
