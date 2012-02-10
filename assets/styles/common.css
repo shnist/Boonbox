@@ -237,6 +237,8 @@ a:hover {
 #content.results #results_main li .product_desc p.price {font-size:12px; font-weight:normal;}
 #content.results #results_main li .product_desc img {width:74px; margin-top:6px;}
 
+#results_main .loader{margin: 40px auto; display: block;}
+
 /*Pagination*/
 #pagination {left:352px; position:relative; top:18px; width:225px;}
 #pagination li {float:left; margin-left:5px; text-align:center;}

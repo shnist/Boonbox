@@ -11,7 +11,7 @@
         <!--#include virtual="../blocks/b_03.00_filters.shtml" -->
         <!-- rest of the content of page goes inside page div -->
         <div id="page" class="clear">
-            <div id="content" class="clear">
+            <div id="content">
             <div class="top-section">
                 <h2 class="week">This Weeks Top 5 Gifts</h2>
                 <ul class="top-gifts week">

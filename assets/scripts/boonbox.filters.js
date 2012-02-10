@@ -113,14 +113,61 @@ Boonbox.extend('filters', {
 		init : function () {
 			$('#filter_options form').submit(function (event) {
 				event.preventDefault();
-				Boonbox.filters.submit.dom();
+				var searchOptions = $(this).serialize();
+				console.log(searchOptions);
+				Boonbox.filters.submit.dom.init();
+				
 			});
 		},
 		triggerSubmit : function () {
 			$('#filter_options form').submit();	
 		},
-		dom : function () {
-			
+		dom : {
+			init : function () {
+				if ($('#content.results').length === 0){
+					$('#content').addClass('results');
+					$('#content').empty();
+					Boonbox.filters.submit.dom.addResults();
+				}
+				Boonbox.filters.ajax.init();
+			},
+			/* add the results template */
+			addResults : function () {
+				$('#content').append(
+					'<div id="results_top" class="clear">' +
+						'<div>' +
+							'<h3>Results</h3>' +
+							'<p>Boon selector has found 34 items</p>' +
+						'</div>' +
+						'<ul>' +
+							'<li><a href="#">View All</a></li>' +
+							'<li><a href="#">Reset Selection</a></li>' +
+							'<li class="drop_down">Sort By:' + 
+								'<select>' +
+									'<option value="price-low">Price, low to high</option>' +
+									'<option value="price-high">Price, high to low</option>' +
+									'<option value="relevance">Relevance</option>' +
+									'<option value="selling">Best Selling</option>' +
+									'<option value="reviews">Best Reviews</option>' +
+								'</select>' +
+							'</li>' +
+						'</ul>' +
+					'</div>' +
+					'<ul id="results_main" class="clear">'+
+					'</ul>'
+				);
+			}
+		}
+	},
+	/**
+	 * Methods relating to the ajax request to the php file
+	 * @class
+	 * @memberOf Boonbox.filters
+	 */
+	ajax : {
+		init : function () {
+			$('#results_main').append('<img src="../../assets/images/loader.gif" alt="products loading" class="loader">');
+			$('')
 		}
 	}
 });
