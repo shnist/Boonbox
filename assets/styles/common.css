@@ -205,6 +205,9 @@ a:hover {
 /* Main carousel */
 .carousel{float:right; padding: 20px 0 0 0;}
 
+/* Suggestions section */
+.suggestions{border-top: #e7e7e7 1px solid; margin:50px 0 0 0;}
+.carousel-small{}
 
 /*---- CONTENTS: AFTER FILTRATION----*/
 

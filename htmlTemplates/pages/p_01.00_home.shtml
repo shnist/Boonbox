@@ -138,6 +138,17 @@
             </div>
             <!-- please do not use empty clear divs -->
             </div>
+<<<<<<< HEAD
+=======
+            <div class="clear suggestions">
+                <h2>Our suggestions</h2>
+                <div class="carousel-small"></div>
+            </div>
+
+            
+            <!-- footer -->
+            <!--#include virtual="../blocks/b_02.00_footer.shtml" -->
+>>>>>>> Carousel suggestions
         </div>
         <!-- footer -->
         <!--#include virtual="../blocks/b_02.00_footer.shtml" -->
