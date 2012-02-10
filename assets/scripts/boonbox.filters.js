@@ -189,12 +189,15 @@ Boonbox.extend('filters', {
 		},
 		request : function (searchOptions) {
 			$.ajax({
-				url : 'request.php',
+				url : '../../assets/scripts/request.php',
 				data: searchOptions,
 				dataType: 'json',
 				success : function (data) {
 					$('#results_main .loader').remove();
 					Boonbox.filters.submit.dom.addResults(data);
+				},
+				error: function (object, stat, error) {
+					console.log(stat + ': ' + error);
 				}
 			});
 		}
