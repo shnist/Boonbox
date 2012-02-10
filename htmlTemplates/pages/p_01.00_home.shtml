@@ -137,9 +137,9 @@
             </div>
             <div class="clear"></div>
             
-            <!-- footer -->
-            <!--#include virtual="../blocks/b_02.00_footer.shtml" -->
         </div>
+        <!-- footer -->
+        <!--#include virtual="../blocks/b_02.00_footer.shtml" -->
         <!-- scripts go here -->
         <!--#include virtual="../blocks/b_00.02_scripts.shtml" -->
         

@@ -11,10 +11,10 @@
 
 <!-- stylesheets -->
 <link rel="stylesheet" href="../../assets/styles/common.css" media="screen">	
-<link rel="stylesheet" href="../../assets/style/common-print.css" media="print">
-<!--[if IE 9]><link rel="stylesheet" href="/assets/styles/ie/ie9.css" media="screen"><![endif]-->
-<!--[if IE 8]><link rel="stylesheet" href="/assets/styles/ie/ie8.css" media="screen"><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="/assets/styles/ie/ie7.css" media="screen"><![endif]-->
+<link rel="stylesheet" href="../../assets/styles/common-print.css" media="print">
+<!--[if IE 9]><link rel="stylesheet" href="../../assets/styles/ie/ie9.css" media="screen"><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="../../assets/styles/ie/ie8.css" media="screen"><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="../../assets/styles/ie/ie7.css" media="screen"><![endif]-->
 
 <!-- facebook meta data -->
 <meta property="og:title" content="Boonbox">

@@ -9,7 +9,14 @@ Boonbox.extend('filters', {
 		$('#age, #occasion, #interest, #price').addClass('hidden');
 		
 		Boonbox.filters.ui.init();
+		Boonbox.filters.search.init();
 	},
+	/**
+	 * Methods that deal with user interaction of the filter buttons
+	 * and selectors
+	 * @function
+	 * @memberOf Boonbox.filters
+	 */
 	ui : {
 		init: function () {
 			$('#filter_selectors a, #filter_selectors p').click(function (e) {
@@ -71,6 +78,49 @@ Boonbox.extend('filters', {
 			$('#price-range').val("$" + $('#slider-range').slider( "values", 0 ) +
 				" - £" + $('#slider-range').slider( "values", 1 ) );
 			}
+	},
+	/**
+	 * Methods to initialise all aspects of querying the database
+	 * and displaying the results
+	 * @class
+	 * @memberOf Boonbox.filters
+	 */
+	search : {
+		init : function () {
+			// remove the submit button
+			$('#filter_options input[type=submit]').addClass('hidden');
+			
+			// initialise submit event binding
+			Boonbox.filters.submit.init();
+			
+			// the delay is used to try and reduce the number of queries
+			var timer;
+			$('#filter_options input').click(function (event){
+				clearTimeout(timer);
+				timer = setTimeout(Boonbox.filters.search.delay, 1000);
+			});
+		},
+		delay : function () {
+			Boonbox.filters.submit.triggerSubmit();
+		}
+	},
+	/**
+	 * Methods to deal with the querying of the database with AJAX
+	 * @class
+	 * @memberOf Boonbox.filters
+	 */
+	submit : {
+		init : function () {
+			$('#filter_options form').submit(function (event) {
+				event.preventDefault();
+				Boonbox.filters.submit.dom();
+			});
+		},
+		triggerSubmit : function () {
+			$('#filter_options form').submit();	
+		},
+		dom : function () {
+			
+		}
 	}
-
 });

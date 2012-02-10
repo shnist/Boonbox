@@ -170,7 +170,7 @@ a:hover {
 #filter_options ul.filter-options-detail li {float:left; padding:15px 0 0; min-width:140px;}
 #filter_options ul.filter-options-detail li label {cursor:pointer; font-size:14px;}
 
-#filter_options input[type=submit]{background: #ebebeb; /* Old browsers */ background: -moz-linear-gradient(top, #ebebeb 0%, #d5d5d5 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebebeb), color-stop(100%,#d5d5d5)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #ebebeb 0%,#d5d5d5 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #ebebeb 0%,#d5d5d5 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #ebebeb 0%,#d5d5d5 100%); /* IE10+ */ background: linear-gradient(top, #ebebeb 0%,#d5d5d5 100%); /* W3C */ width:265px; height:32px; display:block; color: #4c4c4c; border: 1px solid #bcbcbc; margin: 0 auto 15px;}
+#filter_options input[type=submit]{background: #ebebeb; /* Old browsers */ background: -moz-linear-gradient(top, #ebebeb 0%, #d5d5d5 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebebeb), color-stop(100%,#d5d5d5)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #ebebeb 0%,#d5d5d5 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #ebebeb 0%,#d5d5d5 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #ebebeb 0%,#d5d5d5 100%); /* IE10+ */ background: linear-gradient(top, #ebebeb 0%,#d5d5d5 100%); /* W3C */ width:265px; height:32px; color: #4c4c4c; border: 1px solid #bcbcbc; margin: 0 auto 15px;}
 #filter_options input[type=submit]:hover{cursor: pointer;}
 
 
