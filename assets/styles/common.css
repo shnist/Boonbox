@@ -206,12 +206,16 @@ a:hover {
 .top-links a.active{color: #478cd3;}
 
 /* Main carousel */
-.carousel{float:right; padding: 20px 0 0 0;}
+.carousel{float:right; padding: 20px 0 0 0;width:697px;height:410px;position:relative;}
+.carousel img{border: #d9d9d9 1px solid;}
+.carousel #arrow-left{position:absolute;top:210px;left:10px;border:none;}
+.carousel #arrow-right{position:absolute;top:210px;right:10px;border:none;}
 
 /* Suggestions carousel */
 .suggestions{border-top: #e7e7e7 1px solid; margin:20px 0 0 0; padding:10px 0 0 0;}
-.carousel-small {width:940px;}
-.carousel-small li {position:relative; float:left; margin: 15px 0 0 15px; width:220px; height:200px; border:1px solid #d9d9d9;}
+.carousel-small {width:2000px;}
+.carousel-small li .gifts{position:relative; float:left; margin: 15px 0 0 15px; width:220px; height:200px; border:1px solid #d9d9d9;}
+.carousel-small li .arrow {float:left;margin: 100px 0 0 15px; width:19px; height:34px;}
 .carousel-small li:first-child{margin:15px 0 0 0;}
 .carousel-small li .product_desc {display: none; padding:8px 10px; width:200px; height:54px; position:absolute; bottom:0; left:0; background:url('../images/backgrounds/product_hoverbg.png') repeat transparent;}
 .carousel-small.no-js a:hover .product_desc{display: block;}
@@ -276,7 +280,7 @@ a:hover {
 #footer{color:#5f5f5f;font-size:80%; margin:15px auto; width:940px;}
 
 /* Connect */
-#connect {display:inline-block; padding:40px 0 10px; border-top: #e7e7e7 1px solid;border-bottom: #e7e7e7 1px solid; color:#2a2a2a;}
+#connect {display:inline-block; padding:10px 0 10px; border-top: #e7e7e7 1px solid;border-bottom: #e7e7e7 1px solid; color:#2a2a2a;}
 #connect li{float:left; margin:0 0 0 15px;}
 #connect li:first-child{margin:0;}
 #twitter-follow{width:160px;}

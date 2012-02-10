@@ -161,7 +161,10 @@
                 </div>
                 
                 <div class="carousel">
-                    <img src="../../assets/images/carousel1.jpg" title="Carousel image 1">
+                    <a href="" title="Arrow left"><img src="../../assets/images/arrow_left.png" alt="Arrow left" id="arrow-left"></a>
+                    <a href="" title="Arrow right"><img src="../../assets/images/arrow_right.png" alt="Arrow right" id="arrow-right"></a>
+                    <img src="../../assets/images/carousel_placeholder1.jpg" title="Carousel image 1">
+                    
                 </div>
             </div>
             <div class="suggestions clear">
@@ -169,7 +172,12 @@
                 <ul class="carousel-small no-js">
                     <li>
                         <a href="#">
-                                <img src="../../assets/images/placeholder1.jpg">
+                                <img src="../../assets/images/arrow_left.png" alt="Arrow left" class="arrow"> 
+                        </a>
+              	    </li>
+                    <li>
+                        <a href="#">
+                                <img src="../../assets/images/placeholder1.jpg" class="gifts">
                                 <div class="product_desc">
                                         <h4>Monster Toy</h4>
                                         <p class="price">&pound;25.99</p>
@@ -179,7 +187,7 @@
               	    </li>
                     <li>
                         <a href="#">
-                                <img src="../../assets/images/placeholder1.jpg">
+                                <img src="../../assets/images/placeholder1.jpg" class="gifts">
                                 <div class="product_desc">
                                         <h4>Monster Toy</h4>
                                         <p class="price">&pound;25.99</p>
@@ -189,7 +197,7 @@
               	    </li>
                     <li>
                         <a href="#">
-                                <img src="../../assets/images/placeholder1.jpg">
+                                <img src="../../assets/images/placeholder1.jpg" class="gifts"> 
                                 <div class="product_desc">
                                         <h4>Monster Toy</h4>
                                         <p class="price">&pound;25.99</p>
@@ -198,13 +206,18 @@
                         </a>
               	    </li>
                     <li>
-                        <a href="#">
-                                <img src="../../assets/images/placeholder1.jpg">
+                        <a href="#" title="Arrow right"> 
+                                <img src="../../assets/images/placeholder1.jpg" class="gifts"> 
                                 <div class="product_desc">
                                         <h4>Monster Toy</h4>
                                         <p class="price">&pound;25.99</p>
                                         <img src="../../assets/images/star4.png">
                                 </div>
+                        </a>
+              	    </li>
+                    <li>
+                        <a href="#" title="Arrow left">
+                                <img src="../../assets/images/arrow_right.png" alt="Arrow right" class="arrow"> 
                         </a>
               	    </li>
                 </ul>
