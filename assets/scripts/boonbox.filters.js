@@ -114,25 +114,23 @@ Boonbox.extend('filters', {
 			$('#filter_options form').submit(function (event) {
 				event.preventDefault();
 				var searchOptions = $(this).serialize();
-				console.log(searchOptions);
-				Boonbox.filters.submit.dom.init();
-				
+				Boonbox.filters.submit.dom.init(searchOptions);
 			});
 		},
 		triggerSubmit : function () {
 			$('#filter_options form').submit();	
 		},
 		dom : {
-			init : function () {
+			init : function (searchOptions) {
 				if ($('#content.results').length === 0){
 					$('#content').addClass('results');
 					$('#content').empty();
-					Boonbox.filters.submit.dom.addResults();
+					Boonbox.filters.submit.dom.addResultsTemplate();
 				}
-				Boonbox.filters.ajax.init();
+				Boonbox.filters.ajax.init(searchOptions);
 			},
 			/* add the results template */
-			addResults : function () {
+			addResultsTemplate : function () {
 				$('#content').append(
 					'<div id="results_top" class="clear">' +
 						'<div>' +
@@ -156,6 +154,9 @@ Boonbox.extend('filters', {
 					'<ul id="results_main" class="clear">'+
 					'</ul>'
 				);
+			},
+			addResults : function (results) {
+				console.log(results);
 			}
 		}
 	},
@@ -165,9 +166,19 @@ Boonbox.extend('filters', {
 	 * @memberOf Boonbox.filters
 	 */
 	ajax : {
-		init : function () {
+		init : function (searchOptions) {
 			$('#results_main').append('<img src="../../assets/images/loader.gif" alt="products loading" class="loader">');
-			$('')
+			Boonbox.filters.ajax.request(searchOptions);
+		},
+		request : function (searchOptions) {
+			$.ajax({
+				url : '../../assets/scripts/request.php',
+				data: searchOptions,
+				dataType: 'json',
+				success : function (data) {
+					Boonbox.filters.submit.dom.addResults(data)
+				}
+			});
 		}
 	}
 });
