@@ -13,12 +13,7 @@ Boonbox.extend('filters', {
 	ui : {
 		init: function () {
 			$('#filter_selectors a, #filter_selectors p').click(function (e) {
-				e.preventDefault();
-				// changing selected states of filter buttons
-				$('#filter_selectors li').removeClass('selected');
-				$(this).parents('li').addClass('selected');
-				
-				
+				e.preventDefault();				
 				var tab;
 				if($(this).is('p')){
 					tab = $(this).children('a').attr('href');
@@ -26,21 +21,26 @@ Boonbox.extend('filters', {
 					tab = $(this).attr('href');
 				}
 				tab = tab.replace('#', '');
-			
-				var activeTab = $('.active', '#filter_options').attr('id');
 				
-				if (tab !== activeTab){
-					$('.active', '#filter_options').slideUp(1000, function () {
-						$(this).removeClass('active').addClass('hidden');
-						$('#' + tab).slideDown(1500, function () {
-							$(this).removeClass('hidden').addClass('active');
-						});
+				if ($('.selected', '#filter_selectors').length === 0){
+					$(this).parents('li').addClass('selected');
+					console.log('animating here');
+					$('#' + tab).slideDown(1000, function () {
+						$(this).removeClass('hidden').addClass('active');
 					});
-					if ($('.active', '#filter_options').length === 0){
-						$('#' + tab).slideDown(1500, function () {
-							$(this).removeClass('hidden').addClass('active');
+				} else {
+					var activeTab = $('.active', '#filter_options').attr('id');
+				
+					if (activeTab !== undefined){
+						$('#filter_selectors li').removeClass('selected');
+						$(this).parents('li').addClass('selected');
+						$('.active', '#filter_options').slideUp(700, function () {
+							$(this).removeClass('active').addClass('hidden');
+							$('#' + tab).slideDown(1000, function () {
+								$(this).removeClass('hidden').addClass('active');
+							});
 						});
-					}
+					}	
 				}
 			});
 			$('.close', '.filter').click(function () {
