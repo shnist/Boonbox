@@ -165,9 +165,53 @@
                 </div>
             </div>
             <!-- please do not use empty clear divs -->
-            <div class="clear suggestions">
+            <div class="suggestions clear">
                 <h2>Our suggestions</h2>
-                <div class="carousel-small"></div>
+                <ul class="carousel-small">
+                    <li>
+                        <a href="#">
+                                <img src="../../assets/images/placeholder1.jpg">
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="../../assets/images/star4.png">
+                                </div>
+                        </a>
+              	    </li>
+                    <li>
+                        <a href="#">
+                                <img src="../../assets/images/placeholder1.jpg">
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="../../assets/images/star4.png">
+                                </div>
+                        </a>
+              	    </li>
+                    <li>
+                        <a href="#">
+                                <img src="../../assets/images/placeholder1.jpg">
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="../../assets/images/star4.png">
+                                </div>
+                        </a>
+              	    </li>
+                    <li>
+                        <a href="#">
+                                <img src="../../assets/images/placeholder1.jpg">
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="../../assets/images/star4.png">
+                                </div>
+                        </a>
+              	    </li>
+                </ul>
+            </div>
+            <div class="friends clear">
+                
             </div>
             </div>
     
