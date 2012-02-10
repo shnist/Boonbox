@@ -150,9 +150,11 @@ Boonbox.extend('filters', {
 							'</li>' +
 						'</ul>' +
 					'</div>' +
-					'<ul id="results_main" class="clear">'+
+					'<ul id="results_main" class="clear no-js">'+
 					'</ul>'
 				);
+				
+				$('#results_main').removeClass('no-js');
 			},
 			addResults : function (results) {
 				// first say how many have been created
@@ -207,7 +209,6 @@ Boonbox.extend('filters', {
 	results : {
 		ui : {
 			init : function (){
-				console.log('started');	
 				Boonbox.filters.results.ui.slide();
 			},
 			/**
@@ -217,10 +218,12 @@ Boonbox.extend('filters', {
 			 * @memberOf Boonbox.filters.results
 			 */
 			slide : function () {
-				$('#results_main a').bind('hover', function (event) {
+				$('#results_main a').mouseenter(function (event) {
 					event.stopPropagation();
-					console.log('hover');
-				
+					$('.product_desc', this).slideDown(400);				
+				}).mouseleave(function (event) {
+					event.stopPropagation();
+					$('.product_desc', this).slideUp(400);
 				});
 				
 				

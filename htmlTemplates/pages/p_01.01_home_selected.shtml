@@ -36,7 +36,7 @@
 						</ul>
 					</form>
               	</div>
-              	<ul id="results_main" class="clear">
+              	<ul id="results_main" class="clear no-js">
               		<li>
               			<a href="#">
               				<img src="../../assets/images/placeholder1.jpg">

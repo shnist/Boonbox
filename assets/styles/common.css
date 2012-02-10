@@ -235,7 +235,7 @@ a:hover {
 #content.results #results_main {width:948px;}
 #content.results #results_main li {position:relative; float:left; margin-right:15px; margin-top:15px; width:220px; height:200px; border:1px solid #d9d9d9;}
 #results_main li .product_desc {display: none; padding:8px 10px; width:200px; height:54px; position:absolute; bottom:0; left:0; background:url('../images/backgrounds/product_hoverbg.png') repeat transparent;}
-#results_main li a:hover .product_desc{display: block;}
+#results_main.no-js li a:hover .product_desc{display: block;}
 #results_main li a h4,
 #results_main li a p {color:#fff;} 
 #results_main li a:hover h4,
