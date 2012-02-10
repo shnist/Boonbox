@@ -31,8 +31,7 @@ Boonbox.extend('filters', {
 				
 				if ($('.selected', '#filter_selectors').length === 0){
 					$(this).parents('li').addClass('selected');
-					console.log('animating here');
-					$('#' + tab).slideDown(1000, function () {
+					$('#' + tab).slideDown(700, function () {
 						$(this).removeClass('hidden').addClass('active');
 					});
 				} else {
@@ -41,9 +40,9 @@ Boonbox.extend('filters', {
 					if (activeTab !== undefined){
 						$('#filter_selectors li').removeClass('selected');
 						$(this).parents('li').addClass('selected');
-						$('.active', '#filter_options').slideUp(700, function () {
+						$('.active', '#filter_options').slideUp(400, function () {
 							$(this).removeClass('active').addClass('hidden');
-							$('#' + tab).slideDown(1000, function () {
+							$('#' + tab).slideDown(700, function () {
 								$(this).removeClass('hidden').addClass('active');
 							});
 						});
@@ -59,7 +58,7 @@ Boonbox.extend('filters', {
 		},
 		remove : function ($this) {
 			$('.selected', '#filter_selectors').removeClass('selected');
-			$this.parents('.filter').slideUp(1000, function () {
+			$this.parents('.filter').slideUp(800, function () {
 				$(this).removeClass('active').addClass('hidden');
 			});
 			
@@ -135,6 +134,7 @@ Boonbox.extend('filters', {
 					'<div id="results_top" class="clear">' +
 						'<div class="results_context">' +
 							'<h3>Results</h3>' +
+							'<p>Boonbox selector is searching...</p>' +
 						'</div>' +
 						'<ul>' +
 							'<li><a href="#">View All</a></li>' +
@@ -156,7 +156,7 @@ Boonbox.extend('filters', {
 			},
 			addResults : function (results) {
 				// first say how many have been created
-				$('.results_context').append('<p>Boon selector has found ' + results.length + ' items</p>');
+				$('.results_context p').html('Boon selector has found ' + results.length + ' items');
 				
 				// creating the mark up
 				var i = 0, markUp = '';
@@ -174,6 +174,8 @@ Boonbox.extend('filters', {
 						'</li>'
 				}
 				$('#results_main').append(markUp);
+				// start the ui for the results
+				Boonbox.filters.results.ui.init();
 			}
 		}
 	},
@@ -201,5 +203,29 @@ Boonbox.extend('filters', {
 				}
 			});
 		}
+	},
+	results : {
+		ui : {
+			init : function (){
+				console.log('started');	
+				Boonbox.filters.results.ui.slide();
+			},
+			/**
+			 * Method that implements slide up and down for
+			 * each result item
+			 * @function
+			 * @memberOf Boonbox.filters.results
+			 */
+			slide : function () {
+				$('#results_main a').bind('hover', function (event) {
+					event.stopPropagation();
+					console.log('hover');
+				
+				});
+				
+				
+			}
+		}
+		
 	}
 });
