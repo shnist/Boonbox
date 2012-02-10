@@ -17,19 +17,24 @@
               			<h3>Results</h3>
               			<p>Boon selector has found 34 items</p>
               		</div>
-              		<ul>
-              			<li><a href="#">View All</a></li>
-              			<li><a href="#">Reset Selection</a></li>
-              			<li class="drop_down">Sort By: 
-              				<select>
- 								<option value="volvo">Price, low to high</option>
-  								<option value="saab">Price, high to low</option>
-  								<option value="mercedes">Relevance</option>
-  								<option value="audi">Best Selling</option>
-  								<option value="audi">Best Reviews</option>
-							</select>
-              			</li>
-              		</ul>
+					<form action="#" method="POST">
+						<ul>
+							<li><a href="#">View All</a></li>
+							<li><a href="#">Reset Selection</a></li>
+							<li class="drop_down">Sort By: 
+								<select>
+									<option value="price-low">Price, low to high</option>
+									<option value="price-high">Price, high to low</option>
+									<option value="relevance">Relevance</option>
+									<option value="selling">Best Selling</option>
+									<option value="reviews">Best Reviews</option>
+								</select>
+							</li>
+							<li>
+								<input type="submit" name="submit" value="Sort">
+							</li>
+						</ul>
+					</form>
               	</div>
               	<ul id="results_main" class="clear">
               		<li>
