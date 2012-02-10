@@ -12,164 +12,165 @@
         <!-- rest of the content of page goes inside page div -->
         <div id="page" class="clear">
             <div id="content">
-            <div class="top-section">
-                <h2 class="week">This Weeks Top Gifts</h2>
-                <ul class="top-gifts week">
-                    <li>
-                        <a href="" title="Gift Idea #1">
-                            <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
-                            <div class="top-gift-text">
-                                <h4>Gift Idea #1</h4>
-                                <p>&pound;25.99</p>
-                                <img src="../../assets/images/star4.png" class="star" alt="Rating">
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="Gift Idea #1">
-                            <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
-                            <div class="top-gift-text">
-                                <h4>Gift Idea #1</h4>
-                                <p>&pound;25.99</p>
-                                <img src="../../assets/images/star4.png" class="star" alt="Rating">
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="Gift Idea #1">
-                            <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
-                            <div class="top-gift-text">
-                                <h4>Gift Idea #1</h4>
-                                <p>&pound;25.99</p>
-                                <img src="../../assets/images/star4.png" class="star" alt="Rating">
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="Gift Idea #1">
-                            <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
-                            <div class="top-gift-text">
-                                <h4>Gift Idea #1</h4>
-                                <p>&pound;25.99</p>
-                                <img src="../../assets/images/star4.png" class="star" alt="Rating">
-                            </div>
-                        </a>
-                    </li>
+            <div id="top-section-wrapper">
+                <div class="top-section">
+                    <h2 class="week">This Weeks Top Gifts</h2>
+                    <ul class="top-gifts week">
+                        <li>
+                            <a href="" title="Gift Idea #1">
+                                <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="../../assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #1">
+                                <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="../../assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #1">
+                                <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="../../assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #1">
+                                <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="../../assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <h2 class="month">This Months Top Gifts</h2>
+                    <ul class="top-gifts month">
+                        <li>
+                            <a href="" title="Gift Idea #1">
+                                <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="../../assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #2">
+                                <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="../../assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #3">
+                                <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="../../assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #4">
+                                <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="../../assets/images/star4.png" class="star" alt="Rating"> 
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                        </li>                       
+                    </ul>
+                    <h2 class="year">This Years Top Gifts</h2>
+                    <ul class="top-gifts year">
+                        <li>
+                            <a href="" title="Gift Idea #1">
+                                <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="../../assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #2">
+                                <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="../../assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #3">
+                                <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="../../assets/images/star4.png" class="star" alt="Rating" >
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #4">
+                                <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift" title="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="../../assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                        </li>  
+                    </ul>
                     
-                </ul>
-                <h2 class="month">This Months Top Gifts</h2>
-                <ul class="top-gifts month">
-                    <li>
-                        <a href="" title="Gift Idea #1">
-                            <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
-                            <div class="top-gift-text">
-                                <h4>Gift Idea #1</h4>
-                                <p>&pound;25.99</p>
-                                <img src="../../assets/images/star4.png" class="star" alt="Rating">
-                            </div>
-                            <div class="clear"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="Gift Idea #2">
-                            <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
-                            <div class="top-gift-text">
-                                <h4>Gift Idea #1</h4>
-                                <p>&pound;25.99</p>
-                                <img src="../../assets/images/star4.png" class="star" alt="Rating">
-                            </div>
-                            <div class="clear"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="Gift Idea #3">
-                            <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
-                            <div class="top-gift-text">
-                                <h4>Gift Idea #1</h4>
-                                <p>&pound;25.99</p>
-                                <img src="../../assets/images/star4.png" class="star" alt="Rating">
-                            </div>
-                            <div class="clear"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="Gift Idea #4">
-                            <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
-                            <div class="top-gift-text">
-                                <h4>Gift Idea #1</h4>
-                                <p>&pound;25.99</p>
-                                <img src="../../assets/images/star4.png" class="star" alt="Rating"> 
-                            </div>
-                            <div class="clear"></div>
-                        </a>
-                    </li>                       
-                </ul>
-                <h2 class="year">This Years Top Gifts</h2>
-                <ul class="top-gifts year">
-                    <li>
-                        <a href="" title="Gift Idea #1">
-                            <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
-                            <div class="top-gift-text">
-                                <h4>Gift Idea #1</h4>
-                                <p>&pound;25.99</p>
-                                <img src="../../assets/images/star4.png" class="star" alt="Rating">
-                            </div>
-                            <div class="clear"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="Gift Idea #2">
-                            <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
-                            <div class="top-gift-text">
-                                <h4>Gift Idea #1</h4>
-                                <p>&pound;25.99</p>
-                                <img src="../../assets/images/star4.png" class="star" alt="Rating">
-                            </div>
-                            <div class="clear"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="Gift Idea #3">
-                            <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
-                            <div class="top-gift-text">
-                                <h4>Gift Idea #1</h4>
-                                <p>&pound;25.99</p>
-                                <img src="../../assets/images/star4.png" class="star" alt="Rating" >
-                            </div>
-                            <div class="clear"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="Gift Idea #4">
-                            <img src="../../assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift" title="Top gift">
-                            <div class="top-gift-text">
-                                <h4>Gift Idea #1</h4>
-                                <p>&pound;25.99</p>
-                                <img src="../../assets/images/star4.png" class="star" alt="Rating">
-                            </div>
-                            <div class="clear"></div>
-                        </a>
-                    </li>  
-                </ul>
+                    <ul class="top-links">
+                            <li><a href="#week" title="This week">This week</a></li>
+                            <li><a href="#month" title="This month">This month</a></li>
+                            <li><a href="#year" title="This year">This year</a></li>
+                    </ul>
+                </div>
                 
-                <ul class="top-links">
-                        <li><a href="#week" title="This week">This week</a></li>
-                        <li><a href="#month" title="This month">This month</a></li>
-                        <li><a href="#year" title="This year">This year</a></li>
-                </ul>
-            </div>
-            
-            
-            <div class="carousel">
-                <img src="../../assets/images/carousel1.jpg" title="Carousel image 1">
+                <div class="carousel">
+                    <img src="../../assets/images/carousel1.jpg" title="Carousel image 1">
+                </div>
             </div>
             <!-- please do not use empty clear divs -->
-            </div>
-            
             <div class="clear suggestions">
                 <h2>Our suggestions</h2>
                 <div class="carousel-small"></div>
             </div>
+            </div>
+    
 
             
         </div>

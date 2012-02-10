@@ -189,7 +189,7 @@ Boonbox.extend('filters', {
 		},
 		request : function (searchOptions) {
 			$.ajax({
-				url : '../../assets/scripts/request.php',
+				url : 'request.php',
 				data: searchOptions,
 				dataType: 'json',
 				success : function (data) {

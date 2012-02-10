@@ -186,6 +186,7 @@ a:hover {
 /*---- CONTENTS: ON LOAD----*/
 
 /* Top gift section */
+#top-section-wrapper {display:inline-block;}
 .top-section {float:left;margin:20px 0 0 8px;width:225px;}
 .top-section h2{color: #2a2a2a;}
 .top-section h4{font-size:80%; font-weight:bold;}
