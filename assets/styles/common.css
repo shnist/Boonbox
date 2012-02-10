@@ -161,7 +161,7 @@ a:hover {
 #filter_options {position:relative; background-color:#3365a7; overflow: hidden;}
 #filter_options ul li {padding:5px 10px 10px;}
 #filter_options ul li.price {text-align:center;}
-#filter_options ul li.price input {margin:20px 0 10px -60px;}
+#filter_options ul li.price input {margin:20px 0 10px -60px; text-align:center;}
 #filter_options p.close {text-indent:-999em; cursor:pointer; width:13px; height:13px; background-position:-603px -348px; position:absolute; top:7px; right:5px;}
 #filter_options .filter{position: relative;}
 #filter_options h4 {text-align:center; padding:15px 0 7px; border-bottom:1px solid #0e4084; text-shadow:0 -2px 0 #173F6B; width:905px; height:30px; margin:5px 5px 0 5px;}
@@ -176,8 +176,8 @@ a:hover {
 
 /* -- Slider -- */
 
-.ui-slider { position: relative; text-align: left; background: #EEE; height: .8em; }
-.ui-slider .ui-slider-handle { top: -.3em; margin-left: -.6em; background: #000; position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }
+.ui-slider { position: relative; text-align: left; background: #EEE; height: .8em; width:790px; margin:15px 0 10px;}
+.ui-slider .ui-slider-handle { top: -.4em; margin-left: -.6em; background: #000; position: absolute; z-index: 2; width: 1.2em; height: 1.5em; cursor: default; }
 .ui-slider .ui-slider-range { top: 0; height: 100%; position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
 .ui-slider-horizontal .ui-slider-range-min { left: 0; }
 .ui-slider-horizontal .ui-slider-range-max { right: 0; }
