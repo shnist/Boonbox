@@ -156,11 +156,9 @@ Boonbox.extend('filters', {
 				);
 			},
 			addResults : function (results) {
-				console.log(results);
 				// creating the mark up
 				var i = 0, markUp = '';
 				for (i; i < results.length; i = i + 1){
-					console.log(results[i]);
 					markUp = markUp +
 						'<li>' +
 							'<a href="#">' +
