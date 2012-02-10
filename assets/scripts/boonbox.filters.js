@@ -160,12 +160,20 @@ Boonbox.extend('filters', {
 				// creating the mark up
 				var i = 0, markUp = '';
 				for (i; i < results.length; i = i + 1){
+					console.log(results[i]);
 					markUp = markUp +
-						'<li> '
+						'<li>' +
+							'<a href="#">' +
+								'<img src="' + results[i].image + '" alt="' + results[i].name + '">' +
+								'<div class="product_desc">' +
+									'<h4>' + results[i].name + '</h4>' +
+									'<p class="price">£' + results[i].price + '</p>' +
+									'<img src="../../assets/images/star' + results[i].rating + '.png">' +
+								'</div>' +
+							'</a>' +
+						'</li>'
 				}
-				
-				
-				$('#results_main').append();
+				$('#results_main').append(markUp);
 			}
 		}
 	},
@@ -186,7 +194,7 @@ Boonbox.extend('filters', {
 				dataType: 'json',
 				success : function (data) {
 					$('#results_main .loader').remove();
-					Boonbox.filters.submit.dom.addResults(data)
+					Boonbox.filters.submit.dom.addResults(data);
 				}
 			});
 		}
