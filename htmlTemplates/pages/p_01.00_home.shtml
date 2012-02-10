@@ -11,6 +11,7 @@
         <!--#include virtual="../blocks/b_03.00_filters.shtml" -->
         <!-- rest of the content of page goes inside page div -->
         <div id="page" class="clear">
+            <div id="content" class="clear">
             <div class="top-section">
                 <h2 class="week">This Weeks Top 5 Gifts</h2>
                 <ul class="top-gifts week">
@@ -135,8 +136,8 @@
             <div class="carousel">
                 <img src="../../assets/images/carousel1.jpg" title="Carousel image 1">
             </div>
-            <div class="clear"></div>
-            
+            <!-- please do not use empty clear divs -->
+            </div>
         </div>
         <!-- footer -->
         <!--#include virtual="../blocks/b_02.00_footer.shtml" -->
