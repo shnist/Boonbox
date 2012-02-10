@@ -185,7 +185,7 @@ a:hover {
 
 /*---- CONTENTS: ON LOAD----*/
 
-/* Top gift section */
+/* Top gifts */
 #top-section-wrapper {display:inline-block;}
 .top-section {float:left;margin:20px 15px 0 8px;width:215px; border-right: #e7e7e7 1px solid;}
 .top-section h2{color: #2a2a2a;}
@@ -207,9 +207,20 @@ a:hover {
 /* Main carousel */
 .carousel{float:right; padding: 20px 0 0 0;}
 
-/* Suggestions section */
-.suggestions{border-top: #e7e7e7 1px solid; margin:20px 0 0 0;}
-.carousel-small{}
+/* Suggestions carousel */
+.suggestions{border-top: #e7e7e7 1px solid; margin:20px 0 0 0; padding:10px 0 0 0;}
+.carousel-small {width:940px;}
+.carousel-small li {position:relative; float:left; margin: 15px 0 0 15px; width:220px; height:200px; border:1px solid #d9d9d9;}
+.carousel-small li:first-child{margin:15px 0 0 0;}
+.carousel-small li .product_desc {display: none; padding:8px 10px; width:200px; height:54px; position:absolute; bottom:0; left:0; background:url('../images/backgrounds/product_hoverbg.png') repeat transparent;}
+.carousel-small a:hover .product_desc{display: block;}
+.carousel-small li a h4,
+.carousel-small li a p {color:#fff;} 
+.carousel-small li a:hover h4,
+.carousel-small li a:hover p{color:#fff; text-decoration:underline;} 
+.carousel-small li .product_desc h4 {font-size:14px; font-weight:bold; line-height:18px;}
+.carousel-small li .product_desc p.price {font-size:12px; font-weight:normal;}
+.carousel-small li .product_desc img {width:74px; margin-top:6px;}
 
 /*---- CONTENTS: AFTER FILTRATION----*/
 
