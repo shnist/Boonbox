@@ -161,7 +161,7 @@
                 </div>
                 
                 <div class="carousel-wrapper">
-                    <a href="#" class="prev"><img src="../../assets/images/arrow_left.png" alt="Arrow left" id="arrow-left"></a>
+                    <a href="#" class="prev"></a>
                     <ul>
                         <li>
                             <img src="../../assets/images/carousel_placeholder1.jpg" title="Carousel image 1">
@@ -173,13 +173,13 @@
                             <img src="../../assets/images/carousel_placeholder3.jpg" title="Carousel image 3">
                         </li>
                     </ul>
-                    <a href="#" class="next"><img src="../../assets/images/arrow_right.png" alt="Arrow right" id="arrow-right"></a>                    
+                    <a href="#" class="next"></a>                    
                 </div>
             </div>
             <div class="suggestions clear">
                 <h2>Our suggestions</h2>
                 <div class="carousel-small-wrapper">
-                    <a href="#" title="Arrow left" class="arrow-left previous"></a>
+                    <a href="#" class="prev"></a>
                     <ul class="carousel-small no-js">      	    
                         <li>
                             <a href="#">
@@ -262,7 +262,7 @@
                             </a>
                         </li>
                     </ul>
-                    <a href="#" title="Arrow right" class="arrow-right next"></a>
+                    <a href="#" class="next"></a>
                 </div>
             </div>
             <div class="friends clear">

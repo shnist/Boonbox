@@ -208,16 +208,28 @@ a:hover {
 /* Main carousel */
 .carousel-wrapper{display: inline-block; vertical-align: top; padding: 20px 0 0 0; width:697px; /*height:410px;*/ position:relative;}
 .carousel-wrapper img{border: #d9d9d9 1px solid;}
-.carousel-wrapper #arrow-left{position:absolute;top:210px;left:10px;border:none;}
-.carousel-wrapper #arrow-right{position:absolute;top:210px;right:10px;border:none;}
+.carousel-small-wrapper .prev,
+.carousel-small-wrapper .next,
+.carousel-wrapper .prev,
+.carousel-wrapper .next{ position:absolute;top:0;border:none; display: block; width: 19px; height: 34px;}
+.carousel-small-wrapper .prev,
+.carousel-wrapper .prev{background:url('../images/arrow_left.png') 0 0 no-repeat;}
+.carousel-wrapper .prev{left: 5px; top: 200px;}
+.carousel-small-wrapper .prev{left: -30px; top: 90px;}
+.carousel-small-wrapper .next,
+.carousel-wrapper .next{background:url('../images/arrow_right.png') 0 0 no-repeat;}
+.carousel-wrapper .next{right: 5px; top: 200px;}
+.carousel-wrapper .next{right: 5px; top: 200px;}
+.carousel-small-wrapper .next{right: -20px; top: 90px;}
+
+
 
 /* Suggestions carousel */
 .suggestions{border-top: #e7e7e7 1px solid; margin:20px 0 0 0; padding:10px 0 0 0; /*display:inline-block;*/}
-.carousel-wrapper{position:relative;/*height:222px; */}
-.carousel-small-wrapper .arrow-left {background:url('../images/arrow_left.png') 0 0 no-repeat;position:absolute;top:100px;left:15px;width:19px; height:34px;}
+
+.carousel-small-wrapper{position: relative;}
 .carousel-small {width:948px;margin:15px 0 0 0;}
 .carousel-small li .gifts{position:relative; float:left; margin: 0 15px 0 0;border:1px solid #d9d9d9;}
-
 .carousel-small li .product_desc {display: none; padding:8px 10px; width:200px; height:54px; position:absolute; bottom:0; left:0; background:url('../images/backgrounds/product_hoverbg.png') repeat transparent;}
 .carousel-small.no-js a:hover .product_desc{display: block;}
 .carousel-small li a h4,
