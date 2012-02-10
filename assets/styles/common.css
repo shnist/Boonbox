@@ -185,7 +185,7 @@ a:hover {
 
 /*---- CONTENTS: ON LOAD----*/
 
-/* Top gift section */
+/* Top gifts */
 #top-section-wrapper {display:inline-block;}
 .top-section {float:left;margin:20px 15px 0 8px;width:215px; border-right: #e7e7e7 1px solid;}
 .top-section h2{color: #2a2a2a;}
@@ -207,8 +207,8 @@ a:hover {
 /* Main carousel */
 .carousel{float:right; padding: 20px 0 0 0;}
 
-/* Suggestions section */
-.suggestions{border-top: #e7e7e7 1px solid; margin:20px 0 0 0;}
+/* Suggestions carousel */
+.suggestions{border-top: #e7e7e7 1px solid; margin:20px 0 0 0; padding:10px 0 0 0;}
 .carousel-small{}
 
 /*---- CONTENTS: AFTER FILTRATION----*/
