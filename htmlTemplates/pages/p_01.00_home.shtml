@@ -183,42 +183,82 @@
                     <ul class="carousel-small no-js">      	    
                         <li>
                             <a href="#">
-                                    <img src="../../assets/images/placeholder1.jpg" class="gifts">
-                                    <div class="product_desc">
-                                            <h4>Monster Toy</h4>
-                                            <p class="price">&pound;25.99</p>
-                                            <img src="../../assets/images/star4.png">
-                                    </div>
+                                <img src="../../assets/images/placeholder1.jpg" class="gifts">
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="../../assets/images/star4.png">
+                                </div>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                    <img src="../../assets/images/placeholder1.jpg" class="gifts">
-                                    <div class="product_desc">
-                                            <h4>Monster Toy</h4>
-                                            <p class="price">&pound;25.99</p>
-                                            <img src="../../assets/images/star4.png">
-                                    </div>
+                                <img src="../../assets/images/placeholder1.jpg" class="gifts">
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="../../assets/images/star4.png">
+                                </div>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                    <img src="../../assets/images/placeholder1.jpg" class="gifts"> 
-                                    <div class="product_desc">
-                                            <h4>Monster Toy</h4>
-                                            <p class="price">&pound;25.99</p>
-                                            <img src="../../assets/images/star4.png">
-                                    </div>
+                                <img src="../../assets/images/placeholder1.jpg" class="gifts"> 
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="../../assets/images/star4.png">
+                                </div>
                             </a>
                         </li>
                         <li>
                             <a href="#" title="Arrow right"> 
-                                    <img src="../../assets/images/placeholder1.jpg" class="gifts"> 
-                                    <div class="product_desc">
-                                            <h4>Monster Toy</h4>
-                                            <p class="price">&pound;25.99</p>
-                                            <img src="../../assets/images/star4.png">
-                                    </div>
+                                <img src="../../assets/images/placeholder1.jpg" class="gifts"> 
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="../../assets/images/star4.png">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../assets/images/placeholder1.jpg" class="gifts">
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="../../assets/images/star4.png">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../assets/images/placeholder1.jpg" class="gifts">
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="../../assets/images/star4.png">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../assets/images/placeholder1.jpg" class="gifts"> 
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="../../assets/images/star4.png">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Arrow right"> 
+                                <img src="../../assets/images/placeholder1.jpg" class="gifts"> 
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="../../assets/images/star4.png">
+                                </div>
                             </a>
                         </li>
                     </ul>
