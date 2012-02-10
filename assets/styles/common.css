@@ -83,6 +83,7 @@ a:hover {
 #mini-basket ul li a.close,
 #filter_selectors li p,
 #filter_options p.close,
+#filter_options input[type=submit],
 #pagination li a {background:url('../images/sprites/main_sprite.png') 0 0 no-repeat transparent;}
 
 /*---- HEADER ----*/
@@ -157,7 +158,7 @@ a:hover {
 #filter_selectors li p a, #filter_selectors li p a:hover {color:#fff;}
 #filter_selectors li p a {position:relative; top:115px; text-shadow:0 -2px 0 #285384;}
 
-#filter_options {position:relative; background-color:#3365a7;}
+#filter_options {position:relative; background-color:#3365a7; overflow: hidden;}
 #filter_options ul li {padding:5px 10px 10px;}
 #filter_options ul li.price {text-align:center;}
 #filter_options ul li.price input {margin:20px 0 10px -60px;}
@@ -168,6 +169,10 @@ a:hover {
 #filter_options .filter-options-detail {display:inline-block; border-top:1px solid #6098d6; width:845px; margin-left:5px; padding:8px 0 10px 60px;}
 #filter_options ul.filter-options-detail li {float:left; padding:15px 0 0; min-width:140px;}
 #filter_options ul.filter-options-detail li label {cursor:pointer; font-size:14px;}
+
+#filter_options input[type=submit]{background: #ebebeb; /* Old browsers */ background: -moz-linear-gradient(top, #ebebeb 0%, #d5d5d5 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebebeb), color-stop(100%,#d5d5d5)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #ebebeb 0%,#d5d5d5 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #ebebeb 0%,#d5d5d5 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #ebebeb 0%,#d5d5d5 100%); /* IE10+ */ background: linear-gradient(top, #ebebeb 0%,#d5d5d5 100%); /* W3C */ width:265px; height:32px; display:block; color: #4c4c4c; border: 1px solid #bcbcbc; margin: 0 auto 15px;}
+#filter_options input[type=submit]:hover{cursor: pointer;}
+
 
 /* -- Slider -- */
 

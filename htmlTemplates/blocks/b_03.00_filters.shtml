@@ -198,6 +198,8 @@
                         </div>
                     </li>
                 </ul>
+                <!-- hidden element for keyboard navigation -->
+                <input type="submit" name="submit" value="Find me a gift">
             </form>
 		</div>
     </div>
