@@ -1,4 +1,4 @@
-<div class="footer" id="footer">
+<div class="footer clear" id="footer">
     <ul id="connect">
         <li>Connect with us:</li>
         <li id="twitter-follow"><a href="https://twitter.com/BoonBox" class="twitter-follow-button" data-show-count="false">Follow @BoonBox</a>

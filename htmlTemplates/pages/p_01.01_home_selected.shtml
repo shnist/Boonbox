@@ -20,7 +20,7 @@
               		<ul>
               			<li><a href="#">View All</a></li>
               			<li><a href="#">Reset Selection</a></li>
-              			<li>Sort By: 
+              			<li class="drop_down">Sort By: 
               				<select>
  								<option value="volvo">Price, low to high</option>
   								<option value="saab">Price, high to low</option>
@@ -33,40 +33,137 @@
               	</div>
               	<ul id="results_main" class="clear">
               		<li>
-              			<img src="../../assets/images/placeholder1.jpg">
-              			<div class="product_desc">
-              				<h4>Monster Toy</h4>
-              				<p class="price">£25.99</p>
-              				<img src="../../assets/images/star4.png">
-              			</div>
+              			<a href="#">
+              				<img src="../../assets/images/placeholder1.jpg">
+              				<div class="product_desc">
+              					<h4><a href="#">Monster Toy</a></h4>
+              					<p class="price"><a href="#">£25.99</a></p>
+              					<img src="../../assets/images/star4.png">
+              				</div>
+              			</a>
               		</li>
               		<li>
-              			<img src="../../assets/images/placeholder1.jpg">
-              			<div class="product_desc">
-              				<h4>Monster Toy</h4>
-              				<p class="price">£25.99</p>
-              				<img src="../../assets/images/star4.png">
-              			</div>
+              			<a href="#">
+              				<img src="../../assets/images/placeholder1.jpg">
+              				<div class="product_desc">
+              					<h4><a href="#">Monster Toy</a></h4>
+              					<p class="price"><a href="#">£25.99</a></p>
+              					<img src="../../assets/images/star4.png">
+              				</div>
+              			</a>
               		</li>
               		<li>
-              			<img src="../../assets/images/placeholder1.jpg">
-              			<div class="product_desc">
-              				<h4>Monster Toy</h4>
-              				<p class="price">£25.99</p>
-              				<img src="../../assets/images/star4.png">
-              			</div>
+              			<a href="#">
+              				<img src="../../assets/images/placeholder1.jpg">
+              				<div class="product_desc">
+              					<h4><a href="#">Monster Toy</a></h4>
+              					<p class="price"><a href="#">£25.99</a></p>
+              					<img src="../../assets/images/star4.png">
+              				</div>
+              			</a>
               		</li>
               		<li>
-              			<img src="../../assets/images/placeholder1.jpg">
-              			<div class="product_desc">
-              				<h4>Monster Toy</h4>
-              				<p class="price">£25.99</p>
-              				<img src="../../assets/images/star4.png">
-              			</div>
+              			<a href="#">
+              				<img src="../../assets/images/placeholder1.jpg">
+              				<div class="product_desc">
+              					<h4><a href="#">Monster Toy</a></h4>
+              					<p class="price"><a href="#">£25.99</a></p>
+              					<img src="../../assets/images/star4.png">
+              				</div>
+              			</a>
+              		</li>
+              		<li>
+              			<a href="#">
+              				<img src="../../assets/images/placeholder1.jpg">
+              				<div class="product_desc">
+              					<h4><a href="#">Monster Toy</a></h4>
+              					<p class="price"><a href="#">£25.99</a></p>
+              					<img src="../../assets/images/star4.png">
+              				</div>
+              			</a>
+              		</li>
+              		<li>
+              			<a href="#">
+              				<img src="../../assets/images/placeholder1.jpg">
+              				<div class="product_desc">
+              					<h4><a href="#">Monster Toy</a></h4>
+              					<p class="price"><a href="#">£25.99</a></p>
+              					<img src="../../assets/images/star4.png">
+              				</div>
+              			</a>
+              		</li>
+              		<li>
+              			<a href="#">
+              				<img src="../../assets/images/placeholder1.jpg">
+              				<div class="product_desc">
+              					<h4><a href="#">Monster Toy</a></h4>
+              					<p class="price"><a href="#">£25.99</a></p>
+              					<img src="../../assets/images/star4.png">
+              				</div>
+              			</a>
+              		</li>
+              		<li>
+              			<a href="#">
+              				<img src="../../assets/images/placeholder1.jpg">
+              				<div class="product_desc">
+              					<h4><a href="#">Monster Toy</a></h4>
+              					<p class="price"><a href="#">£25.99</a></p>
+              					<img src="../../assets/images/star4.png">
+              				</div>
+              			</a>
+              		</li>
+              		<li>
+              			<a href="#">
+              				<img src="../../assets/images/placeholder1.jpg">
+              				<div class="product_desc">
+              					<h4><a href="#">Monster Toy</a></h4>
+              					<p class="price"><a href="#">£25.99</a></p>
+              					<img src="../../assets/images/star4.png">
+              				</div>
+              			</a>
+              		</li>
+              		<li>
+              			<a href="#">
+              				<img src="../../assets/images/placeholder1.jpg">
+              				<div class="product_desc">
+              					<h4><a href="#">Monster Toy</a></h4>
+              					<p class="price"><a href="#">£25.99</a></p>
+              					<img src="../../assets/images/star4.png">
+              				</div>
+              			</a>
+              		</li>
+              		<li>
+              			<a href="#">
+              				<img src="../../assets/images/placeholder1.jpg">
+              				<div class="product_desc">
+              					<h4><a href="#">Monster Toy</a></h4>
+              					<p class="price"><a href="#">£25.99</a></p>
+              					<img src="../../assets/images/star4.png">
+              				</div>
+              			</a>
+              		</li>
+              		<li>
+              			<a href="#">
+              				<img src="../../assets/images/placeholder1.jpg">
+              				<div class="product_desc">
+              					<h4><a href="#">Monster Toy</a></h4>
+              					<p class="price"><a href="#">£25.99</a></p>
+              					<img src="../../assets/images/star4.png">
+              				</div>
+              			</a>
               		</li>
               	</ul>
+              	<ul id="pagination" class="clear">
+              		<li class="prev"><a href="#">Previous</a></li>
+              		<li><a class="selected" href="#">1</a></li>
+              		<li><a href="#">2</a></li>
+              		<li><a href="#">3</a></li>
+              		<li><a href="#">4</a></li>
+              		<li><a href="#">5</a></li>
+              		<li class="next"><a href="#">Next</a></li>
+              	</ul>
             </div>
-            </div><!-- footer -->
+            <!-- footer -->
             <!--#include virtual="../blocks/b_02.00_footer.shtml" -->
         </div>
         <!-- scripts go here -->
