@@ -229,10 +229,12 @@ a:hover {
 /* Results */
 #content.results #results_main {width:948px;}
 #content.results #results_main li {position:relative; float:left; margin-right:15px; margin-top:15px; width:220px; height:200px; border:1px solid #d9d9d9;}
-#content.results #results_main li img {width:220px;}
-#content.results #results_main li .product_desc {padding:8px 10px; width:200px; height:54px; position:absolute; bottom:0; left:0; background:url('../images/backgrounds/product_hoverbg.png') repeat transparent;}
-#content.results #results_main li .product_desc a {color:#fff;} 
-#content.results #results_main li .product_desc a:hover {color:#fff; text-decoration:underline;} 
+#results_main li .product_desc {display: none; padding:8px 10px; width:200px; height:54px; position:absolute; bottom:0; left:0; background:url('../images/backgrounds/product_hoverbg.png') repeat transparent;}
+#results_main li a:hover .product_desc{display: block;}
+#results_main li a h4,
+#results_main li a p {color:#fff;} 
+#results_main li a:hover h4,
+#results_main li a:hover p{color:#fff; text-decoration:underline;} 
 #content.results #results_main li .product_desc h4 {font-size:14px; font-weight:bold; line-height:18px;}
 #content.results #results_main li .product_desc p.price {font-size:12px; font-weight:normal;}
 #content.results #results_main li .product_desc img {width:74px; margin-top:6px;}
