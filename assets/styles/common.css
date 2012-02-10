@@ -187,10 +187,10 @@ a:hover {
 
 /* Top gift section */
 #top-section-wrapper {display:inline-block;}
-.top-section {float:left;margin:20px 0 0 8px;width:225px;}
+.top-section {float:left;margin:20px 15px 0 8px;width:215px; border-right: #e7e7e7 1px solid;}
 .top-section h2{color: #2a2a2a;}
 .top-section h4{font-size:80%; font-weight:bold;}
-.top-gifts{margin:10px 20px 0 0; padding:0; border-right: #e7e7e7 1px solid; width:215px; float:left }
+.top-gifts{margin:10px 0 0 0; padding:0;  width:215px; float:left }
 .top-gifts li{padding:7px;margin:0;}
 .top-gifts li:hover{background-color:#f6f6f6;}
 .top-gifts li a {display:inline-block;}
@@ -200,16 +200,15 @@ a:hover {
 .star {padding:8px 0 0 0;}
 
 
-
-.top-links li{float:left;font-size:80%;margin:15px 0 0 0; padding:0 7px 0 7px; border-left:#5f5f5f 1px solid;}
-.top-links li:first-child{padding:0 7px 0 0; border:none;}
+.top-links li{float:left;font-size:80%;margin:15px 0 0 0; padding:0 6px 0 6px; border-left:#5f5f5f 1px solid;}
+.top-links li:first-child{padding:0 6px 0 0; border:none;}
 .top-links li:hover{background:none;}
 
 /* Main carousel */
 .carousel{float:right; padding: 20px 0 0 0;}
 
 /* Suggestions section */
-.suggestions{border-top: #e7e7e7 1px solid; margin:50px 0 0 0;}
+.suggestions{border-top: #e7e7e7 1px solid; margin:20px 0 0 0;}
 .carousel-small{}
 
 /*---- CONTENTS: AFTER FILTRATION----*/
