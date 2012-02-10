@@ -1,6 +1,7 @@
 <!-- libraries -->
 <script src="../../assets/scripts/libs/jquery_1.7.1.js"></script>
 <script src="../../assets/scripts/libs/jquery_ui_1.8.17.min.js"></script>
+<script src="../../assets/scripts/libs/jquery.carouFredSel-5.5.0-packed.js"></script>
 <!-- custom scripts -->
 <script src="../../assets/scripts/boonbox.common.js"></script>
 <script src="../../assets/scripts/boonbox.filters.js"></script>

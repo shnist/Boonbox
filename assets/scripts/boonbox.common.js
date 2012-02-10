@@ -44,6 +44,7 @@ Boonbox.extend('common', {
 	init : function(){
 		this.basket.ui();
 		this.topBuys.init();
+		this.carousel.init();
 		if($.support.opacity !== true){
 			this.placeholder();
 		}
@@ -145,5 +146,13 @@ Boonbox.extend('common', {
 				}
 			});
 		});		
+	},
+	carousel : {
+		init : function () {
+			
+		},
+		startCarousel : function () {
+			
+		}
 	}
 });
