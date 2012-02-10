@@ -133,9 +133,8 @@ Boonbox.extend('filters', {
 			addResultsTemplate : function () {
 				$('#content').append(
 					'<div id="results_top" class="clear">' +
-						'<div>' +
+						'<div class="results_context">' +
 							'<h3>Results</h3>' +
-							'<p>Boon selector has found 34 items</p>' +
 						'</div>' +
 						'<ul>' +
 							'<li><a href="#">View All</a></li>' +
@@ -156,6 +155,9 @@ Boonbox.extend('filters', {
 				);
 			},
 			addResults : function (results) {
+				// first say how many have been created
+				$('.results_context').append('<p>Boon selector has found ' + results.length + ' items</p>');
+				
 				// creating the mark up
 				var i = 0, markUp = '';
 				for (i; i < results.length; i = i + 1){

@@ -13,7 +13,7 @@
         <div id="page" class="clear">
             <div id="content" class="results">
             	<div id="results_top" class="clear">
-              		<div>
+              		<div class="results_context">
               			<h3>Results</h3>
               			<p>Boon selector has found 34 items</p>
               		</div>
