@@ -161,12 +161,19 @@
                 </div>
                 
                 <div class="carousel-wrapper">
-                    <a href="" title="Arrow left"><img src="../../assets/images/arrow_left.png" alt="Arrow left" id="arrow-left"></a>
-                    <a href="" title="Arrow right"><img src="../../assets/images/arrow_right.png" alt="Arrow right" id="arrow-right"></a>
-                    <img src="../../assets/images/carousel_placeholder1.jpg" title="Carousel image 1">
-                    <!--<img src="../../assets/images/carousel_placeholder2.jpg" title="Carousel image 2">
-                    <img src="../../assets/images/carousel_placeholder3.jpg" title="Carousel image 3">-->
-                    
+                    <a href="#" class="prev"><img src="../../assets/images/arrow_left.png" alt="Arrow left" id="arrow-left"></a>
+                    <ul>
+                        <li>
+                            <img src="../../assets/images/carousel_placeholder1.jpg" title="Carousel image 1">
+                        </li>
+                        <li>
+                            <img src="../../assets/images/carousel_placeholder2.jpg" title="Carousel image 2">
+                        </li>
+                        <li>
+                            <img src="../../assets/images/carousel_placeholder3.jpg" title="Carousel image 3">
+                        </li>
+                    </ul>
+                    <a href="#" class="next"><img src="../../assets/images/arrow_right.png" alt="Arrow right" id="arrow-right"></a>                    
                 </div>
             </div>
             <div class="suggestions clear">

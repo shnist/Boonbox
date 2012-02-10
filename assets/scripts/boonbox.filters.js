@@ -317,7 +317,6 @@ Boonbox.extend('filters', {
 		newPage : function(page){
 			Boonbox.filters.dom.resetResults();
 			Boonbox.filters.dom.addResults(Boonbox.results, page);
-			
 		}
 	}
 });
