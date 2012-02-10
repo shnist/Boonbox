@@ -208,8 +208,10 @@ Boonbox.extend('filters', {
 			 * @memberOf Boonbox.filters.submit.dom
 			 */
 			resetResults : function (){
-				
-				
+				if ($('#results_main li').length !== 0){
+					$('#results_main').empty();
+					$('#pagination').remove();
+				}
 			}
 		}
 	},
