@@ -206,7 +206,8 @@ a:hover {
 .top-links a.active{color: #478cd3;}
 
 /* Main carousel */
-.carousel-wrapper{display: inline-block; vertical-align: top; padding: 20px 0 0 0; width:697px; /*height:410px;*/ position:relative;}
+.carousel{display: inline-block; vertical-align: top; padding: 20px 0 0 0; width:697px;}
+.carousel-wrapper{ /*height:410px;*/ position:relative;}
 .carousel-wrapper img{border: #d9d9d9 1px solid;}
 .carousel-small-wrapper .prev,
 .carousel-small-wrapper .next,
