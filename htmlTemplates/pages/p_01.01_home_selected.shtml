@@ -159,13 +159,13 @@
               		</li>
               	</ul>
               	<ul id="pagination" class="clear">
-              		<li class="prev"><a href="#">Previous</a></li>
-              		<li><a class="selected" href="#">1</a></li>
-              		<li><a href="#">2</a></li>
-              		<li><a href="#">3</a></li>
-              		<li><a href="#">4</a></li>
-              		<li><a href="#">5</a></li>
-              		<li class="next"><a href="#">Next</a></li>
+              		<li class="prev"><a href="#prev">Previous</a></li>
+              		<li><a class="selected" href="#1">1</a></li>
+              		<li><a href="#2">2</a></li>
+              		<li><a href="#3">3</a></li>
+              		<li><a href="#4">4</a></li>
+              		<li><a href="#5">5</a></li>
+              		<li class="next"><a href="#next">Next</a></li>
               	</ul>
             </div>
 		</div>

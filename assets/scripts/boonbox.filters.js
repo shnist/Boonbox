@@ -113,107 +113,11 @@ Boonbox.extend('filters', {
 			$('#filter_options form').submit(function (event) {
 				event.preventDefault();
 				var searchOptions = $(this).serialize();
-				Boonbox.filters.submit.dom.init(searchOptions);
+				Boonbox.filters.dom.init(searchOptions);
 			});
 		},
 		triggerSubmit : function () {
 			$('#filter_options form').submit();	
-		},
-		dom : {
-			init : function (searchOptions) {
-				if ($('#content.results').length === 0){
-					$('#content').addClass('results');
-					$('#content').empty();
-					Boonbox.filters.submit.dom.addResultsTemplate();
-				}
-				Boonbox.filters.ajax.init(searchOptions);
-			},
-			/* add the results template */
-			addResultsTemplate : function () {
-				$('#content').append(
-					'<div id="results_top" class="clear">' +
-						'<div class="results_context">' +
-							'<h3>Results</h3>' +
-							'<p>Boonbox selector is searching...</p>' +
-						'</div>' +
-						'<ul>' +
-							'<li><a href="#">View All</a></li>' +
-							'<li><a href="#">Reset Selection</a></li>' +
-							'<li class="drop_down">Sort By:' + 
-								'<select>' +
-									'<option value="price-low">Price, low to high</option>' +
-									'<option value="price-high">Price, high to low</option>' +
-									'<option value="relevance">Relevance</option>' +
-									'<option value="selling">Best Selling</option>' +
-									'<option value="reviews">Best Reviews</option>' +
-								'</select>' +
-							'</li>' +
-						'</ul>' +
-					'</div>' +
-					'<ul id="results_main" class="clear no-js">'+
-					'</ul>'
-				);
-				
-				$('#results_main').removeClass('no-js');
-			},
-			addResults : function (results) {
-				// first say how many have been created
-				$('.results_context p').html('Boon selector has found ' + results.length + ' items');
-				var i = 0, j = 0, productMarkUp = '', paginationMarkUp = '', maxProducts = 12;
-				
-				// creating pagination if necessary
-				if (results.length > 12){
-					var paginationNumber = Math.ceil(results.length / 12);
-
-					paginationMarkup = '<ul id="pagination" class="clear">' +
-											'<li class="prev"><a href="#">Previous</a></li>';
-					for (j; j < paginationNumber; j = j + 1){
-						paginationMarkup = paginationMarkup + '<li><a href="#' + (j + 1) + '">' + (j + 1) + '</a></li>';
-					}
-					paginationMarkup = paginationMarkup + '<li class="next"><a href="#">Next</a></li>' +
-						'</ul>';
-						
-					$('#content').append(paginationMarkup);
-					
-					// add selected class to last pagination number
-					$('#pagination a[href=#1]').addClass('selected');	
-					// initialise event binding
-					Boonbox.filters.results.ui.pagination();
-									
-				} else {
-					maxProducts = results.length;
-				}
-
-				
-				// creating the mark up for products
-				for (i; i < maxProducts; i = i + 1){
-					productMarkUp = productMarkUp +
-						'<li>' +
-							'<a href="#">' +
-								'<img src="' + results[i].image + '" alt="' + results[i].name + '">' +
-								'<div class="product_desc">' +
-									'<h4>' + results[i].name + '</h4>' +
-									'<p class="price">£' + results[i].price + '</p>' +
-									'<img src="../../assets/images/star' + results[i].rating + '.png">' +
-								'</div>' +
-							'</a>' +
-						'</li>'
-				}
-				$('#results_main').append(productMarkUp);
-				// start the ui for the results
-				Boonbox.filters.results.ui.init();
-			},
-			/**
-			 * Method that resets the DOM if results already exist
-			 * @function
-			 * @memberOf Boonbox.filters.submit.dom
-			 */
-			resetResults : function (){
-				if ($('#results_main li').length !== 0){
-					$('#results_main').empty();
-					$('#pagination').remove();
-				}
-			}
 		}
 	},
 	/**
@@ -239,8 +143,10 @@ Boonbox.extend('filters', {
 				success : function (data) {
 					$('.overlay').remove();
 					$('#content.results').removeClass('ajax');
-					Boonbox.filters.submit.dom.resetResults();
-					Boonbox.filters.submit.dom.addResults(data);
+					// results stored here
+					Boonbox.results = data;
+					Boonbox.filters.dom.resetResults();
+					Boonbox.filters.dom.addResults(data, 1);
 				},
 				error: function (object, stat, error) {
 					console.log(stat + ': ' + error);
@@ -274,9 +180,144 @@ Boonbox.extend('filters', {
 			 * @memberOf Boonbox.filters.results
 			 */ 
 			pagination : function(){
-				console.log('pagination ready');
+				$('#pagination a').click(function (event) {
+					event.preventDefault();
+					var clicked = $(this).attr('href'),
+						currentPage = $('#pagination .selected').attr('href'),
+						lastPage = $('#pagination li').eq($('#pagination li').length - 1).children('a').attr('href'),
+						newPage;
+						
+					clicked = clicked.replace('#', '');
+					currentPage = currentPage.replace('#', '');
+					lastPage = lastPage.replace('#', '');
+						
+					'<li class="prev"><a href="#prev">Previous</a></li>';
+					
+					if (clicked === 'prev'){
+						newPage = Number(currentPage) - 1;						
+					} else if (clicked === 'next'){
+						newPage = Number(currentPage) + 1;
+					} else {
+						newPage = Number(clicked);
+					}
+					// adjust dom to simulate new page
+					Boonbox.filters.dom.newPage(newPage);
+				});
 			}
 		}
-		
+	},
+	dom : {
+		init : function (searchOptions) {
+			if ($('#content.results').length === 0){
+				$('#content').addClass('results');
+				$('#content').empty();
+				Boonbox.filters.dom.addResultsTemplate();
+			}
+			Boonbox.filters.ajax.init(searchOptions);
+		},
+		/* add the results template */
+		addResultsTemplate : function () {
+			$('#content').append(
+				'<div id="results_top" class="clear">' +
+					'<div class="results_context">' +
+						'<h3>Results</h3>' +
+						'<p>Boonbox selector is searching...</p>' +
+					'</div>' +
+					'<ul>' +
+						'<li><a href="#">View All</a></li>' +
+						'<li><a href="#">Reset Selection</a></li>' +
+						'<li class="drop_down">Sort By:' + 
+							'<select>' +
+								'<option value="price-low">Price, low to high</option>' +
+								'<option value="price-high">Price, high to low</option>' +
+								'<option value="relevance">Relevance</option>' +
+								'<option value="selling">Best Selling</option>' +
+								'<option value="reviews">Best Reviews</option>' +
+							'</select>' +
+						'</li>' +
+					'</ul>' +
+				'</div>' +
+				'<ul id="results_main" class="clear no-js">'+
+				'</ul>'
+			);
+			
+			$('#results_main').removeClass('no-js');
+		},
+		addResults : function (results, pageNumber) {
+			// first say how many have been created
+			$('.results_context p').html('Boon selector has found ' + results.length + ' items');
+			var i = 0, j = 0, productMarkUp = '', paginationMarkUp = '', itemsPerPage = 12, maxProducts = itemsPerPage * pageNumber;
+			
+			// creating pagination if necessary
+			if (results.length > 12){
+				var paginationNumber = Math.ceil(results.length / 12);
+
+				paginationMarkup = '<ul id="pagination" class="clear">';
+				if (pageNumber !== 1){
+					paginationMarkup = paginationMarkup + '<li class="prev"><a href="#prev">Previous</a></li>';
+				}
+				for (j; j < paginationNumber; j = j + 1){
+					paginationMarkup = paginationMarkup + '<li><a href="#' + (j + 1) + '">' + (j + 1) + '</a></li>';
+				}
+				if (pageNumber !== paginationNumber){
+					paginationMarkup = paginationMarkup + '<li class="next"><a href="#next">Next</a></li>';
+				}
+				paginationMarkup = paginationMarkup + '</ul>';
+					
+				$('#content').append(paginationMarkup);
+				
+				// add selected class to last pagination number
+				$('#pagination a[href=#'+pageNumber+']').addClass('selected');	
+				// initialise event binding
+				Boonbox.filters.results.ui.pagination();
+								
+			} else {
+				maxProducts = results.length;
+			}
+						
+			// setting i depending on page number
+			if (pageNumber !== 1){
+				i = (pageNumber * itemsPerPage) / 2;
+			}
+			
+			// checking if this is the last page, if so then set maxProducts to results.length
+			if(pageNumber === paginationNumber){
+				maxProducts = results.length;
+			}
+			
+			// creating the mark up for products
+			for (i; i < maxProducts; i = i + 1){
+				productMarkUp = productMarkUp +
+					'<li>' +
+						'<a href="#">' +
+							'<img src="' + results[i].image + '" alt="' + results[i].name + '">' +
+							'<div class="product_desc">' +
+								'<h4>' + results[i].name + '</h4>' +
+								'<p class="price">£' + results[i].price + '</p>' +
+								'<img src="../../assets/images/star' + results[i].rating + '.png">' +
+							'</div>' +
+						'</a>' +
+					'</li>'
+			}
+			$('#results_main').append(productMarkUp);
+			// start the ui for the results
+			Boonbox.filters.results.ui.init();
+		},
+		/**
+		 * Method that resets the DOM if results already exist
+		 * @function
+		 * @memberOf Boonbox.filters.dom
+		 */
+		resetResults : function (){
+			if ($('#results_main li').length !== 0){
+				$('#results_main').empty();
+				$('#pagination').remove();
+			}
+		},
+		newPage : function(page){
+			Boonbox.filters.dom.resetResults();
+			Boonbox.filters.dom.addResults(Boonbox.results, page);
+			
+		}
 	}
 });
