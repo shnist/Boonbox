@@ -203,6 +203,7 @@ a:hover {
 .top-links li{float:left;font-size:80%;margin:15px 0 0 0; padding:0 6px 0 6px; border-left:#5f5f5f 1px solid;}
 .top-links li:first-child{padding:0 6px 0 0; border:none;}
 .top-links li:hover{background:none;}
+.top-links a.active{color: #478cd3;}
 
 /* Main carousel */
 .carousel{float:right; padding: 20px 0 0 0;}

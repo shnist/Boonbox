@@ -98,12 +98,16 @@ Boonbox.extend('common', {
 		init : function () {
 			$('.month, .year', '.top-section').addClass('hidden');
 			$('.week', '.top-section').addClass('active');
-			
+			$('.top-links a[href=#week]', '.top-section').addClass('active');
 			Boonbox.common.topBuys.ui();
 		},
 		ui : function () {
 			$('.top-links a', '.top-section').click(function (e) {
 				e.preventDefault();
+				
+				$('.top-links a', '.top-section').removeClass('active');
+				$(this).addClass('active');
+				
 				var tab = $(this).attr('href');
 					tab = tab.replace('#', '');
 				
@@ -112,7 +116,8 @@ Boonbox.extend('common', {
 					activeTab = activeTab[1];
 				
 				if (tab !== activeTab){
-					$('.active', '.top-section').removeClass('active').addClass('hidden');
+					$('.top-gifts', '.top-section').removeClass('active').addClass('hidden');
+					$('.top-gifts', '.top-section').siblings('h2').removeClass('active').addClass('hidden');
 					$('.' + tab + ',' + '.top-section').removeClass('hidden').addClass('active');
 				}
 			});
@@ -151,6 +156,7 @@ Boonbox.extend('common', {
 		init : function () {
 			$('.carousel-small').removeClass('no-js');
 			Boonbox.common.carousel.slide();
+			Boonbox.common.carousel.startCarousel();
 		},
 		/**
 		 * Method that does the slide stuff for the product items
@@ -167,7 +173,8 @@ Boonbox.extend('common', {
 			});
 		},
 		startCarousel : function () {
-			
+			//console.log('started carousel');
+			//$('.carousel_small, .carousel').carouFredSel();
 		}
 	}
 });
