@@ -159,11 +159,31 @@ Boonbox.extend('filters', {
 			addResults : function (results) {
 				// first say how many have been created
 				$('.results_context p').html('Boon selector has found ' + results.length + ' items');
+				var i = 0, j = 0, productMarkUp = '', paginationMarkUp = '', maxProducts = 16;
 				
-				// creating the mark up
-				var i = 0, markUp = '';
-				for (i; i < results.length; i = i + 1){
-					markUp = markUp +
+				// creating pagination if necessary
+				if (results > 16){
+					var paginationNumber = Math.ceil(results.length / 16);
+					paginationMarkup = '<ul id="pagination" class="clear">' +
+											'<li class="prev"><a href="#">Previous</a></li>';
+					for (j; j < paginationNumber; j = j + 1){
+						paginationMarkUp = paginationMarkup + '<li><a href="#' + j + '">' + j + '</a></li>';
+					}
+					paginationMarkup = paginationMarkup + '<li class="next"><a href="#">Next</a></li>' +
+						'</ul>';
+						
+					$('#content').append(paginationMarkup);
+					// add selected class to last pagination number
+
+					
+				} else {
+					maxProducts = results.length;
+				}
+
+				
+				// creating the mark up for products
+				for (i; i < maxProducts; i = i + 1){
+					productMarkUp = productMarkUp +
 						'<li>' +
 							'<a href="#">' +
 								'<img src="' + results[i].image + '" alt="' + results[i].name + '">' +
@@ -175,7 +195,7 @@ Boonbox.extend('filters', {
 							'</a>' +
 						'</li>'
 				}
-				$('#results_main').append(markUp);
+				$('#results_main').append(productMarkUp);
 				// start the ui for the results
 				Boonbox.filters.results.ui.init();
 			}
@@ -225,8 +245,6 @@ Boonbox.extend('filters', {
 					event.stopPropagation();
 					$('.product_desc', this).slideUp(400);
 				});
-				
-				
 			}
 		}
 		
