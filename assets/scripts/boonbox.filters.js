@@ -156,7 +156,15 @@ Boonbox.extend('filters', {
 				);
 			},
 			addResults : function (results) {
-				console.log(results);
+				// creating the mark up
+				var i = 0, markUp = '';
+				for (i; i < results.length; i = i + 1){
+					markUp = markUp +
+						'<li> '
+				}
+				
+				
+				$('#results_main').append();
 			}
 		}
 	},
@@ -176,6 +184,7 @@ Boonbox.extend('filters', {
 				data: searchOptions,
 				dataType: 'json',
 				success : function (data) {
+					$('#results_main .loader').remove();
 					Boonbox.filters.submit.dom.addResults(data)
 				}
 			});
