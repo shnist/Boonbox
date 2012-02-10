@@ -164,10 +164,9 @@
                     <img src="../../assets/images/carousel1.jpg" title="Carousel image 1">
                 </div>
             </div>
-            <!-- please do not use empty clear divs -->
             <div class="suggestions clear">
                 <h2>Our suggestions</h2>
-                <ul class="carousel-small">
+                <ul class="carousel-small no-js">
                     <li>
                         <a href="#">
                                 <img src="../../assets/images/placeholder1.jpg">

@@ -149,7 +149,22 @@ Boonbox.extend('common', {
 	},
 	carousel : {
 		init : function () {
-			
+			$('.carousel-small').removeClass('no-js');
+			Boonbox.common.carousel.slide();
+		},
+		/**
+		 * Method that does the slide stuff for the product items
+		 * @function
+		 * @memberof Boonbox.common.carousel
+		 */ 
+		slide: function () {
+			$('.carousel-small a').mouseenter(function (event) {
+				event.stopPropagation();
+				$('.product_desc', this).slideDown(400);				
+			}).mouseleave(function (event) {
+				event.stopPropagation();
+				$('.product_desc', this).slideUp(400);
+			});
 		},
 		startCarousel : function () {
 			
