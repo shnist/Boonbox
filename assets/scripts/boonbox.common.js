@@ -155,6 +155,7 @@ Boonbox.extend('common', {
 	carousel : {
 		init : function () {
 			$('.carousel-small').removeClass('no-js');
+			$('.carousel, .carousel-small').before('<a href="#" class="prev"></a>').after('<a href="#" class="next"></a>');
 			Boonbox.common.carousel.slide();
 			Boonbox.common.carousel.startCarousel();
 		},
@@ -173,8 +174,40 @@ Boonbox.extend('common', {
 			});
 		},
 		startCarousel : function () {
-			//console.log('started carousel');
-			//$('.carousel_small, .carousel').carouFredSel();
+			$('.carousel').carouFredSel({
+				items : 1,
+				scroll: 1,
+				width: 705,
+				height: 415,
+				auto : {
+					play: false
+				},
+				prev : {
+					button: '.carousel-wrapper .prev',
+			        key: 'left'
+				},
+				next : {
+					button: '.carousel-wrapper .next',
+					key: 'right'
+				}
+			});
+			$('.carousel-small').carouFredSel({
+				items : 4,
+				scroll: 4,
+				width: 950,
+				height: 205,
+				auto : {
+					play: false
+				},
+				prev : {
+					button: '.carousel-small-wrapper .prev',
+			        key: 'left'
+				},
+				next : {
+					button: '.carousel-small-wrapper .next',
+					key: 'right'
+				}
+			});
 		}
 	}
 });
