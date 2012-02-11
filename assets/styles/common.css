@@ -214,16 +214,15 @@ a:hover {
 .carousel-wrapper .next{z-index: 10; position:absolute;top:0;border:none; display: block; width: 19px; height: 34px;}
 .carousel-small-wrapper .prev,
 .carousel-wrapper .prev{background:url('../images/arrow_left.png') 0 0 no-repeat;}
-.carousel-wrapper .prev{left: 5px; top: 200px;}
+.carousel-wrapper .prev{left: 10px; top: 200px;}
 .carousel-small-wrapper .prev{left: -30px; top: 90px;}
 .carousel-small-wrapper .next,
 .carousel-wrapper .next{background:url('../images/arrow_right.png') 0 0 no-repeat;}
-.carousel-wrapper .next{right: 5px; top: 200px;}
-.carousel-wrapper .next{right: 5px; top: 200px;}
+.carousel-wrapper .next{right: 0; top: 200px;}
 .carousel-small-wrapper .next{right: -20px; top: 90px;}
 
 .carousel li{display: inline; float: left;}
-.carousel-small li{display: inline; float: left;}
+.carousel-small li{display: inline; float: left; position: relative;}
 
 
 /* Suggestions carousel */
