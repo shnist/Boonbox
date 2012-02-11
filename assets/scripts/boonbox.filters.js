@@ -290,7 +290,7 @@ Boonbox.extend('filters', {
 				productMarkUp = productMarkUp +
 					'<li>' +
 						'<a href="#">' +
-							'<img src="' + results[i].image + '" alt="' + results[i].name + '">' +
+							'<img src="' + String(results[i].image) + '" alt="' + results[i].name + '">' +
 							'<div class="product_desc">' +
 								'<h4>' + results[i].name + '</h4>' +
 								'<p class="price">£' + results[i].price + '</p>' +
