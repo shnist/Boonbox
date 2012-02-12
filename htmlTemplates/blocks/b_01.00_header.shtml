@@ -11,13 +11,16 @@
     </div>
     <div id="main-header">
     	<a href=""><img id="logo" src="../../assets/images/boonbox.jpg" title="Boonbox"></a>
-        <input type="text" placeholder="I'm looking for...">
+        <div id="search">
+        	<input type="text" placeholder="I'm looking for...">
+        	<input type="button" name="search">
+		</div>
         <div id="basket">
-          	<p id="basket-summary"><a href="#" alt="View my basket">My Basket <span>(£40)</span></a></p>
+          	<p id="basket-summary"><a href="#" alt="View my basket">My Bag <span>(£40)</span></a></p>
             <div id="mini-basket">
                 <ul>
                 	<li>
-                    	<a href="" title="Blow Monkey Nail Dryer">
+                    	<a href="#" title="Blow Monkey Nail Dryer">
                             <img src="../../assets/images/mini_basket_placeholder1.jpg" title="Product 1">
                             <div class="product_detail">
                             	<h4>Blow Monkey Nail Dryer</h4>
