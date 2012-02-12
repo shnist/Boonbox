@@ -285,11 +285,15 @@ a:hover {
 #pagination {left:352px; position:relative; top:18px; width:225px;}
 #pagination li {float:left; margin-left:5px; text-align:center;}
 #pagination li a {font-size:12px; padding-top:6px; display:inline-block; font-weight:bold; color:#717171; width:27px; height:20px; background-position:-71px -412px;}
+#pagination li a:hover {text-decoration:underline;}
 #pagination li.prev a,
 #pagination li.next a {text-indent:-999em;}
 #pagination li.prev a {background-position:-5px -412px;}
 #pagination li.next a {background-position:-39px -412px}
 #pagination li a.selected {background-position:-104px -412px; color:#fff;}
+#pagination li.disabled a {cursor: default; }
+#pagination li.prev.disabled a {background-position:-5px -444px;}
+#pagination li.next.disabled a {background-position:-39px -444px}
 
 /*---- FOOTER ----*/
 

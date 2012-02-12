@@ -159,7 +159,7 @@
               		</li>
               	</ul>
               	<ul id="pagination" class="clear">
-              		<li class="prev"><a href="#prev">Previous</a></li>
+              		<li class="prev disabled"><a href="#prev">Previous</a></li>
               		<li><a class="selected" href="#1">1</a></li>
               		<li><a href="#2">2</a></li>
               		<li><a href="#3">3</a></li>
