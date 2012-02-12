@@ -177,8 +177,8 @@ Boonbox.extend('common', {
 			$('.carousel').carouFredSel({
 				items : 1,
 				scroll: 1,
-				width: 705,
-				height: 415,
+				width: 731,
+				height: 419,
 				auto : {
 					play: false
 				},
@@ -194,7 +194,7 @@ Boonbox.extend('common', {
 			$('.carousel-small').carouFredSel({
 				items : 4,
 				scroll: 4,
-				width: 950,
+				width: 918,
 				height: 205,
 				auto : {
 					play: false
