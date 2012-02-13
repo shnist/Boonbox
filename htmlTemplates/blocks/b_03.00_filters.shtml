@@ -109,39 +109,39 @@
                         <h4>3. What is the occasion? <span>(select an option below)</span></h4>
                         <ul class="filter-options-detail clear">
                             <li>
-                                <input id="birthday" type="checkbox" name="occasion" value="Birthday" >
+                                <input id="birthday" type="radio" name="occasion" value="Birthday" >
                                 <label for="birthday">Birthday</label>
                             </li>
                             <li>
-                                <input id="wedding" type="checkbox" name="occasion" value="Wedding" >
+                                <input id="wedding" type="radio" name="occasion" value="Wedding" >
                                 <label for="wedding">Wedding</label>
                             </li>
                             <li>
-                                <input id="anniversary" type="checkbox" name="occasion" value="Anniversary" >
+                                <input id="anniversary" type="radio" name="occasion" value="Anniversary" >
                                 <label for="anniversary">Anniversary</label>
                             </li>
                             <li>
-                                <input id="new-baby" type="checkbox" name="occasion" value="New Baby" >
+                                <input id="new-baby" type="radio" name="occasion" value="New Baby" >
                                 <label for="boyfriend">New Baby</label>
                             </li>
                             <li>
-                                <input id="new-job" type="checkbox" name="occasion" value="New Job" >
+                                <input id="new-job" type="radio" name="occasion" value="New Job" >
                                 <label for="new-job">New Job</label>
                             </li>
                             <li>
-                                <input id="christmas" type="checkbox" name="occasion" value="Christmas" >
+                                <input id="christmas" type="radio" name="occasion" value="Christmas" >
                                 <label for="christmas">Christmas</label>
                             </li>
                             <li>
-                                <input id="valentines" type="checkbox" name="occasion" value="Valentines" >
+                                <input id="valentines" type="radio" name="occasion" value="Valentines" >
                             <label for="valentines">Valentines</label>
                             </li>
                             <li>
-                                <input id="graduation" type="checkbox" name="occasion" value="Graduation" >
+                                <input id="graduation" type="radio" name="occasion" value="Graduation" >
                                 <label for="graduation">Graduation</label>
                             </li>
                             <li>
-                                <input id="retirement" type="checkbox" name="occasion" value="Retirement" >
+                                <input id="retirement" type="radio" name="occasion" value="Retirement" >
                                 <label for="retirement">Retirement</label>
                             </li>
                         </ul>
