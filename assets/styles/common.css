@@ -296,15 +296,16 @@ a:hover {
 #footer{color:#5f5f5f;font-size:80%; margin:15px auto; width:940px;}
 
 /* Connect */
-#connect {display:inline-block; margin-left:10px; width:920px; padding:20px 0 15px 0; border-top: #e7e7e7 1px solid;border-bottom: #e7e7e7 1px solid; color:#2a2a2a;}
-#connect li{float:left; margin:0 0 0 15px;}
+#connect {display:inline-block; letter-spacing: -4px; margin-left:10px; width:920px; padding:20px 0 15px 0; border-top: #e7e7e7 1px solid;border-bottom: #e7e7e7 1px solid; color:#2a2a2a;}
+#connect li{display: inline-block; letter-spacing: 0; vertical-align: top; margin:0 0 5px 13px;}
 #connect li:first-child{margin:0;}
-#twitter-follow{width:145px; position:relative; top:-4px;}
-#rss a{ background:url('../images/backgrounds/rss.jpg') 0 1px no-repeat; padding:5px 0 3px 30px;font-weight:bold;margin:0 15px 0 0;}
-#twitter a{ background:url('../images/backgrounds/twitter.jpg') 0 1px no-repeat;padding:5px 0 3px 30px;font-weight:bold;margin:0 15px 0 0;}
-#facebook a{ background:url('../images/backgrounds/facebook.jpg') 0 1px no-repeat;padding:5px 0 3px 30px;font-weight:bold;margin:0 24px 0 0;}
-#email a{ background:url('../images/backgrounds/email.jpg') 0 1px no-repeat;padding:4px 0 0 40px;font-weight:bold;}
-#connect input {color:#5f5f5f; font-size:12px; font-style:italic; padding:4px 3px 3px 5px; width:175px;  border:1px solid #CCCCCC; margin:-8px 0 0 0;}
+#twitter-follow{width:145px;}
+#connect a{padding:5px 0 3px 30px; font-weight:bold; margin:0 15px 0 0; display: block;}
+#rss a{ background:url('../images/backgrounds/rss.jpg') 0 1px no-repeat; }
+#twitter a{ background:url('../images/backgrounds/twitter.jpg') 0 1px no-repeat;}
+#facebook a{ background:url('../images/backgrounds/facebook.jpg') 0 1px no-repeat;}
+#email span{ background:url('../images/backgrounds/email.jpg') 0 1px no-repeat;padding:4px 0 0 40px;font-weight:bold;display: block;}
+#connect input {color:#5f5f5f; font-size:12px; font-style:italic; padding:4px 3px 3px 5px; width:175px;  border:1px solid #CCCCCC;}
 
 /* Sitemap */
 #sitemap{padding:10px 0 15px; border-bottom: #e7e7e7 1px solid;}

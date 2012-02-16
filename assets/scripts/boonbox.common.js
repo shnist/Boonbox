@@ -48,6 +48,7 @@ Boonbox.extend('common', {
 		if($.support.opacity !== true){
 			this.placeholder();
 		}
+		this.mailingList();
 	},
 	basket : {
 		ui : function (){
@@ -209,5 +210,8 @@ Boonbox.extend('common', {
 				}
 			});
 		}
+	},
+	mailingList : function () {
+		$('#mailing-list input[type=submit]').addClass('hidden');
 	}
 });

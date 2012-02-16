@@ -1,14 +1,20 @@
 <div class="footer clear" id="footer">
-    <ul id="connect">
-        <li>Connect with us:</li>
-        <li id="twitter-follow"><a href="https://twitter.com/BoonBox" class="twitter-follow-button" data-show-count="false">Follow @BoonBox</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
-        <li id="rss"><a href="#" title="RSS">2,964</a></li>
-        <li id="twitter"><a href="#" title="Twitter">2,252</a></li>
-        <li id="facebook"><a href="#" title="Facebook">1,997</a></li>
-        <li id="email"><a href="#" title="E-mail">Join our mailing list:</a></li>
-        <li id="last"><input type="text" placeholder="enter your email here..."></li>
-    </ul>
+    <form method="POST" action="/" id="mailing-list">
+        <ul id="connect">
+            <li>Connect with us:</li>
+            <li id="twitter-follow"><a href="https://twitter.com/BoonBox" class="twitter-follow-button" data-show-count="false">Follow @BoonBox</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+            <li id="rss"><a href="#" title="RSS">2,964</a></li>
+            <li id="twitter"><a href="#" title="Twitter">2,252</a></li>
+            <li id="facebook"><a href="#" title="Facebook">1,997</a></li>
+            <li id="email"><span>Join our mailing list:</span></li>
+            <li id="last">
+                <input type="text" placeholder="enter your email here...">
+                <input type="text" name="submitted" disabled="disabled" class="hidden">
+                <input type="submit" name="submit" value="Join">
+            </li>
+        </ul>
+    </form>
     
     <div id="sitemap">
            <ul>
