@@ -199,8 +199,8 @@ a:hover {
 .star {padding:8px 0 0 0;}
 
 .top-links {margin-left:9px; width:195px;}
-.top-links li {float:left; font-size:12px; margin:5px 0 0 0; padding:0 6px 0 6px; border-left:#5f5f5f 1px solid;}
-.top-links li:first-child {padding:0 6px 0 0; border:none;}
+.top-links li {float:left; font-size:12px; margin:5px 0 0 0; padding:0 5px 0 5px; border-left:#5f5f5f 1px solid;}
+.top-links li:first-child {padding:0 5px 0 0; border:none;}
 .top-links li:hover {background:none;}
 .top-links a.active {color: #478cd3;}
 
