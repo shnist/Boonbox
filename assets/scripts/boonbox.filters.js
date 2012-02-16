@@ -72,6 +72,11 @@ Boonbox.extend('filters', {
 				values: [ 15, 300 ],
 				slide: function( event, ui ) {
 					$('#price-range').val( "£" + ui.values[ 0 ] + " - £" + ui.values[ 1 ] );
+				},
+				change: function (event, ui) {
+					var timer;
+					clearTimeout(timer);
+					timer = setTimeout(Boonbox.filters.search.delay, 1000);
 				}
 			});
 			$('#price-range').val("$" + $('#slider-range').slider( "values", 0 ) +
