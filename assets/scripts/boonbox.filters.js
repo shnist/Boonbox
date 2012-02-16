@@ -253,13 +253,17 @@ Boonbox.extend('filters', {
 				var paginationNumber = Math.ceil(results.length / 12);
 
 				paginationMarkup = '<ul id="pagination" class="clear">';
-				if (pageNumber !== 1){
+				if (pageNumber === 1){
+					paginationMarkup = paginationMarkup + '<li class="prev disabled"><a href="#prev">Previous</a></li>';
+				} else {
 					paginationMarkup = paginationMarkup + '<li class="prev"><a href="#prev">Previous</a></li>';
 				}
 				for (j; j < paginationNumber; j = j + 1){
 					paginationMarkup = paginationMarkup + '<li><a href="#' + (j + 1) + '">' + (j + 1) + '</a></li>';
 				}
-				if (pageNumber !== paginationNumber){
+				if (pageNumber === paginationNumber){
+					paginationMarkup = paginationMarkup + '<li class="next disabled"><a href="#next">Next</a></li>';
+				} else {
 					paginationMarkup = paginationMarkup + '<li class="next"><a href="#next">Next</a></li>';
 				}
 				paginationMarkup = paginationMarkup + '</ul>';
