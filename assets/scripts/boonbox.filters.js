@@ -195,8 +195,6 @@ Boonbox.extend('filters', {
 					clicked = clicked.replace('#', '');
 					currentPage = currentPage.replace('#', '');
 					lastPage = lastPage.replace('#', '');
-						
-					'<li class="prev"><a href="#prev">Previous</a></li>';
 					
 					if (clicked === 'prev'){
 						newPage = Number(currentPage) - 1;						
@@ -286,13 +284,19 @@ Boonbox.extend('filters', {
 						
 			// setting i depending on page number
 			if (pageNumber !== 1){
-				i = (pageNumber * itemsPerPage) / 2;
+				console.log('items per page: ' + itemsPerPage);
+				console.log('page number: ' + pageNumber);
+				console.log(pageNumber * itemsPerPage);
+				i = (pageNumber * itemsPerPage) - itemsPerPage;
 			}
 			
 			// checking if this is the last page, if so then set maxProducts to results.length
 			if(pageNumber === paginationNumber){
 				maxProducts = results.length;
 			}
+			
+			console.log('i:' + i);
+			console.log('max products:' + maxProducts)
 			
 			// creating the mark up for products
 			for (i; i < maxProducts; i = i + 1){
