@@ -92,7 +92,19 @@ Boonbox.extend('common', {
 		removeItem : function ($item) {
 			$item.fadeOut(1000, function () {
 				$(this).remove();
+				// update basket total
+				Boonbox.common.basket.updateBasketTotal();	
 			});
+		},
+		updateBasketTotal : function () {
+			var total = 0;
+			$('#mini-basket .price').each(function () {
+				var price = Number($(this).html().replace('£', ''));
+				console.log(price);
+				total = total + price;
+			})
+			$('#basket-summary span').html('(£' + total + ')');
+			$('#mini-basket h3 span').html('£' + total + '.00');
 		}
 	},
 	topBuys : {
