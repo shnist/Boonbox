@@ -189,24 +189,26 @@ Boonbox.extend('filters', {
 			pagination : function(){
 				$('#pagination a').click(function (event) {
 					event.preventDefault();
-					var clicked = $(this).attr('href'),
-						currentPage = $('#pagination .selected').attr('href'),
-						lastPage = $('#pagination li').eq($('#pagination li').length - 1).children('a').attr('href'),
-						newPage;
+					if ($(this).parent('li').hasClass('disabled') !== true){
+						var clicked = $(this).attr('href'),
+							currentPage = $('#pagination .selected').attr('href'),
+							lastPage = $('#pagination li').eq($('#pagination li').length - 1).children('a').attr('href'),
+							newPage;
+							
+						clicked = clicked.replace('#', '');
+						currentPage = currentPage.replace('#', '');
+						lastPage = lastPage.replace('#', '');
 						
-					clicked = clicked.replace('#', '');
-					currentPage = currentPage.replace('#', '');
-					lastPage = lastPage.replace('#', '');
-					
-					if (clicked === 'prev'){
-						newPage = Number(currentPage) - 1;						
-					} else if (clicked === 'next'){
-						newPage = Number(currentPage) + 1;
-					} else {
-						newPage = Number(clicked);
+						if (clicked === 'prev'){
+							newPage = Number(currentPage) - 1;						
+						} else if (clicked === 'next'){
+							newPage = Number(currentPage) + 1;
+						} else {
+							newPage = Number(clicked);
+						}
+						// adjust dom to simulate new page
+						Boonbox.filters.dom.newPage(newPage);
 					}
-					// adjust dom to simulate new page
-					Boonbox.filters.dom.newPage(newPage);
 				});
 			}
 		},
