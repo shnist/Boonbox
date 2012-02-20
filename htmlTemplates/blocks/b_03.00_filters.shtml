@@ -194,7 +194,7 @@
                         <p class="close"><a href="#">close</a></p> 
                         <h4>5. What is your spending allowance? <span>(select an option below)</span></h4>
                         <div class="filter-options-detail">
-                            <input type="text" id="price-range">
+                            <input type="text" id="price-range" name="price">
                         </div>
                     </li>
                 </ul>

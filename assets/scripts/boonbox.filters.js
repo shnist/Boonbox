@@ -71,7 +71,7 @@ Boonbox.extend('filters', {
 				max: 500,
 				values: [ 15, 300 ],
 				slide: function( event, ui ) {
-					$('#price-range').val( "£" + ui.values[ 0 ] + " - £" + ui.values[ 1 ] );
+					$('#price-range').attr('value', "£" + ui.values[ 0 ] + " - £" + ui.values[ 1 ] );
 				},
 				change: function (event, ui) {
 					var timer;
