@@ -218,9 +218,7 @@ Boonbox.extend('filters', {
 			ui : function (results) {
 				$('#view-all').click(function (event) {
 					event.preventDefault();
-					Boonbox.filters.results.viewAll.reset(results);
-					Boonbox.filters.results.viewAll.scroll();
-				
+					Boonbox.filters.results.viewAll.reset(results);				
 				});	
 			},
 			reset : function (results) {
@@ -233,28 +231,52 @@ Boonbox.extend('filters', {
 					max = 13;
 				}
 				Boonbox.filters.dom.productMarkup(0, max, results);
+				Boonbox.filters.results.viewAll.scroll(results, max);
 			},
-			scroll : function () {
+			scroll : function (results, max) {
 				var containerHeight = $(document).innerHeight(),
-					loading = false;
+					// counter to know which products need adding
+					pageNumber = 1, itemsPerPage = 12, paginationNumber = Math.ceil(results.length / 12);
+					Boonbox.filters.results.viewAll.loading = false;
+
 				$(document).scroll(function () {
 					var scrollTop = $(document).scrollTop();
 				
-					if (loading !== true){
+					if (Boonbox.filters.results.viewAll.loading !== true){
 						if((scrollTop + 550) > containerHeight){
-							loading = true;
-							Boonbox.filters.results.viewAll.newContent();
+							pageNumber = pageNumber + 1;
+							min = (pageNumber * itemsPerPage) - itemsPerPage;
+							if (paginationNumber === pageNumber){
+								max = results.length;
+								// unbind the scroll
+								$(document).unbind('scroll');
+							} else {
+								max = max + itemsPerPage;
+							}
+							Boonbox.filters.results.viewAll.loading = true;
+							Boonbox.filters.results.viewAll.addLoader();
+							var timer = setTimeout(function () {
+								Boonbox.filters.dom.productMarkup(min, max, results, function (loaded) {
+									if(loaded === 'done'){
+										Boonbox.filters.results.viewAll.removeLoader();
+									}
+								});
+							}, 1500);
 						}
 					}
 
 				})
 				
 			},
-			newContent : function () {
+			addLoader : function () {
 				$('#content').append('<div id="new-content">' +
 								'<img src="../../assets/images/view_all_loader.gif" alt="products loading" class="loader">' +
 									'</div>'
 								);
+			},
+			removeLoader : function () {
+				Boonbox.filters.results.viewAll.loading = false;
+				$('#new-content').remove();
 			}
 			
 		}
@@ -352,7 +374,7 @@ Boonbox.extend('filters', {
 		/**
 		 * Method that appends product mark up
 		 */
-		productMarkup : function (i, maxNo, results) {
+		productMarkup : function (i, maxNo, results, callback) {
 			var productMarkUp = '';
 			// creating the mark up for products
 			for (i; i < maxNo; i = i + 1){
@@ -369,6 +391,10 @@ Boonbox.extend('filters', {
 					'</li>'
 			}
 			$('#results_main').append(productMarkUp);
+			
+			if(callback !== undefined){
+				callback('done');
+			}
 		},
 		/**
 		 * Method that resets the DOM if results already exist
