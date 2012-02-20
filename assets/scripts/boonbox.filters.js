@@ -79,7 +79,7 @@ Boonbox.extend('filters', {
 					timer = setTimeout(Boonbox.filters.search.delay, 1000);
 				}
 			});
-			$('#price-range').val("$" + $('#slider-range').slider( "values", 0 ) +
+			$('#price-range').attr('value', "$" + $('#slider-range').slider( "values", 0 ) +
 				" - £" + $('#slider-range').slider( "values", 1 ) );
 			}
 	},
