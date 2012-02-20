@@ -268,7 +268,6 @@ a:hover {
 
 /* Results */
 #results_main {width:948px; letter-spacing: -3px;}
-#results_main.scrolling{overflow-y: scroll; height: 660px;}
 #results_main li {position:relative; display: inline-block; letter-spacing: 0; margin-right:15px; margin-top:15px; width:220px; height:200px; border:1px solid #d9d9d9;}
 #results_main.scrolling li{margin-right: 10px}
 #results_main li .product_desc {display: none; padding:8px 10px; width:200px; height:54px; position:absolute; bottom:0; left:0; background:url('../images/backgrounds/product_hoverbg.png') repeat transparent;}
@@ -284,6 +283,9 @@ a:hover {
 /* Overlay */
 .overlay{z-index: 10; position: absolute; top: 70px; left: 0; background: #FFF; opacity: 0.7; width: 940px; height: 100%;}
 .overlay .loader{margin: 40px auto; display: block;}
+
+/* View All Loader */
+#new-content{margin: 15px 0 0 0; text-align: center;}
 
 /*Pagination*/
 #pagination {left:352px; position:relative; top:18px; width:225px;}

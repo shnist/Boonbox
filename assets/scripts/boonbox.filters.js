@@ -233,19 +233,30 @@ Boonbox.extend('filters', {
 					max = 13;
 				}
 				Boonbox.filters.dom.productMarkup(0, max, results);
-				$('#results_main').addClass('scrolling');
 			},
 			scroll : function () {
-				var containerHeight = $('#results_main').innerHeight();
-					
-				$('#results_main').scroll(function () {
-					
-					var scrollTop = $('#results_main').scrollTop();
-					console.log('scroll top: ' + scrollTop);
-					console.log('container height: ' + containerHeight);
+				var containerHeight = $(document).innerHeight(),
+					loading = false;
+				$(document).scroll(function () {
+					var scrollTop = $(document).scrollTop();
+				
+					if (loading !== true){
+						if((scrollTop + 550) > containerHeight){
+							loading = true;
+							Boonbox.filters.results.viewAll.newContent();
+						}
+					}
+
 				})
 				
+			},
+			newContent : function () {
+				$('#content').append('<div id="new-content">' +
+								'<img src="../../assets/images/view_all_loader.gif" alt="products loading" class="loader">' +
+									'</div>'
+								);
 			}
+			
 		}
 	},
 	dom : {
