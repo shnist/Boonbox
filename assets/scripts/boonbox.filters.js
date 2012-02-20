@@ -219,6 +219,7 @@ Boonbox.extend('filters', {
 				$('#view-all').click(function (event) {
 					event.preventDefault();
 					Boonbox.filters.results.viewAll.reset(results);				
+					Boonbox.filters.results.viewAll.stickyHeader();				
 				});	
 			},
 			reset : function (results) {
@@ -233,13 +234,28 @@ Boonbox.extend('filters', {
 				Boonbox.filters.dom.productMarkup(0, max, results);
 				Boonbox.filters.results.viewAll.scroll(results, max);
 			},
+			//stickyHeader : function () {
+			//	$(window).scroll(function () {
+			//		var scrollTop = $(window).scrollTop();
+			//		if (scrollTop > 185){
+			//			console.log('sticky');
+			//			if($('#filters').hasClass('active') !== true){
+			//				$('#filters').addClass('active');
+			//			}
+			//		} else if(scrollTop < 185) {
+			//			console.log('turn off sticky');
+			//			$('#filters').removeClass('active');
+			//		}
+			//	
+			//	});			
+			//},
 			scroll : function (results, max) {
-				var containerHeight = $(document).height(),
+				var containerHeight = $(window).height(),
 					// counter to know which products need adding
 					pageNumber = 1, itemsPerPage = 12, paginationNumber = Math.ceil(results.length / 12);
 					Boonbox.filters.results.viewAll.loading = false;
-				$(document).scroll(function () {
-					var scrollTop = $(document).scrollTop();
+				$(window).scroll(function () {
+					var scrollTop = $(window).scrollTop();
 				
 					if (Boonbox.filters.results.viewAll.loading !== true){				
 						if((scrollTop + 850) > containerHeight){							
@@ -248,7 +264,7 @@ Boonbox.extend('filters', {
 							if (paginationNumber === pageNumber){
 								max = results.length;
 								// unbind the scroll
-								$(document).unbind('scroll');
+								$(window).unbind('scroll');
 							} else {
 								max = max + itemsPerPage;
 							}

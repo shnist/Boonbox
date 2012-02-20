@@ -133,6 +133,7 @@ a:hover {
 /*---- FILTERS ----*/
 
 #filters {background:url('../images/backgrounds/filter_top.png') 0 0 repeat-x #478cd3; margin-top:1em;}
+/*#filters.active{position: fixed; top: 0; left: 0; z-index: 100; margin: 0; width: 100%;}*/
 #filters_wrapper {margin:0 auto; width:932px; padding:10px 7px 0 7px; color:#fff;}
 #filters_wrapper h3 {padding: 11px 3px 4px;}
 
