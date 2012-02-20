@@ -77,7 +77,7 @@ a:hover {
 /* 3.1 Sprites */
 /* Add sprite images here*/
 
-#search input[type=button],
+#search input[type=submit],
 #basket-summary a,
 #mini-basket p a,
 #mini-basket ul li a.close,
@@ -104,7 +104,7 @@ a:hover {
 #main-header #logo, #search, #main-header #basket {float:left;}
 #search {position:relative; display:inline-block; top:78px; left:100px;}
 #search input[type=text] {color:#5f5f5f; font-size:12px; font-style:italic; padding:8px 30px 8px 8px; width:430px; border:1px solid #CCCCCC;}
-#search input[type=button] {background-position:-915px -312px; width:22px; height:30px; border:0; position:absolute; right:4px; top:6px; cursor:pointer;}
+#search input[type=submit] {text-indent: -9999px; background-position:-915px -312px; width:22px; height:30px; border:0; position:absolute; right:4px; top:6px; cursor:pointer;}
 
 #basket {font-size:12px; position:relative; top:63px; left:195px;}
 #basket p#basket-summary a {height:36px; display:inline-block; text-transform:uppercase; font-weight:bold; background-position:-79px -346px; padding:10px 0 0 50px;}
@@ -247,7 +247,7 @@ a:hover {
 .friends ul li {float:left;margin:0 23px 0 0;}
 /*---- CONTENTS: AFTER FILTRATION----*/
 
-#content.results {padding:15px 0 50px; margin-left:3px; position: relative; overflow: hidden;}
+#content.results {padding:15px 0 50px; margin-left:3px; position: relative; /*overflow: hidden;*/}
 #content.ajax {min-height: 100px;}
 
 /* Top results bar */
@@ -267,8 +267,10 @@ a:hover {
 #results_top div p {font-weight:bold; font-size:14px;}
 
 /* Results */
-#results_main {width:948px;}
-#results_main li {position:relative; float:left; margin-right:15px; margin-top:15px; width:220px; height:200px; border:1px solid #d9d9d9;}
+#results_main {width:948px; letter-spacing: -3px;}
+#results_main.scrolling{overflow-y: scroll; height: 660px;}
+#results_main li {position:relative; display: inline-block; letter-spacing: 0; margin-right:15px; margin-top:15px; width:220px; height:200px; border:1px solid #d9d9d9;}
+#results_main.scrolling li{margin-right: 10px}
 #results_main li .product_desc {display: none; padding:8px 10px; width:200px; height:54px; position:absolute; bottom:0; left:0; background:url('../images/backgrounds/product_hoverbg.png') repeat transparent;}
 #results_main.no-js li a:hover .product_desc{display: block;}
 #results_main li a h4,

@@ -161,8 +161,9 @@ Boonbox.extend('filters', {
 	},
 	results : {
 		ui : {
-			init : function (){
+			init : function (results){
 				Boonbox.filters.results.ui.slide();
+				Boonbox.filters.results.viewAll.ui(results);
 			},
 			/**
 			 * Method that implements slide up and down for
@@ -207,6 +208,44 @@ Boonbox.extend('filters', {
 					Boonbox.filters.dom.newPage(newPage);
 				});
 			}
+		},
+		/**
+		* Method that handles the functionality of the view all button
+		* @function
+		* @memberOf Boonbox.filters.results
+		*/
+		viewAll : {
+			ui : function (results) {
+				$('#view-all').click(function (event) {
+					event.preventDefault();
+					Boonbox.filters.results.viewAll.reset(results);
+					Boonbox.filters.results.viewAll.scroll();
+				
+				});	
+			},
+			reset : function (results) {
+				// remove pagination
+				$('#pagination').remove();
+				$('#results_main').empty();
+				
+				var max = 16;
+				if(results.length < 16){
+					max = 13;
+				}
+				Boonbox.filters.dom.productMarkup(0, max, results);
+				$('#results_main').addClass('scrolling');
+			},
+			scroll : function () {
+				var containerHeight = $('#results_main').innerHeight();
+					
+				$('#results_main').scroll(function () {
+					
+					var scrollTop = $('#results_main').scrollTop();
+					console.log('scroll top: ' + scrollTop);
+					console.log('container height: ' + containerHeight);
+				})
+				
+			}
 		}
 	},
 	dom : {
@@ -226,19 +265,6 @@ Boonbox.extend('filters', {
 						'<h3>Results</h3>' +
 						'<p>Boonbox selector is searching...</p>' +
 					'</div>' +
-					'<ul>' +
-						'<li><a href="#">View All</a></li>' +
-						'<li><a href="#">Reset Selection</a></li>' +
-						'<li class="drop_down">Sort By:' + 
-							'<select>' +
-								'<option value="price-low">Price, low to high</option>' +
-								'<option value="price-high">Price, high to low</option>' +
-								'<option value="relevance">Relevance</option>' +
-								'<option value="selling">Best Selling</option>' +
-								'<option value="reviews">Best Reviews</option>' +
-							'</select>' +
-						'</li>' +
-					'</ul>' +
 				'</div>' +
 				'<ul id="results_main" class="clear no-js">'+
 				'</ul>'
@@ -249,7 +275,7 @@ Boonbox.extend('filters', {
 		addResults : function (results, pageNumber) {
 			// first say how many have been created
 			$('.results_context p').html('Boon selector has found ' + results.length + ' items');
-			var i = 0, j = 0, productMarkUp = '', paginationMarkUp = '', itemsPerPage = 12, maxProducts = itemsPerPage * pageNumber;
+			var i = 0, j = 0, paginationMarkUp = '', itemsPerPage = 12, maxProducts = itemsPerPage * pageNumber;
 			
 			// creating pagination if necessary
 			if (results.length > 12){
@@ -284,9 +310,6 @@ Boonbox.extend('filters', {
 						
 			// setting i depending on page number
 			if (pageNumber !== 1){
-				console.log('items per page: ' + itemsPerPage);
-				console.log('page number: ' + pageNumber);
-				console.log(pageNumber * itemsPerPage);
 				i = (pageNumber * itemsPerPage) - itemsPerPage;
 			}
 			
@@ -294,12 +317,34 @@ Boonbox.extend('filters', {
 			if(pageNumber === paginationNumber){
 				maxProducts = results.length;
 			}
+			Boonbox.filters.dom.productMarkup(i, maxProducts, results);
 			
-			console.log('i:' + i);
-			console.log('max products:' + maxProducts)
+			// add header options
+			$('.results_context').after(
+					'<ul>' +
+						'<li><a href="#" id="view-all">View All</a></li>' +
+						'<li><a href="#">Reset Selection</a></li>' +
+						'<li class="drop_down">Sort By:' + 
+							'<select>' +
+								'<option value="price-low">Price, low to high</option>' +
+								'<option value="price-high">Price, high to low</option>' +
+								'<option value="relevance">Relevance</option>' +
+								'<option value="selling">Best Selling</option>' +
+								'<option value="reviews">Best Reviews</option>' +
+							'</select>' +
+						'</li>' +
+					'</ul>');
 			
+			// start the ui for the results
+			Boonbox.filters.results.ui.init(results);
+		},
+		/**
+		 * Method that appends product mark up
+		 */
+		productMarkup : function (i, maxNo, results) {
+			var productMarkUp = '';
 			// creating the mark up for products
-			for (i; i < maxProducts; i = i + 1){
+			for (i; i < maxNo; i = i + 1){
 				productMarkUp = productMarkUp +
 					'<li>' +
 						'<a href="#">' +
@@ -313,8 +358,6 @@ Boonbox.extend('filters', {
 					'</li>'
 			}
 			$('#results_main').append(productMarkUp);
-			// start the ui for the results
-			Boonbox.filters.results.ui.init();
 		},
 		/**
 		 * Method that resets the DOM if results already exist
@@ -325,6 +368,7 @@ Boonbox.extend('filters', {
 			if ($('#results_main li').length !== 0){
 				$('#results_main').empty();
 				$('#pagination').remove();
+				$('#results_top ul').remove();
 			}
 		},
 		newPage : function(page){

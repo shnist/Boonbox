@@ -12,8 +12,10 @@
     <div id="main-header">
     	<a href=""><img id="logo" src="../../assets/images/boonbox.jpg" title="Boonbox"></a>
         <div id="search">
-        	<input type="text" placeholder="I'm looking for...">
-        	<input type="button" name="search">
+            <form method="post" action="/">
+                <input type="text" placeholder="I'm looking for...">
+                <input type="submit" value="Search" name="search">
+            </form>
 		</div>
         <div id="basket">
           	<p id="basket-summary"><a href="#" alt="View my basket">My Bag <span>(£40)</span></a></p>
