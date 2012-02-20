@@ -234,16 +234,15 @@ Boonbox.extend('filters', {
 				Boonbox.filters.results.viewAll.scroll(results, max);
 			},
 			scroll : function (results, max) {
-				var containerHeight = $(document).innerHeight(),
+				var containerHeight = $(document).height(),
 					// counter to know which products need adding
 					pageNumber = 1, itemsPerPage = 12, paginationNumber = Math.ceil(results.length / 12);
 					Boonbox.filters.results.viewAll.loading = false;
-
 				$(document).scroll(function () {
 					var scrollTop = $(document).scrollTop();
 				
-					if (Boonbox.filters.results.viewAll.loading !== true){
-						if((scrollTop + 550) > containerHeight){
+					if (Boonbox.filters.results.viewAll.loading !== true){				
+						if((scrollTop + 850) > containerHeight){							
 							pageNumber = pageNumber + 1;
 							min = (pageNumber * itemsPerPage) - itemsPerPage;
 							if (paginationNumber === pageNumber){
