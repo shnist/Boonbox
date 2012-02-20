@@ -164,6 +164,7 @@ Boonbox.extend('filters', {
 			init : function (results){
 				Boonbox.filters.results.ui.slide();
 				Boonbox.filters.results.viewAll.ui(results);
+				Boonbox.filters.results.resetPage.ui();
 			},
 			/**
 			 * Method that implements slide up and down for
@@ -294,13 +295,33 @@ Boonbox.extend('filters', {
 				$('#new-content').remove();
 			}
 			
+		},
+		/**
+		 * Method that handles the reset page functionality
+		 * @function
+		 * @memberOf Boonbox.filters
+		*/
+		resetPage : {
+			ui : function () {
+				$('#reset-selection').click(function (e) {
+					e.preventDefault();
+					$('#results_top').remove();
+					$('#results_main').remove();
+					$('#pagination').remove();
+					$('#filter_options form').get(0).reset();
+					$('#content').removeClass('results');
+					
+					$('#content').append(Boonbox.filters.emptiedContent);
+					
+				});
+			}		
 		}
 	},
 	dom : {
 		init : function (searchOptions) {
 			if ($('#content.results').length === 0){
 				$('#content').addClass('results');
-				$('#content').empty();
+				Boonbox.filters.emptiedContent = $('#content').children().detach();
 				Boonbox.filters.dom.addResultsTemplate();
 			}
 			Boonbox.filters.ajax.init(searchOptions);
@@ -371,7 +392,7 @@ Boonbox.extend('filters', {
 			$('.results_context').after(
 					'<ul>' +
 						'<li><a href="#" id="view-all">View All</a></li>' +
-						'<li><a href="#">Reset Selection</a></li>' +
+						'<li><a href="#" id="reset-selection">Reset Selection</a></li>' +
 						'<li class="drop_down">Sort By:' + 
 							'<select>' +
 								'<option value="price-low">Price, low to high</option>' +
