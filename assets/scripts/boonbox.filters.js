@@ -222,7 +222,7 @@ Boonbox.extend('filters', {
 				$('#view-all').click(function (event) {
 					event.preventDefault();
 					Boonbox.filters.results.viewAll.reset(results);				
-					Boonbox.filters.results.viewAll.stickyHeader();				
+					//Boonbox.filters.results.viewAll.stickyHeader();				
 				});	
 			},
 			reset : function (results) {
@@ -346,7 +346,8 @@ Boonbox.extend('filters', {
 		addResults : function (results, pageNumber) {
 			// first say how many have been created
 			$('.results_context p').html('Boon selector has found ' + results.length + ' items');
-			var i = 0, j = 0, paginationMarkUp = '', itemsPerPage = 12, maxProducts = itemsPerPage * pageNumber;
+			var i = 0, j = 0, paginationMarkUp = '', itemsPerPage = 12, maxProducts = itemsPerPage * pageNumber,
+				header = '';
 			
 			// creating pagination if necessary
 			if (results.length > 12){
@@ -390,10 +391,16 @@ Boonbox.extend('filters', {
 			}
 			Boonbox.filters.dom.productMarkup(i, maxProducts, results);
 			
+			if (results.length > 12){
+				header = '<li><a href="#" id="view-all">View All</a></li>';
+			} 
+			
+			
+			
 			// add header options
 			$('.results_context').after(
 					'<ul>' +
-						'<li><a href="#" id="view-all">View All</a></li>' +
+						 header +
 						'<li><a href="#" id="reset-selection">Reset Selection</a></li>' +
 						'<li class="drop_down">Sort By:' + 
 							'<select>' +
@@ -419,6 +426,7 @@ Boonbox.extend('filters', {
 				if (results[i][0][0] !== undefined){
 					result = results[i][0][0];
 				}else{
+					console.log('first level');
 					result = results[i][0];
 				}
 				productMarkUp = productMarkUp +
