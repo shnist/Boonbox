@@ -62,7 +62,7 @@
                         <h4>2. How old is s/he? <span>(select an option below)</span></h4>
                         <ul class="filter-options-detail clear">
                             <li>
-                                <input id="one-five" type="radio" name="age" value="Mum" >
+                                <input id="one-five" type="radio" name="age" value="1-5" >
                                 <label for="one-five">1 - 5</label>
                             </li>
                             <li>
@@ -122,7 +122,7 @@
                             </li>
                             <li>
                                 <input id="new-baby" type="radio" name="occasion" value="New Baby" >
-                                <label for="boyfriend">New Baby</label>
+                                <label for="new-baby">New Baby</label>
                             </li>
                             <li>
                                 <input id="new-job" type="radio" name="occasion" value="New Job" >
