@@ -154,7 +154,7 @@ Boonbox.extend('filters', {
 					Boonbox.filters.dom.addResults(data, 1);
 				},
 				error: function (object, stat, error) {
-					console.log(stat + ': ' + error);
+					//console.log(stat + ': ' + error);
 				}
 			});
 		}
@@ -222,7 +222,9 @@ Boonbox.extend('filters', {
 				$('#view-all').click(function (event) {
 					event.preventDefault();
 					Boonbox.filters.results.viewAll.reset(results);				
-					//Boonbox.filters.results.viewAll.stickyHeader();				
+					//Boonbox.filters.results.viewAll.stickyHeader();
+					// remove it
+					$(this).unbind('click').addClass('disabled');
 				});	
 			},
 			reset : function (results) {
@@ -269,7 +271,7 @@ Boonbox.extend('filters', {
 								// unbind the scroll
 								$(window).unbind('scroll');
 							} else {
-								max = max + itemsPerPage;
+								max = max + (itemsPerPage + 1);
 							}
 							Boonbox.filters.results.viewAll.loading = true;
 							Boonbox.filters.results.viewAll.addLoader();
@@ -282,9 +284,7 @@ Boonbox.extend('filters', {
 							}, 1500);
 						}
 					}
-
-				})
-				
+				});
 			},
 			addLoader : function () {
 				$('#content').append('<div id="new-content">' +
@@ -314,7 +314,6 @@ Boonbox.extend('filters', {
 					$('#content').removeClass('results');
 					
 					$('#content').append(Boonbox.filters.emptiedContent);
-					
 				});
 			}		
 		}
@@ -395,8 +394,6 @@ Boonbox.extend('filters', {
 				header = '<li><a href="#" id="view-all">View All</a></li>';
 			} 
 			
-			
-			
 			// add header options
 			$('.results_context').after(
 					'<ul>' +
@@ -426,7 +423,6 @@ Boonbox.extend('filters', {
 				if (results[i][0][0] !== undefined){
 					result = results[i][0][0];
 				}else{
-					console.log('first level');
 					result = results[i][0];
 				}
 				productMarkUp = productMarkUp +
@@ -446,6 +442,9 @@ Boonbox.extend('filters', {
 			if(callback !== undefined){
 				callback('done');
 			}
+				
+			Boonbox.filters.results.ui.init(results);
+
 		},
 		/**
 		 * Method that resets the DOM if results already exist
