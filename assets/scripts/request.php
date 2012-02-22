@@ -164,7 +164,7 @@ for ($i = 0; $i < count($tags); $i++) {
 }
 
 // simulates delay - in seconds
-sleep(3);
+sleep(30);
 
 if (count($tags) === 1){
 	$jsonFinal = json_encode($selectedProducts);

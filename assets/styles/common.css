@@ -282,7 +282,7 @@ a:hover {
 #results_main li .product_desc img {width:74px; margin-top:6px;}
 
 /* Overlay */
-.overlay{z-index: 10; position: absolute; top: 70px; left: 0; background: #FFF; opacity: 0.7; width: 940px; /*height: 100%;*/}
+.overlay{z-index: 10; position: absolute; top: 70px; left: 0; background: #FFF; opacity: 0.7; width: 940px; height: 100%;}
 .overlay .loader{margin: 40px auto; display: block;}
 
 /* View All Loader */
