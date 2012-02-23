@@ -164,8 +164,8 @@ for ($i = 0; $i < count($tags); $i++) {
 		//echo var_dump($selectedProducts);
 	} else {
 		for ($l = 0; $l < count($selectedProducts); $l++){
-			for ($m = 0; $m < count($selectedProducts[$l][0]['tags']); $m++){
-				$currentTag = $selectedProducts[$l][0]['tags'][$m];
+			for ($m = 0; $m < count($selectedProducts[$l]['tags']); $m++){
+				$currentTag = $selectedProducts[$l]['tags'][$m];
 				if ($currentTag == $tags[$i]){
 					// add the found item to the new array
 					$finalProducts[] = $selectedProducts[$l];
