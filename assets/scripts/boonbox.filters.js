@@ -420,19 +420,14 @@ Boonbox.extend('filters', {
 			var productMarkUp = '';
 			// creating the mark up for products
 			for (i; i < maxNo; i = i + 1){
-				if (results[i][0][0] !== undefined){
-					result = results[i][0][0];
-				}else{
-					result = results[i][0];
-				}
 				productMarkUp = productMarkUp +
 					'<li>' +
 						'<a href="#">' +
-							'<img src="' + String(result.image) + '" alt="' + result.name + '">' +
+							'<img src="' + String(results[i].image) + '" alt="' + results[i].name + '">' +
 							'<div class="product_desc">' +
-								'<h4>' + result.name + '</h4>' +
-								'<p class="price">£' + result.price + '</p>' +
-								'<img src="../../assets/images/star' + result.rating + '.png">' +
+								'<h4>' + results[i].name + '</h4>' +
+								'<p class="price">£' + results[i].price + '</p>' +
+								'<img src="../../assets/images/star' + results[i].rating + '.png">' +
 							'</div>' +
 						'</a>' +
 					'</li>'
