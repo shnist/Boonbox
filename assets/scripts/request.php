@@ -141,51 +141,62 @@ if($_GET['interest']){
 }
 if($_GET['price']){
 	// this will remove items from the newly created array
-	echo $_GET['price'];
+	$lowerPrice = $_GET['lower-price'];
+	$higherPrice = $_GET['higher-price'];
 }
 
 // array for the filtered products
 $selectedProducts = array();
 $finalProducts = array();
-for ($i = 0; $i < count($tags); $i++) {
-	if ($i === 0){
-		for ($j = 0; $j < count($allProducts); $j++){
-			for ($k = 0; $k < count($allProducts[$j]['tags']); $k++){
-				$currentTag = $allProducts[$j]['tags'][$k];
-				if ($currentTag == $tags[$i]){	
-					// add the found item to the new array
-					//$selectedProducts[] = array_slice($allProducts, $j, 1, true);
-					$selectedProducts[] = $allProducts[$j];
-					// remove it from the old so it's not selected twice
-					unset($allProducts[$j]);
+
+if (count($tags) !== 0) {
+	for ($i = 0; $i < count($tags); $i++) {
+		if ($i === 0){
+			for ($j = 0; $j < count($allProducts); $j++){
+				for ($k = 0; $k < count($allProducts[$j]['tags']); $k++){
+					$currentTag = $allProducts[$j]['tags'][$k];
+					if ($currentTag == $tags[$i] && ($allProducts[$j]['price'] < $higherPrice && $allProducts[$j]['price'] > $lowerPrice)){	
+						// add the found item to the new array
+						$selectedProducts[] = $allProducts[$j];
+						// remove it from the old so it's not selected twice
+						unset($allProducts[$j]);
+					}
+				}
+			}
+		} else {
+			for ($l = 0; $l < count($selectedProducts); $l++){
+				for ($m = 0; $m < count($selectedProducts[$l]['tags']); $m++){
+					$currentTag = $selectedProducts[$l]['tags'][$m];
+					if ($currentTag == $tags[$i]){
+						// add the found item to the new array
+						$finalProducts[] = $selectedProducts[$l];
+						// remove it from the old so it's not selected twice
+						unset($selectedProducts[$l]);
+					}
 				}
 			}
 		}
-		//echo var_dump($selectedProducts);
-	} else {
-		for ($l = 0; $l < count($selectedProducts); $l++){
-			for ($m = 0; $m < count($selectedProducts[$l]['tags']); $m++){
-				$currentTag = $selectedProducts[$l]['tags'][$m];
-				if ($currentTag == $tags[$i]){
-					// add the found item to the new array
-					$finalProducts[] = $selectedProducts[$l];
-					//$finalProducts[] = array_slice($selectedProducts, $l, 1, true);
-					// remove it from the old so it's not selected twice
-					unset($selectedProducts[$l]);
-				}
-			}
+	}	
+} else{
+	for ($a = 0; $a < count($allProducts); $a++){
+		if ($allProducts[$a]['price'] < $higherPrice && $allProducts[$a]['price'] > $lowerPrice){	
+			// add the found item to the new array
+			$selectedProducts[] = $allProducts[$a];
 		}
 	}
 }
 
+
+
+
 // simulates delay - in seconds
 sleep(3);
 
-if (count($tags) === 1){
+if (count($tags) === 1 || count($tags) === 0){
 	$jsonFinal = json_encode($selectedProducts);
 } else {
 	$jsonFinal = json_encode($finalProducts);
 }
 
-//echo $jsonFinal;
+echo $jsonFinal;
 ?>

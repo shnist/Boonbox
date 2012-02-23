@@ -72,6 +72,8 @@ Boonbox.extend('filters', {
 				values: [ 5, 70 ],
 				slide: function( event, ui ) {
 					$('#price-range').attr('value', "£" + ui.values[ 0 ] + " - £" + ui.values[ 1 ] );
+					$('#lower-price').attr('value', $('#slider-range').slider('values', 0));
+					$('#higher-price').attr('value', $('#slider-range').slider('values', 1));
 				},
 				change: function (event, ui) {
 					var timer;
@@ -81,7 +83,9 @@ Boonbox.extend('filters', {
 			});
 			$('#price-range').attr('value', "£" + $('#slider-range').slider( "values", 0 ) +
 				" - £" + $('#slider-range').slider( "values", 1 ) );
-			}
+			$('#lower-price').attr('value', $('#slider-range').slider('values', 0));
+			$('#higher-price').attr('value', $('#slider-range').slider('values', 1));
+		}
 	},
 	/**
 	 * Methods to initialise all aspects of querying the database
