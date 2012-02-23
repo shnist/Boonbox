@@ -152,39 +152,39 @@
                         <h4>4. What are his/her interests? <span>(select an option below)</span></h4>
                         <ul class="filter-options-detail clear">
                             <li>
-                                <input id="Music" type="checkbox" name="interest" value="Music" >
+                                <input id="Music" type="checkbox" name="interest[]" value="Music" >
                                 <label for="Music">Music</label>
                             </li>
                             <li>
-                                <input id="Sport" type="checkbox" name="interest" value="Sport" >
+                                <input id="Sport" type="checkbox" name="interest[]" value="Sport" >
                                 <label for="Sport">Sport</label>
                             </li>
                             <li>
-                                <input id="Art" type="checkbox" name="interest" value="Art" >
+                                <input id="Art" type="checkbox" name="interest[]" value="Art" >
                                 <label for="Art">Art</label>
                             </li>
                             <li>
-                                <input id="Science" type="checkbox" name="interest" value="Science" >
+                                <input id="Science" type="checkbox" name="interest[]" value="Science" >
                                 <label for="Science">Science</label>
                             </li>
                             <li>
-                                <input id="Cars" type="checkbox" name="interest" value="Cars" >
+                                <input id="Cars" type="checkbox" name="interest[]" value="Cars" >
                                 <label for="Cars">Cars</label>
                             </li>
                             <li>
-                                <input id="Holidays" type="checkbox" name="interest" value="Holidays" >
+                                <input id="Holidays" type="checkbox" name="interest[]" value="Holidays" >
                                 <label for="Holidays">Holidays</label>
                             </li>
                             <li>
-                                <input id="Design" type="checkbox" name="interest" value="Design" >
+                                <input id="Design" type="checkbox" name="interest[]" value="Design" >
                             <label for="Design">Design</label>
                             </li>
                             <li>
-                                <input id="Food" type="checkbox" name="interest" value="Food" >
+                                <input id="Food" type="checkbox" name="interest[]" value="Food" >
                                 <label for="Food">Food</label>
                             </li>
                             <li>
-                                <input id="Cooking" type="checkbox" name="interest" value="Cooking" >
+                                <input id="Cooking" type="checkbox" name="interest[]" value="Cooking" >
                                 <label for="Cooking">Cooking</label>
                             </li>
                         </ul>

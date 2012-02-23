@@ -262,6 +262,7 @@ a:hover {
 #results_top ul li.drop_down {position:relative; top:-2px; padding:0;}
 #results_top ul li.drop_down select {margin-left:5px;}
 #results_top ul li a {text-decoration:underline;}
+#results_top ul li a.disabled {color: #DDD;}
 
 #results_top div {padding-left:3px; color:#424242;}
 #results_top div h3 {font-size:20px; text-transform:uppercase; margin-bottom:2px;}

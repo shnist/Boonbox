@@ -123,8 +123,10 @@ if($_GET['occasion']){
 }
 if($_GET['interest']){
 	// find the relationship selected
-	//$tags[] = $_GET['interest'];
-	// this will need to be sorted
+	$interests = count($_GET['interest']);
+	for ($i = 0; $i < $interests; $i++){
+		$tags[] = $_GET['interest'][$i];
+	}
 	
 }
 if($_GET['price']){
@@ -164,7 +166,7 @@ for ($i = 0; $i < count($tags); $i++) {
 }
 
 // simulates delay - in seconds
-sleep(30);
+sleep(3);
 
 if (count($tags) === 1){
 	$jsonFinal = json_encode($selectedProducts);
