@@ -352,70 +352,72 @@ Boonbox.extend('filters', {
 			var i = 0, j = 0, paginationMarkUp = '', itemsPerPage = 12, maxProducts = itemsPerPage * pageNumber,
 				header = '';
 			
-			// creating pagination if necessary
-			if (results.length > 12){
-				var paginationNumber = Math.ceil(results.length / 12);
-
-				paginationMarkup = '<ul id="pagination" class="clear">';
-				if (pageNumber === 1){
-					paginationMarkup = paginationMarkup + '<li class="prev disabled"><a href="#prev">Previous</a></li>';
-				} else {
-					paginationMarkup = paginationMarkup + '<li class="prev"><a href="#prev">Previous</a></li>';
-				}
-				for (j; j < paginationNumber; j = j + 1){
-					paginationMarkup = paginationMarkup + '<li><a href="#' + (j + 1) + '">' + (j + 1) + '</a></li>';
-				}
-				if (pageNumber === paginationNumber){
-					paginationMarkup = paginationMarkup + '<li class="next disabled"><a href="#next">Next</a></li>';
-				} else {
-					paginationMarkup = paginationMarkup + '<li class="next"><a href="#next">Next</a></li>';
-				}
-				paginationMarkup = paginationMarkup + '</ul>';
-					
-				$('#content').append(paginationMarkup);
-				
-				// add selected class to last pagination number
-				$('#pagination a[href=#'+pageNumber+']').addClass('selected');	
-				// initialise event binding
-				Boonbox.filters.results.ui.pagination();
-								
-			} else {
-				maxProducts = results.length;
-			}
+			if (results.length !== 0){
+				// creating pagination if necessary
+				if (results.length > 12){
+					var paginationNumber = Math.ceil(results.length / 12);
+	
+					paginationMarkup = '<ul id="pagination" class="clear">';
+					if (pageNumber === 1){
+						paginationMarkup = paginationMarkup + '<li class="prev disabled"><a href="#prev">Previous</a></li>';
+					} else {
+						paginationMarkup = paginationMarkup + '<li class="prev"><a href="#prev">Previous</a></li>';
+					}
+					for (j; j < paginationNumber; j = j + 1){
+						paginationMarkup = paginationMarkup + '<li><a href="#' + (j + 1) + '">' + (j + 1) + '</a></li>';
+					}
+					if (pageNumber === paginationNumber){
+						paginationMarkup = paginationMarkup + '<li class="next disabled"><a href="#next">Next</a></li>';
+					} else {
+						paginationMarkup = paginationMarkup + '<li class="next"><a href="#next">Next</a></li>';
+					}
+					paginationMarkup = paginationMarkup + '</ul>';
 						
-			// setting i depending on page number
-			if (pageNumber !== 1){
-				i = (pageNumber * itemsPerPage) - itemsPerPage;
+					$('#content').append(paginationMarkup);
+					
+					// add selected class to last pagination number
+					$('#pagination a[href=#'+pageNumber+']').addClass('selected');	
+					// initialise event binding
+					Boonbox.filters.results.ui.pagination();
+									
+				} else {
+					maxProducts = results.length;
+				}
+							
+				// setting i depending on page number
+				if (pageNumber !== 1){
+					i = (pageNumber * itemsPerPage) - itemsPerPage;
+				}
+				
+				// checking if this is the last page, if so then set maxProducts to results.length
+				if(pageNumber === paginationNumber){
+					maxProducts = results.length;
+				}
+				Boonbox.filters.dom.productMarkup(i, maxProducts, results);
+				
+				if (results.length > 12){
+					header = '<li><a href="#" id="view-all">View All</a></li>';
+				} 
+				
+				// add header options
+				$('.results_context').after(
+						'<ul>' +
+							 header +
+							'<li><a href="#" id="reset-selection">Reset Selection</a></li>' +
+							'<li class="drop_down">Sort By:' + 
+								'<select>' +
+									'<option value="price-low">Price, low to high</option>' +
+									'<option value="price-high">Price, high to low</option>' +
+									'<option value="relevance">Relevance</option>' +
+									'<option value="selling">Best Selling</option>' +
+									'<option value="reviews">Best Reviews</option>' +
+								'</select>' +
+							'</li>' +
+						'</ul>');
+				
+				// start the ui for the results
+				Boonbox.filters.results.ui.init(results);
 			}
-			
-			// checking if this is the last page, if so then set maxProducts to results.length
-			if(pageNumber === paginationNumber){
-				maxProducts = results.length;
-			}
-			Boonbox.filters.dom.productMarkup(i, maxProducts, results);
-			
-			if (results.length > 12){
-				header = '<li><a href="#" id="view-all">View All</a></li>';
-			} 
-			
-			// add header options
-			$('.results_context').after(
-					'<ul>' +
-						 header +
-						'<li><a href="#" id="reset-selection">Reset Selection</a></li>' +
-						'<li class="drop_down">Sort By:' + 
-							'<select>' +
-								'<option value="price-low">Price, low to high</option>' +
-								'<option value="price-high">Price, high to low</option>' +
-								'<option value="relevance">Relevance</option>' +
-								'<option value="selling">Best Selling</option>' +
-								'<option value="reviews">Best Reviews</option>' +
-							'</select>' +
-						'</li>' +
-					'</ul>');
-			
-			// start the ui for the results
-			Boonbox.filters.results.ui.init(results);
 		},
 		/**
 		 * Method that appends product mark up
