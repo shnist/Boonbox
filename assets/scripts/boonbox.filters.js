@@ -68,8 +68,8 @@ Boonbox.extend('filters', {
 			$('#slider-range').slider({
 				range: true,
 				min: 0,
-				max: 500,
-				values: [ 15, 300 ],
+				max: 80,
+				values: [ 5, 70 ],
 				slide: function( event, ui ) {
 					$('#price-range').attr('value', "£" + ui.values[ 0 ] + " - £" + ui.values[ 1 ] );
 				},
@@ -79,7 +79,7 @@ Boonbox.extend('filters', {
 					timer = setTimeout(Boonbox.filters.search.delay, 1000);
 				}
 			});
-			$('#price-range').attr('value', "$" + $('#slider-range').slider( "values", 0 ) +
+			$('#price-range').attr('value', "£" + $('#slider-range').slider( "values", 0 ) +
 				" - £" + $('#slider-range').slider( "values", 1 ) );
 			}
 	},

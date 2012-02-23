@@ -141,7 +141,7 @@ if($_GET['interest']){
 }
 if($_GET['price']){
 	// this will remove items from the newly created array
-	//echo 'search tags for price';
+	echo $_GET['price'];
 }
 
 // array for the filtered products
@@ -187,5 +187,5 @@ if (count($tags) === 1){
 	$jsonFinal = json_encode($finalProducts);
 }
 
-echo $jsonFinal;
+//echo $jsonFinal;
 ?>
