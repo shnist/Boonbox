@@ -25,7 +25,7 @@
 .top-gifts li a {display:inline; height: 1%;}
 
 /* Main carousel */
-.carousel-wrapper{display: inline-block; height: 1%;}
+.carousel-wrapper{display: inline; height: 1%;}
 
 /* Friends */
 .friends {display:inline; height: 1%;}
@@ -34,7 +34,7 @@
 #results_top {display:inline; height: 1%;}
 
 /* Results */
-#results_main li {display: inline-block; zoom: 1;}
+#results_main li {display: inline; zoom: 1;}
 
 /*Pagination*/
 #pagination li a {display:inline; zoom: 1;}
