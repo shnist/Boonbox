@@ -2,3 +2,44 @@
         Boonbox
         IE7 CSS styles for Boonbox sites
 */
+
+
+/* Main Header */
+#search {display:inline; height: 1%;}
+
+#basket p#basket-summary a {display: inline; zoom: 1;}
+
+#mini-basket ul li {display: inline; height: 1%;}
+#mini-basket ul li a.close {display:inline; zoom: 1;}
+
+/*---- FILTERS ----*/
+
+#filter_selectors li p {display:inline; zoom:1;}
+
+#filter_options .filter-options-detail {display:inline; height: 1%;}
+
+/*---- CONTENTS: ON LOAD----*/
+
+/* Top gifts */
+.top-section {display: inline; height: 1%;}
+.top-gifts li a {display:inline; height: 1%;}
+
+/* Main carousel */
+.carousel-wrapper{display: inline-block; height: 1%;}
+
+/* Friends */
+.friends {display:inline; height: 1%;}
+
+/* Top results bar */
+#results_top {display:inline; height: 1%;}
+
+/* Results */
+#results_main li {display: inline-block; zoom: 1;}
+
+/*Pagination*/
+#pagination li a {display:inline; zoom: 1;}
+
+/* Connect */
+
+#connect {display:inline; height: 1%;}
+#connect li{display: inline; height: 1%}
