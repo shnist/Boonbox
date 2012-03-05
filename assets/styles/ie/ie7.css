@@ -31,7 +31,10 @@
 .friends {display:inline; height: 1%;}
 
 /* Top results bar */
-#results_top {display:inline; height: 1%;}
+/*#results_top {display:inline; height: 1%;}*/
+#results_top div{zoom: 1;}
+#results_top div h3 {zoom: 1;}
+#results_top div p {zoom: 1;}
 
 /* Results */
 #results_main li {display: inline; zoom: 1;}
