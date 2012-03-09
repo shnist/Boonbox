@@ -67,6 +67,10 @@
 
 /*Pagination*/
 #pagination li a {display:inline; zoom: 1;}
+#pagination li.prev a, #pagination li.next a {
+	text-indent: 0;
+	line-height: 3000;
+}
 
 /* Main carousel */
 .carousel-wrapper{display: inline; height: 1%;}

@@ -194,14 +194,10 @@ Boonbox.extend('filters', {
 				$('#pagination a').click(function (event) {
 					event.preventDefault();
 					if ($(this).parent('li').hasClass('disabled') !== true){
-						var clicked = $(this).attr('href'),
-							currentPage = $('#pagination .selected').attr('href'),
-							lastPage = $('#pagination li').eq($('#pagination li').length - 1).children('a').attr('href'),
+						var clicked = $(this).parent().prop('class').replace('page-', ''),
+							currentPage = $('#pagination .selected').parent().prop('class').replace('page-', ''),
+							lastPage = $('#pagination li').eq($('#pagination li').length - 1).prop('class').replace('page-', ''),
 							newPage;
-							
-						clicked = clicked.replace('#', '');
-						currentPage = currentPage.replace('#', '');
-						lastPage = lastPage.replace('#', '');
 						
 						if (clicked === 'prev'){
 							newPage = Number(currentPage) - 1;						
@@ -365,7 +361,7 @@ Boonbox.extend('filters', {
 						paginationMarkUp += '<li class="prev"><a href="#prev">Previous</a></li>';
 					}
 					for (j; j < paginationNumber; j = j + 1){
-						paginationMarkUp += '<li><a href="#' + (j + 1) + '">' + (j + 1) + '</a></li>';
+						paginationMarkUp += '<li class="page-' + (j + 1) + '"><a href="#' + (j + 1) + '">' + (j + 1) + '</a></li>';
 					}
 					if (pageNumber === paginationNumber){
 						paginationMarkUp += '<li class="next disabled"><a href="#next">Next</a></li>';
@@ -375,9 +371,9 @@ Boonbox.extend('filters', {
 					paginationMarkUp += '</ul>';
 						
 					$('#content').append(paginationMarkUp);
-					
+					//console.log();
 					// add selected class to last pagination number
-					$('#pagination a[href=#'+pageNumber+']').addClass('selected');	
+					$('#pagination .page-' + pageNumber + ' a').addClass('selected');	
 					// initialise event binding
 					Boonbox.filters.results.ui.pagination();
 									
