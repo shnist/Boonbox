@@ -24,17 +24,26 @@
 	font-size: 0; /* FF2 doesn’t like the above */
 }
 
-#basket{z-index: 20000;}
+/*#basket{z-index: 20000;}*/
 #basket p#basket-summary a {display:inline; zoom:1;}
 
 /* Mini Basket */
 #mini-basket ul li {display:inline; zoom:1;}
+
+/* Main Header */
+#search {display:inline; height: 1%;}
+
+#basket p#basket-summary a {display: inline; zoom: 1;}
+
 #mini-basket ul li a.close {display:inline; zoom: 1;}
 
 /*---- FILTERS ----*/
 
 #filter_options .filter-options-detail {display:inline; zoom: 1;}
 #filter_options .filter{position: relative; zoom: 1; z-index: 100;}
+
+#filter_selectors li p {display:inline; zoom:1;}
+
 
 /*---- CONTENTS: ON LOAD----*/
 
@@ -57,10 +66,23 @@
 #results_main li {display: inline; zoom: 1;}
 
 /*Pagination*/
-
 #pagination li a {display:inline; zoom: 1;}
 
-/* Connect */
+/* Main carousel */
+.carousel-wrapper{display: inline; height: 1%;}
 
+/* Friends */
+.friends {display:inline; height: 1%;}
+
+/* Top results bar */
+/*#results_top {display:inline; height: 1%;}*/
+#results_top div{zoom: 1;}
+#results_top div h3 {zoom: 1;}
+#results_top div p {zoom: 1;}
+
+/* Results */
+#results_main li {display: inline; zoom: 1;}
+
+/* Connect */
 #connect {display:inline; zoom: 1;}
 #connect li{display: inline; zoom: 1;} 
