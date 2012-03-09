@@ -23,9 +23,9 @@ var Boonbox = {
 	 * @name {String} The namespace the object should be dropped into
 	 * @obj {Object} The object
 	 */
-	extend: function (name, object){
+	extend: function (name, object) {
 		
-		if (this[name] === undefined){
+		if (this[name] === undefined) {
 			this[name] = object;
 		}
 		
@@ -41,17 +41,20 @@ Boonbox.extend('common', {
 	 * @function
 	 * @memberOf boonbox
 	 */
-	init : function(){
+	init : function () {
 		this.basket.ui();
 		this.topBuys.init();
 		this.carousel.init();
-		if($.support.opacity !== true){
+		if ($.support.opacity !== true) {
 			this.placeholder();
 		}
 		this.mailingList();
+		if ($.browser.msie && $.browser.version === "7.0") {
+			this.ie7Fixes.init($("body"));
+		}
 	},
 	basket : {
-		ui : function (){
+		ui : function () {
 			// first hide the basket by default 
 			$('#mini-basket').addClass('hidden');
 			
@@ -60,11 +63,11 @@ Boonbox.extend('common', {
 				clearTimeout(timer);
 				Boonbox.common.basket.add();
 				event.stopPropagation();
-			}).mouseleave(function (event){
+			}).mouseleave(function (event) {
 				timer = setTimeout(Boonbox.common.basket.remove, 600);
 				event.stopPropagation();
-			})
-			$('#mini-basket').mouseenter(function (event){
+			});
+			$('#mini-basket').mouseenter(function (event) {
 				clearTimeout(timer);
 				event.stopPropagation();
 			});
@@ -79,13 +82,13 @@ Boonbox.extend('common', {
 				e.preventDefault();
 			});
 		},
-		add : function (){
-			$('#mini-basket').slideDown(800, function(){
+		add : function () {
+			$('#mini-basket').slideDown(800, function () {
 				$(this).removeClass('hidden');
 			});
 		},
-		remove : function (){
-			$('#mini-basket').slideUp(400, function(){
+		remove : function () {
+			$('#mini-basket').slideUp(400, function () {
 				$(this).addClass('hidden');
 			});
 		},
@@ -100,9 +103,8 @@ Boonbox.extend('common', {
 			var total = 0;
 			$('#mini-basket .price').each(function () {
 				var price = Number($(this).html().replace('£', ''));
-				console.log(price);
 				total = total + price;
-			})
+			});
 			$('#basket-summary span').html('(£' + total + ')');
 			$('#mini-basket h3 span').html('£' + total + '.00');
 		}
@@ -117,18 +119,19 @@ Boonbox.extend('common', {
 		ui : function () {
 			$('.top-links a', '.top-section').click(function (e) {
 				e.preventDefault();
+				var tab, activeTab;
 				
 				$('.top-links a', '.top-section').removeClass('active');
 				$(this).addClass('active');
 				
-				var tab = $(this).attr('href');
-					tab = tab.replace('#', '');
+				tab = $(this).attr('href');
+				tab = tab.replace('#', '');
 				
-				var activeTab = $('ul.active', '.top-section').attr('class');
-					activeTab = activeTab.split(' ');
-					activeTab = activeTab[1];
+				activeTab = $('ul.active', '.top-section').attr('class');
+				activeTab = activeTab.split(' ');
+				activeTab = activeTab[1];
 				
-				if (tab !== activeTab){
+				if (tab !== activeTab) {
 					$('.top-gifts', '.top-section').removeClass('active').addClass('hidden');
 					$('.top-gifts', '.top-section').siblings('h2').removeClass('active').addClass('hidden');
 					$('.' + tab + ',' + '.top-section').removeClass('hidden').addClass('active');
@@ -139,16 +142,16 @@ Boonbox.extend('common', {
 	placeholder : function () {
 		// local reference to the element
 		var placeholderEl = $('[placeholder]');
-		$(placeholderEl).focus(function() {
+		$(placeholderEl).focus(function () {
 			// re-localised for the function's scope
 			var input = $(this);
 			if (input.val() === input.attr('placeholder')) {
 				input.val('');
 				input.removeClass('placeholder');
 			}
-		}).blur(function() {
+		}).blur(function () {
 			var input = $(this);
-			if (input.val() === '' || input.val() == input.attr('placeholder')) {
+			if (input.val() === '' || input.val() === input.attr('placeholder')) {
 				input.addClass('placeholder');
 				input.val(input.attr('placeholder'));
 			}
@@ -156,9 +159,9 @@ Boonbox.extend('common', {
 		
 		// prevents the values of the placeholder from attaching themselves
 		// to the form action script
-		$(placeholderEl).parents('form').submit(function() {
-			$(this).find('[placeholder]').each(function() {
-			var input = $(this);
+		$(placeholderEl).parents('form').submit(function () {
+			$(this).find('[placeholder]').each(function () {
+				var input = $(this);
 				if (input.val() === input.attr('placeholder')) {
 					input.val('');
 				}
@@ -225,5 +228,20 @@ Boonbox.extend('common', {
 	},
 	mailingList : function () {
 		$('#mailing-list input[type=submit]').addClass('hidden');
+	},
+	ie7Fixes: {
+		init: function ($context) {
+			var $elements = $context.find('#basket')
+				.find('#basket-mini')
+				.find('#filter_selectors li p a')
+				.find('#filter_options p.close');
+			this.customZIndex($elements);
+		},
+		customZIndex: function ($elements) {
+			$elements.each(function (i) {
+				alert($(this));
+				$(this).css('zIndex', ($elements.length - i));
+			});
+		}		
 	}
 });

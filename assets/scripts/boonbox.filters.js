@@ -4,7 +4,7 @@ Boonbox.extend('filters', {
 	 * @function
 	 * @memberOf boonbox
 	 */
-	init : function (){
+	init : function () {
 		$('#relationship').addClass('active');
 		$('#age, #occasion, #interest, #price').addClass('hidden');
 		
@@ -21,7 +21,7 @@ Boonbox.extend('filters', {
 		init: function () {
 			$('#filter_selectors a, #filter_selectors p').click(function (e) {
 				e.preventDefault();				
-				var tab;
+				var tab, activeTab;
 				if($(this).is('p')){
 					tab = $(this).children('a').attr('href');
 				} else {
@@ -35,7 +35,7 @@ Boonbox.extend('filters', {
 						$(this).removeClass('hidden').addClass('active');
 					});
 				} else {
-					var activeTab = $('.active', '#filter_options').attr('id');
+					activeTab = $('.active', '#filter_options').attr('id');
 				
 					if (activeTab !== undefined){
 						$('#filter_selectors li').removeClass('selected');
@@ -264,7 +264,8 @@ Boonbox.extend('filters', {
 					pageNumber = 1, itemsPerPage = 12, paginationNumber = Math.ceil(results.length / 12);
 					Boonbox.filters.results.viewAll.loading = false;
 				$(window).scroll(function () {
-					var scrollTop = $(window).scrollTop();
+					var scrollTop = $(window).scrollTop(),
+						min, timer;
 				
 					if (Boonbox.filters.results.viewAll.loading !== true){				
 						if((scrollTop + 850) > containerHeight){							
@@ -279,7 +280,7 @@ Boonbox.extend('filters', {
 							}
 							Boonbox.filters.results.viewAll.loading = true;
 							Boonbox.filters.results.viewAll.addLoader();
-							var timer = setTimeout(function () {
+							timer = setTimeout(function () {
 								Boonbox.filters.dom.productMarkup(min, max, results, function (loaded) {
 									if(loaded === 'done'){
 										Boonbox.filters.results.viewAll.removeLoader();
@@ -314,7 +315,7 @@ Boonbox.extend('filters', {
 					$('#results_top').remove();
 					$('#results_main').remove();
 					$('#pagination').remove();
-					$('#filter_options form').get(0).reset();
+					$('#filter_options li input').prop('checked', false);
 					$('#content').removeClass('results');
 					
 					$('#content').append(Boonbox.filters.emptiedContent);
@@ -350,18 +351,18 @@ Boonbox.extend('filters', {
 			// first say how many have been created
 			$('.results_context p').html('Boon selector has found ' + results.length + ' items');
 			var i = 0, j = 0, paginationMarkUp = '', itemsPerPage = 12, maxProducts = itemsPerPage * pageNumber,
-				header = '';
+				header = '', paginationNumber;
 			
 			if (results.length !== 0){
 				// creating pagination if necessary
 				if (results.length > 12){
-					var paginationNumber = Math.ceil(results.length / 12);
+					paginationNumber = Math.ceil(results.length / 12);
 	
-					paginationMarkup = '<ul id="pagination" class="clear">';
+					paginationMarkUp = '<ul id="pagination" class="clear">';
 					if (pageNumber === 1){
-						paginationMarkup = paginationMarkup + '<li class="prev disabled"><a href="#prev">Previous</a></li>';
+						paginationMarkUp = paginationMarkup + '<li class="prev disabled"><a href="#prev">Previous</a></li>';
 					} else {
-						paginationMarkup = paginationMarkup + '<li class="prev"><a href="#prev">Previous</a></li>';
+						paginationMarkUp = paginationMarkup + '<li class="prev"><a href="#prev">Previous</a></li>';
 					}
 					for (j; j < paginationNumber; j = j + 1){
 						paginationMarkup = paginationMarkup + '<li><a href="#' + (j + 1) + '">' + (j + 1) + '</a></li>';
@@ -436,7 +437,7 @@ Boonbox.extend('filters', {
 								'<img src="../../assets/images/star' + results[i].rating + '.png">' +
 							'</div>' +
 						'</a>' +
-					'</li>'
+					'</li>';
 			}
 			$('#results_main').append(productMarkUp);
 			

@@ -22,6 +22,7 @@
 	font-size: 0; /* FF2 doesn’t like the above */
 }
 
+#basket{z-index: 20000;}
 #basket p#basket-summary a {display:inline; zoom:1;}
 
 /* Mini Basket */
@@ -30,10 +31,8 @@
 
 /*---- FILTERS ----*/
 
-/* peekaboo bug */
-.filter{zoom: 1;}
-
 #filter_options .filter-options-detail {display:inline; zoom: 1;}
+#filter_options .filter{position: relative; zoom: 1; z-index: 100;}
 
 /*---- CONTENTS: ON LOAD----*/
 
@@ -51,6 +50,8 @@
 #results_top {display:inline; zoom:1;}
 
 /* Results */
+.results{zoom: 1;}
+
 #results_main li {display: inline; zoom: 1;}
 
 /*Pagination*/

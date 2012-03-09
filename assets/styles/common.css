@@ -138,7 +138,7 @@ a:hover {
 #filters_wrapper h3 {padding: 11px 3px 4px;}
 
 #filter_selectors {padding-left:1px;}
-#filter_selectors li {float:left; text-transform:uppercase; position:relative; text-align:center;}
+#filter_selectors li {float:left; text-transform:uppercase; /*position:relative;*/ text-align:center;}
 #filter_selectors li p {cursor:pointer; color:#fff; width:188px; height:153px; display:inline-block; background-position:-2px -152px;}
 #filter_selectors li.selected p,
 #filter_selectors li p:hover {color:#fff; padding-left:3px; margin-left:-3px;} 
@@ -161,7 +161,7 @@ a:hover {
 #filter_selectors li p a, #filter_selectors li p a:hover {color:#fff;}
 #filter_selectors li p a {position:relative; top:115px; text-shadow:0 -2px 0 #285384;}
 
-#filter_options {position:relative; background-color:#3365a7; overflow: hidden;}
+#filter_options {/*position:relative;*/ background-color:#3365a7; overflow: hidden;}
 #filter_options ul li {padding:5px 10px 10px;}
 #filter_options ul li.price {text-align:center;}
 #filter_options ul li.price input {margin:20px 0 10px -60px; text-align:center;}
