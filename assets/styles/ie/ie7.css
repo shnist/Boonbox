@@ -2,3 +2,54 @@
         Boonbox
         IE7 CSS styles for Boonbox sites
 */
+
+/* 2. 	Common Elements */
+
+/* 3. Page Structure */
+/* All styles relating to the structure of the pages */
+
+/* 3.1 Sprites */
+/* Add sprite images here*/
+
+/*---- HEADER ----*/
+
+/* Main Header */
+
+#basket p#basket-summary a {display:inline; zoom:1;}
+
+/* Mini Basket */
+#mini-basket ul li {display:inline; zoom:1;}
+#mini-basket ul li a.close {display:inline; zoom: 1;}
+
+/*---- FILTERS ----*/
+
+#filter_selectors li p {display:inline; zoom: 1;}
+
+#filter_options .filter-options-detail {display:inline; zoom: 1;}
+
+/*---- CONTENTS: ON LOAD----*/
+
+/* Top gifts */
+.top-section {display: inline; zoom: 1;} 
+.top-gifts li a {display:inline; zoom: 1;}
+
+/* Main carousel */
+.carousel-wrapper{display: inline; zoom: 1;}
+
+/* Friends */
+.friends {display:inline; zoom: 1;}
+
+/* Top results bar */
+#results_top {display:inline; zoom:1;}
+
+/* Results */
+#results_main li {display: inline; zoom: 1;}
+
+/*Pagination*/
+
+#pagination li a {display:inline; zoom: 1;}
+
+/* Connect */
+
+#connect {display:inline; zoom: 1;}
+#connect li{display: inline; zoom: 1;} 
