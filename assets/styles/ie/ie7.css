@@ -23,7 +23,7 @@
 
 /*---- FILTERS ----*/
 
-#filter_selectors li p {display:inline; zoom: 1;}
+.filter{zoom: 1;}
 
 #filter_options .filter-options-detail {display:inline; zoom: 1;}
 
