@@ -15,6 +15,13 @@
 
 /* Main Header */
 
+/* Negative text indent fix */
+#search input[name="search"]{
+	line-height: 999px; /* Set it higher than your image height */
+	overflow: hidden; /* Hide the text */
+	font-size: 0; /* FF2 doesn’t like the above */
+}
+
 #basket p#basket-summary a {display:inline; zoom:1;}
 
 /* Mini Basket */
@@ -23,6 +30,7 @@
 
 /*---- FILTERS ----*/
 
+/* peekaboo bug */
 .filter{zoom: 1;}
 
 #filter_options .filter-options-detail {display:inline; zoom: 1;}
