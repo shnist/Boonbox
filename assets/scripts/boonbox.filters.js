@@ -360,21 +360,21 @@ Boonbox.extend('filters', {
 	
 					paginationMarkUp = '<ul id="pagination" class="clear">';
 					if (pageNumber === 1){
-						paginationMarkUp = paginationMarkup + '<li class="prev disabled"><a href="#prev">Previous</a></li>';
+						paginationMarkUp += '<li class="prev disabled"><a href="#prev">Previous</a></li>';
 					} else {
-						paginationMarkUp = paginationMarkup + '<li class="prev"><a href="#prev">Previous</a></li>';
+						paginationMarkUp += '<li class="prev"><a href="#prev">Previous</a></li>';
 					}
 					for (j; j < paginationNumber; j = j + 1){
-						paginationMarkup = paginationMarkup + '<li><a href="#' + (j + 1) + '">' + (j + 1) + '</a></li>';
+						paginationMarkUp += '<li><a href="#' + (j + 1) + '">' + (j + 1) + '</a></li>';
 					}
 					if (pageNumber === paginationNumber){
-						paginationMarkup = paginationMarkup + '<li class="next disabled"><a href="#next">Next</a></li>';
+						paginationMarkUp += '<li class="next disabled"><a href="#next">Next</a></li>';
 					} else {
-						paginationMarkup = paginationMarkup + '<li class="next"><a href="#next">Next</a></li>';
+						paginationMarkUp += '<li class="next"><a href="#next">Next</a></li>';
 					}
-					paginationMarkup = paginationMarkup + '</ul>';
+					paginationMarkUp += '</ul>';
 						
-					$('#content').append(paginationMarkup);
+					$('#content').append(paginationMarkUp);
 					
 					// add selected class to last pagination number
 					$('#pagination a[href=#'+pageNumber+']').addClass('selected');	
