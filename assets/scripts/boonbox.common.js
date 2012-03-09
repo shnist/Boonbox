@@ -49,9 +49,6 @@ Boonbox.extend('common', {
 			this.placeholder();
 		}
 		this.mailingList();
-		//if ($.browser.msie && $.browser.version === "7.0") {
-			this.ie7Fixes.init($("body"));
-		//}
 	},
 	basket : {
 		ui : function () {
@@ -228,21 +225,5 @@ Boonbox.extend('common', {
 	},
 	mailingList : function () {
 		$('#mailing-list input[type=submit]').addClass('hidden');
-	},
-	ie7Fixes: {
-		init: function ($context) {
-			var $elements = $context.find('#basket');
-				//.find('#basket-mini')
-				//.find('#filter_selectors li p a')
-				//.find('#filter_options p.close');
-			this.customZIndex($elements);
-		},
-		customZIndex: function ($elements) {
-			//console.log($elements);
-			$elements.each(function (i) {
-				alert($(this));
-				$(this).css('zIndex', ($elements.length - i));
-			});
-		}		
 	}
 });
