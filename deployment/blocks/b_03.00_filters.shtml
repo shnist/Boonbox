@@ -1,0 +1,209 @@
+<div id="filters" class="clear">
+	<div id="filters_wrapper">
+    	<h3>Boon Selector : Select an option to start</h3>
+   		<ul id="filter_selectors">
+    		<li class="relationship selected"><p><a href="#relationship">Relationship</a></p></li>
+    		<li class="age"><p><a href="#age">Age</a></p></li>
+    		<li class="occasion"><p><a href="#occasion">Occasion</a></p></li>
+    		<li class="interest"><p><a href="#interest">Interest</a></p></li>
+    		<li class="price"><p><a href="#price">Price</a></p></li>
+    	</ul>
+    
+    	<div id="filter_options" class="clear">
+            <form action="#" method="GET">
+                <ul>
+                    <!-- RELATIONSHIP -->
+                    <li id="relationship" class="filter">
+                        <p class="close"><a href="#">close</a></p>
+                        <h4>1. What's your relationship with the person? <span>(select an option below)</span></h4>
+                        
+                        <ul class="filter-options-detail clear">
+                            <li>
+                                <input id="mum" type="radio" name="relationship" value="Mum" >
+                                <label for="mum">Mum</label>
+                            </li>
+                            <li>
+                                <input id="dad" type="radio" name="relationship" value="Dad" >
+                                <label for="dad">Dad</label>
+                            </li>
+                            <li>
+                                <input id="girlfriend" type="radio" name="relationship" value="Girlfriend" >
+                            <label for="girlfriend">Girlfriend</label>
+                            </li>
+                            <li>
+                                <input id="boyfriend" type="radio" name="relationship" value="Boyfriend" >
+                                <label for="boyfriend">Boyfriend</label>
+                            </li>
+                            <li>
+                                <input id="friend" type="radio" name="relationship" value="Friend" >
+                                <label for="friend">Friend</label>
+                            </li>
+                            <li>
+                                <input id="sister" type="radio" name="relationship" value="Sister" >
+                                <label for="sister">Sister</label>
+                            </li>
+                            <li>
+                                <input id="brother" type="radio" name="relationship" value="Brother" >
+                            <label for="brother"> Brother</label>
+                            </li>
+                            <li>
+                                <input id="daughter" type="radio" name="relationship" value="Daughter" >
+                                <label for="daughter">Daughter</label>
+                            </li>
+                            <li>
+                                <input id="son" type="radio" name="relationship" value="Son" >
+                                <label for="son">Son</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- AGE -->
+                    <li id="age" class="filter">
+                        <p class="close"><a href="#">close</a></p>
+                        <h4>2. How old is s/he? <span>(select an option below)</span></h4>
+                        <ul class="filter-options-detail clear">
+                            <li>
+                                <input id="one-five" type="radio" name="age" value="1-5" >
+                                <label for="one-five">1 - 5</label>
+                            </li>
+                            <li>
+                                <input id="six-ten" type="radio" name="age" value="6-10" >
+                                <label for="six-ten">6 - 10</label>
+                            </li>
+                            <li>
+                                <input id="eleven-fifteen" type="radio" name="age" value="11-15" >
+                            <label for="eleven-fifteen">11 - 15</label>
+                            </li>
+                            <li>
+                                <input id="sixteen-ninteen" type="radio" name="age" value="16-19" >
+                                <label for="sixteen-ninteen">16 - 19</label>
+                            </li>
+                            <li>
+                                <input id="twenty-twentythree" type="radio" name="age" value="20-23" >
+                                <label for="twenty-twentythree">20 - 23</label>
+                            </li>
+                            <li>
+                                <input id="twentyfour-twentynine" type="radio" name="age" value="24-29" >
+                                <label for="twentyfour-twentynine">24 - 29</label>
+                            </li>
+                            <li>
+                                <input id="thirty-fourty" type="radio" name="age" value="30-40" >
+                            <label for="thirty-fourty"> 30 - 40</label>
+                            </li>
+                            <li>
+                                <input id="fourtyone-fiftyfive" type="radio" name="age" value="41-55" >
+                                <label for="fourtyone-fiftyfive">41 - 55</label>
+                            </li>
+                            <li>
+                                <input id="fiftysix-seventy" type="radio" name="age" value="56-70" >
+                                <label for="fiftysix-seventy">56 - 70</label>
+                            </li>
+                            <li>
+                                <input id="seventyone-plus" type="radio" name="age" value="71+" >
+                                <label for="seventyone-plus">71+</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- OCCASION -->
+                    <li id="occasion" class="filter">
+                        <p class="close"><a href="#">close</a></p>
+                        <h4>3. What is the occasion? <span>(select an option below)</span></h4>
+                        <ul class="filter-options-detail clear">
+                            <li>
+                                <input id="birthday" type="radio" name="occasion" value="Birthday" >
+                                <label for="birthday">Birthday</label>
+                            </li>
+                            <li>
+                                <input id="wedding" type="radio" name="occasion" value="Wedding" >
+                                <label for="wedding">Wedding</label>
+                            </li>
+                            <li>
+                                <input id="anniversary" type="radio" name="occasion" value="Anniversary" >
+                                <label for="anniversary">Anniversary</label>
+                            </li>
+                            <li>
+                                <input id="new-baby" type="radio" name="occasion" value="New Baby" >
+                                <label for="new-baby">New Baby</label>
+                            </li>
+                            <li>
+                                <input id="new-job" type="radio" name="occasion" value="New Job" >
+                                <label for="new-job">New Job</label>
+                            </li>
+                            <li>
+                                <input id="christmas" type="radio" name="occasion" value="Christmas" >
+                                <label for="christmas">Christmas</label>
+                            </li>
+                            <li>
+                                <input id="valentines" type="radio" name="occasion" value="Valentines" >
+                            <label for="valentines">Valentines</label>
+                            </li>
+                            <li>
+                                <input id="graduation" type="radio" name="occasion" value="Graduation" >
+                                <label for="graduation">Graduation</label>
+                            </li>
+                            <li>
+                                <input id="retirement" type="radio" name="occasion" value="Retirement" >
+                                <label for="retirement">Retirement</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- INTEREST -->
+                    <li id="interest" class="filter">
+                        <p class="close"><a href="#">close</a></p>
+                        <h4>4. What are his/her interests? <span>(select an option below)</span></h4>
+                        <ul class="filter-options-detail clear">
+                            <li>
+                                <input id="Music" type="checkbox" name="interest[]" value="Music" >
+                                <label for="Music">Music</label>
+                            </li>
+                            <li>
+                                <input id="Sport" type="checkbox" name="interest[]" value="Sport" >
+                                <label for="Sport">Sport</label>
+                            </li>
+                            <li>
+                                <input id="Art" type="checkbox" name="interest[]" value="Art" >
+                                <label for="Art">Art</label>
+                            </li>
+                            <li>
+                                <input id="Science" type="checkbox" name="interest[]" value="Science" >
+                                <label for="Science">Science</label>
+                            </li>
+                            <li>
+                                <input id="Cars" type="checkbox" name="interest[]" value="Cars" >
+                                <label for="Cars">Cars</label>
+                            </li>
+                            <li>
+                                <input id="Holidays" type="checkbox" name="interest[]" value="Holidays" >
+                                <label for="Holidays">Holidays</label>
+                            </li>
+                            <li>
+                                <input id="Design" type="checkbox" name="interest[]" value="Design" >
+                            <label for="Design">Design</label>
+                            </li>
+                            <li>
+                                <input id="Food" type="checkbox" name="interest[]" value="Food" >
+                                <label for="Food">Food</label>
+                            </li>
+                            <li>
+                                <input id="Cooking" type="checkbox" name="interest[]" value="Cooking" >
+                                <label for="Cooking">Cooking</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- PRICE -->
+                    <li class="price filter" id="price">
+                        <p class="close"><a href="#">close</a></p> 
+                        <h4>5. What is your spending allowance? <span>(select an option below)</span></h4>
+                        <div class="filter-options-detail">
+                            <input type="text" id="price-range" name="price">
+                            <input type="text" id="lower-price" name="lower-price" class="hidden">
+                            <input type="text" id="higher-price" name="higher-price" class="hidden">
+                        </div>
+                    </li>
+                </ul>
+                <!-- hidden element for keyboard navigation -->
+                <input type="text" name="submitted" class="hidden" disabled="disabled">
+                <input type="submit" name="submit" value="Find me a gift">
+            </form>
+		</div>
+    </div>
+</div>

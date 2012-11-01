@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--#include virtual="/blocks/b_00.01_head.shtml" -->    
+    </head>
+    <body>
+        <div id="wrapper">
+        <!-- header -->
+        <!--#include virtual="/blocks/b_01.00_header.shtml" -->
+        <!-- filters -->
+        <!--#include virtual="/blocks/b_03.00_filters.shtml" -->
+        <!-- rest of the content of page goes inside page div -->
+        <div id="page" class="clear">
+            <div id="content">
+            <div id="top-section-wrapper">
+                <div class="top-section">
+                    <h2 class="week">This Weeks Top Gifts</h2>
+                    <ul class="top-gifts week">
+                        <li>
+                            <a href="" title="Gift Idea #1">
+                                <img src="/assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="/assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #1">
+                                <img src="/assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="/assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #1">
+                                <img src="/assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="/assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #1">
+                                <img src="/assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="/assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <h2 class="month">This Months Top Gifts</h2>
+                    <ul class="top-gifts month">
+                        <li>
+                            <a href="" title="Gift Idea #1">
+                                <img src="/assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="/assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #2">
+                                <img src="/assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="/assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #3">
+                                <img src="/assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="/assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #4">
+                                <img src="/assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="/assets/images/star4.png" class="star" alt="Rating"> 
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                        </li>                       
+                    </ul>
+                    <h2 class="year">This Years Top Gifts</h2>
+                    <ul class="top-gifts year">
+                        <li>
+                            <a href="" title="Gift Idea #1">
+                                <img src="/assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="/assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #2">
+                                <img src="/assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="/assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #3">
+                                <img src="/assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="/assets/images/star4.png" class="star" alt="Rating" >
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="Gift Idea #4">
+                                <img src="/assets/images/top_gift.jpg" class="top-gift-image" alt="Top gift" title="Top gift">
+                                <div class="top-gift-text">
+                                    <h4>Gift Idea #1</h4>
+                                    <p>&pound;25.99</p>
+                                    <img src="/assets/images/star4.png" class="star" alt="Rating">
+                                </div>
+                                <div class="clear"></div>
+                            </a>
+                        </li>  
+                    </ul>
+                    
+                    <ul class="top-links">
+                            <li><a href="#week" title="This week">This week</a></li>
+                            <li><a href="#month" title="This month">This month</a></li>
+                            <li><a href="#year" title="This year">This year</a></li>
+                    </ul>
+                </div>
+                
+                <div class="carousel-wrapper">
+                    <ul class="carousel">
+                        <li>
+                            <img src="/assets/images/carousel_placeholder1.jpg" title="Carousel image 1">
+                        </li>
+                        <li>
+                            <img src="/assets/images/carousel_placeholder2.jpg" title="Carousel image 2">
+                        </li>
+                        <li>
+                            <img src="/assets/images/carousel_placeholder3.jpg" title="Carousel image 3">
+                        </li>
+                    </ul>                 
+                </div>
+            </div>
+            <div class="suggestions clear">
+                <h2>Our suggestions</h2>
+                <div class="carousel-small-wrapper">
+                    <ul class="carousel-small no-js">      	    
+                        <li>
+                            <a href="#">
+                                <img src="/assets/images/placeholder1.jpg" class="gifts">
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="/assets/images/star4.png">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/assets/images/placeholder1.jpg" class="gifts">
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="/assets/images/star4.png">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/assets/images/placeholder1.jpg" class="gifts"> 
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="/assets/images/star4.png">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Arrow right"> 
+                                <img src="/assets/images/placeholder1.jpg" class="gifts"> 
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="/assets/images/star4.png">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/assets/images/placeholder1.jpg" class="gifts">
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="/assets/images/star4.png">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/assets/images/placeholder1.jpg" class="gifts">
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="/assets/images/star4.png">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/assets/images/placeholder1.jpg" class="gifts"> 
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="/assets/images/star4.png">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Arrow right"> 
+                                <img src="/assets/images/placeholder1.jpg" class="gifts"> 
+                                <div class="product_desc">
+                                        <h4>Monster Toy</h4>
+                                        <p class="price">&pound;25.99</p>
+                                        <img src="/assets/images/star4.png">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="friends clear">
+                <h2>Our friends</h2>
+                <ul>
+                    <li><a href="" title=""><img src="/assets/images/friends_1.jpg" title="Our friends 1"></a></li>
+                    <li><a href="" title=""><img src="/assets/images/friends_2.jpg" title="Our friends 2"></a></li>
+                    <li><a href="" title=""><img src="/assets/images/friends_3.jpg" title="Our friends 3"></a></li>
+                    <li><a href="" title=""><img src="/assets/images/friends_4.jpg" title="Our friends 4"></a></li>
+                    <li><a href="" title=""><img src="/assets/images/friends_5.jpg" title="Our friends 5"></a></li>
+                </ul>
+            </div>
+            </div>
+    
+
+            
+        </div>
+        <!-- footer -->
+        <!--#include virtual="/blocks/b_02.00_footer.shtml" -->
+        <!-- scripts go here -->
+        <!--#include virtual="/blocks/b_00.02_scripts.shtml" -->
+        
+        </div>
+    </body>
+</html>

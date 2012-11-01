@@ -1,0 +1,54 @@
+<div class="footer clear" id="footer">
+    <form method="POST" action="/" id="mailing-list">
+        <ul id="connect">
+            <li>Connect with us:</li>
+            <li id="twitter-follow"><a href="https://twitter.com/BoonBox" class="twitter-follow-button" data-show-count="false">Follow @BoonBox</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+            <li id="rss"><a href="#" title="RSS">2,964</a></li>
+            <li id="twitter"><a href="#" title="Twitter">2,252</a></li>
+            <li id="facebook"><a href="#" title="Facebook">1,997</a></li>
+            <li id="email"><span>Join our mailing list:</span></li>
+            <li id="last">
+                <input type="text" placeholder="enter your email here...">
+                <input type="text" name="submitted" disabled="disabled" class="hidden">
+                <input type="submit" name="submit" value="Join">
+            </li>
+        </ul>
+    </form>
+    
+    <div id="sitemap">
+           <ul>
+               <li class="first">Shopping with us</li>
+               <li><a href="">Ordering &amp; payment</a></li>
+               <li><a href="">Delivery information</a></li>
+               <li><a href="">Returns &amp; refunds</a></li>
+           </ul>
+           <ul>
+               <li class="first">Questions?</li>
+               <li><a href="">F.A.Q.</a></li>
+               <li><a href="">Complaints</a></li>
+           </ul>
+           <ul>
+               <li class="first">More about BoonBox</li>
+               <li><a href="">History</a></li>
+               <li><a href="">Jobs</a></li>
+               <li><a href="">Press</a></li>
+               <li><a href="">Affliate scheme</a></li>
+           </ul>
+           <ul>
+               <li class="first">Other services</li>
+                <li><a href="">Gift wrapping</a></li>
+               <li><a href="">Customised cards</a></li>
+               <li><a href="">Next day delivery</a></li>
+           </ul>
+           <div class="clear"></div>
+    </div>
+    <div id="information">
+        <p id="disclaimer">Copyright &copy; BoonBox 2011. All rights reserved. Legal Disclaimer. </p>
+        <div id="payment">
+            <img src="../../assets/images/payment.jpg" title="Payment" >
+        </div>
+        <div class="clear"></div>
+    </div>    
+    
+</div>

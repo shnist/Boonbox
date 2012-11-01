@@ -1,0 +1,92 @@
+/*!
+        Boonbox
+        IE7 CSS styles for Boonbox sites
+*/
+
+/* 2. 	Common Elements */
+
+/* 3. Page Structure */
+/* All styles relating to the structure of the pages */
+
+/* 3.1 Sprites */
+/* Add sprite images here*/
+
+/*---- HEADER ----*/
+
+/* Main Header */
+
+#header{position: relative; z-index: 2000;}
+
+/* Negative text indent fix */
+#search input[name="search"]{
+	line-height: 999px; /* Set it higher than your image height */
+	overflow: hidden; /* Hide the text */
+	font-size: 0; /* FF2 doesn’t like the above */
+}
+
+/*#basket{z-index: 20000;}*/
+#basket p#basket-summary a {display:inline; zoom:1;}
+
+/* Mini Basket */
+#mini-basket ul li {display:inline; zoom:1;}
+
+/* Main Header */
+#search {display:inline; height: 1%;}
+
+#basket p#basket-summary a {display: inline; zoom: 1;}
+
+#mini-basket ul li a.close {display:inline; zoom: 1;}
+
+/*---- FILTERS ----*/
+
+#filter_options .filter-options-detail {display:inline; zoom: 1;}
+#filter_options .filter{position: relative; zoom: 1; z-index: 100;}
+
+#filter_selectors li p {display:inline; zoom:1;}
+
+
+/*---- CONTENTS: ON LOAD----*/
+
+/* Top gifts */
+.top-section {display: inline; zoom: 1;} 
+.top-gifts li a {display:inline; zoom: 1;}
+
+/* Main carousel */
+.carousel-wrapper{display: inline; zoom: 1;}
+
+/* Friends */
+.friends {display:inline; zoom: 1;}
+
+/* Top results bar */
+#results_top {display:inline; zoom:1;}
+
+/* Results */
+.results{zoom: 1;}
+
+#results_main li {display: inline; zoom: 1;}
+
+/*Pagination*/
+#pagination li a {display:inline; zoom: 1;}
+#pagination li.prev a, #pagination li.next a {
+	text-indent: 0;
+	line-height: 3000;
+}
+
+/* Main carousel */
+.carousel-wrapper{display: inline; height: 1%;}
+
+/* Friends */
+.friends {display:inline; height: 1%;}
+
+/* Top results bar */
+/*#results_top {display:inline; height: 1%;}*/
+#results_top div{zoom: 1;}
+#results_top div h3 {zoom: 1;}
+#results_top div p {zoom: 1;}
+
+/* Results */
+#results_main li {display: inline; zoom: 1;}
+
+/* Connect */
+#connect {display:inline; zoom: 1;}
+#connect li{display: inline; zoom: 1;} 
